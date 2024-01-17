@@ -2,11 +2,23 @@
     display: flex;
     padding: 0 50px;
     align-items: center;
+    justify-content: space-between;
     height: 60px;
     position: sticky;
     top: 0;
     z-index: 99;
     background-color: rgb(0, 24, 66);
+}
+
+.Header-left{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.Header-right i{
+    color: white;
+    font-size: 20px;
 }
 
 .Header-logo{

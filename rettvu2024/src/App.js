@@ -7,13 +7,16 @@ import Committee from "./components/Committee/Committee";
 import Header from "./components/Header/Header";
 import Program from "./components/program/program";
 import Map from "./components/map/map";
-const { Content, Footer } = Layout;
+import Footer from "./components/Footer/Footer";
+import logo from "./components/imgs/logoTVU.png";
+
+const { Content } = Layout;
 
 const items = [
   {
     label: 'Program',
     key: 'mail',
-    path: '/', 
+    path: '/',
   },
   {
     label: 'Organizing Committee',
@@ -42,9 +45,10 @@ const App = () => {
     <div className='App'>
       <Layout>
         <div className='Banner'>
-          LOGO RET TVU 2024
-        </div>    
-        <Header/>
+          <Avatar src={logo} size={50} />
+          <h2>RET 2024 BY TRA VINH UNIVERSITY</h2>
+        </div>
+        <Header />
         <Content>
           <div className='Content'>
             <Routes>
@@ -55,9 +59,7 @@ const App = () => {
             </Routes>
           </div>
         </Content>
-        <Footer>
-          <div className='Footer'>Footer</div>
-        </Footer>
+        <Footer />
       </Layout>
     </div>
   );

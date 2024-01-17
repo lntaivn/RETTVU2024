@@ -1,6 +1,6 @@
 
 import "./map.css"
-
+import map from "../imgs/map.jpg"
 
 const Map = () => {
 
@@ -12,7 +12,7 @@ const Map = () => {
                 </div>
                  
 
-                <img src="https://lh3.googleusercontent.com/jAH-oAjwCnmlb2cNSX0pFreghzALB6PRzSs9DU4_3Ro8MQxp2z8O2hCOXYIwh5msz6Isb0dKxbkGZ_3pHLLUQxCIwWLKHBIMxdozM4EchlfEGVmhbMX0SPRUy7p0Dn9u9A=w1280" alt="" />
+                <img src={map} alt="" />
 
                 <div className="map_layout_contract">
                     <b>CONTACT US:</b><span> ret_conf@tvu.edu.vn</span>

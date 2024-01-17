@@ -10,13 +10,18 @@ const Header = () => {
 
     return (
         <div className="Header">
-            <div className="Header-logo" >
-                <Avatar src={logo} size={40} />
+            <div className="Header-left">
+                <div className="Header-logo" >
+                    <Avatar src={logo} size={35} />
+                </div>
+                <Link to="/" className={location.pathname === '/' ? "Header-link Heade-active" : "Header-link"}>Program</Link>
+                <Link to="/committee" className={location.pathname.startsWith('/committee') ? "Header-link Heade-active" : "Header-link"}>Committee</Link>
+                <Link to="/about" className={location.pathname.startsWith('/about') ? "Header-link Heade-active" : "Header-link"}>About RET</Link>
+                <Link to="/contact" className={location.pathname.startsWith('/contact') ? "Header-link Heade-active" : "Header-link"}>Contact</Link>
             </div>
-            <Link to="/" className={location.pathname === '/' ? "Header-link Heade-active" : "Header-link"}>Program</Link>
-            <Link to="/committee" className={location.pathname.startsWith('/committee') ? "Header-link Heade-active" : "Header-link"}>Committee</Link>
-            <Link to="/about" className={location.pathname.startsWith('/about') ? "Header-link Heade-active" : "Header-link"}>About RET</Link>
-            <Link to="/contact" className={location.pathname.startsWith('/contact') ? "Header-link Heade-active" : "Header-link"}>Contact</Link>
+            <div className="Header-right">
+                <i className="fa-solid fa-magnifying-glass"></i>
+            </div>
         </div>
     )
 }
