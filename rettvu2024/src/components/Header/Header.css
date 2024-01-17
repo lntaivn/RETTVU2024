@@ -1,0 +1,35 @@
+.Header{
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: rgb(0, 24, 66);
+}
+
+.Header-logo{
+    margin-right: 30px;
+}
+
+.Header-link{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0 30px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.Header-link:hover{
+    background-color: rgb(255, 153, 0);
+    color: rgb(0, 24, 66);
+}
+
+.Heade-active{
+    background-color: rgb(255, 153, 0);
+    color: rgb(0, 24, 66);
+}

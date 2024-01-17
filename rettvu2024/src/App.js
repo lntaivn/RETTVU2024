@@ -1,11 +1,12 @@
 
 import "./App.css"
-import { Layout, Menu, ConfigProvider } from 'antd';
+import { Layout, Menu, ConfigProvider, Avatar } from 'antd';
 import { Link, Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Committee from "./components/Committee/Committee";
+import Header from "./components/Header/Header";
 
-const { Header, Content, Footer } = Layout;
+const { Content, Footer } = Layout;
 
 const items = [
   {
@@ -40,25 +41,9 @@ const App = () => {
     <div className='App'>
       <Layout>
         <div className='Banner'>
-          Banner
-        </div>
-        <Header style={{ display: 'flex', alignItems: 'center', zIndex: 99, padding: "0" }} className='Header'>
-          <div className="demo-logo" />
-          <ConfigProvider
-            theme={{
-              token: {
-                colorPrimary: '#f7961e'
-              }
-            }}>
-            <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']} style={{ flex: 1, minWidth: 0,backgroundColor: "#374f8a", fontWeight: "600" }}>
-              {items.map(item => (
-                <Menu.Item key={item.key}>
-                  <Link to={item.path}>{item.label}</Link>
-                </Menu.Item>
-              ))}
-            </Menu>
-          </ConfigProvider>
-        </Header>
+          LOGO RET TVU 2024
+        </div>    
+        <Header/>
         <Content>
           <div className='Content'>
             <Routes>

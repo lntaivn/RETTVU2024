@@ -11,13 +11,15 @@
 
 .Committee_item > p{
     white-space: pre-line;
-}
-
-p{
     padding-left: 40px;
     margin: 10px 10px;
     font-size: 1.1rem;
+}
 
+.Committee_item div p{
+    padding-left: 40px;
+    margin: 10px 10px;
+    font-size: 1.1rem;
 }
 
 .Committee_item > h2 {
