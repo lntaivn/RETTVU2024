@@ -16,46 +16,23 @@ const items = [
   },
   {
     label: 'Organizing Committee',
-    key: 'app',
+    key: 'committee',
     path: '/committee', // Add the path for Organizing Committee
   },
   {
+    label: 'Contact',
+    key: 'contact',
+    path: '/contact', // Add the path for Organizing Committee
+  },
+  {
+    label: 'History',
+    key: 'history',
+    path: '/history', // Add the path for Organizing Committee
+  },
+  {
     label: 'About RET',
-    key: 'SubMenu',
-    children: [
-      {
-        type: 'group',
-        label: 'Item 1',
-        children: [
-          {
-            label: 'Option 1',
-            key: 'setting:1',
-            path: '/option1', // Add the path for Option 1
-          },
-          {
-            label: 'Option 2',
-            key: 'setting:2',
-            path: '/option2', // Add the path for Option 2
-          },
-        ],
-      },
-      {
-        type: 'group',
-        label: 'Item 2',
-        children: [
-          {
-            label: 'Option 3',
-            key: 'setting:3',
-            path: '/option3', // Add the path for Option 3
-          },
-          {
-            label: 'Option 4',
-            key: 'setting:4',
-            path: '/option4', // Add the path for Option 4
-          },
-        ],
-      },
-    ],
+    key: 'about',
+    path: '/about', // Add the path for Organizing Committee
   },
 ];
 
@@ -71,10 +48,10 @@ const App = () => {
           <ConfigProvider
             theme={{
               token: {
-                colorPrimary: 'orange'
+                colorPrimary: '#f7961e'
               }
             }}>
-            <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']} style={{ flex: 1, minWidth: 0, }}>
+            <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']} style={{ flex: 1, minWidth: 0,backgroundColor: "#374f8a", fontWeight: "600" }}>
               {items.map(item => (
                 <Menu.Item key={item.key}>
                   <Link to={item.path}>{item.label}</Link>
