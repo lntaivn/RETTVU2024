@@ -13,7 +13,7 @@
     white-space: pre-line;
 }
 
-p{
+.Committee_item div p{
     padding-left: 40px;
     margin: 10px 10px;
     font-size: 1.1rem;
