@@ -1,38 +1,79 @@
-.Slide-img{
+.Committee-content {
+    display        : flex;
+    justify-content: center;
+    padding        : 30px 30px;
+    gap            : 30px;
+    position       : relative;
+    align-items    : flex-start;
+}
+
+.Committee_right {
+    width   : 400px;
+    position: sticky;
+    top     : 80px;
+}
+
+.Committee_left {
+    flex: 1;
+}
+
+.Slide-img {
     margin-bottom: 30px;
     /* object-fit: cover; */
 
 }
-.Committee_item{
-    margin: 0;
-    padding: 0;
+
+.Committee_item {
+    margin    : 0;
+    padding   : 0;
     box-sizing: border-box;
 }
 
-.Committee_item > p{
-    white-space: pre-line;
+.Committee_item>p {
+    white-space : pre-line;
     padding-left: 40px;
-    margin: 10px 10px;
-    font-size: 1.1rem;
+    margin      : 10px 10px;
+    font-size   : 1.1rem;
 }
 
-.Committee_item div p{
+.Committee_item div p {
     padding-left: 40px;
-    margin: 10px 10px;
-    font-size: 1.1rem;
+    margin      : 10px 10px;
+    font-size   : 1.1rem;
 }
 
-.Committee_item > h2 {
-    margin-left: 30px;
-    width: 1000px;
-    color: #fff;
-    font-family: Montserrat;
+.Committee_item>h2 {
+    color           : #fff;
+    font-family     : Montserrat;
     background-color: #374f8a;
-    border-left: 1.6rem solid #f7961e;
-    padding: 1rem 1.6rem;
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-align: left;
-    text-transform: capitalize;
+    border-left     : 1.6rem solid #f7961e;
+    padding         : 1rem 1.6rem;
+    font-weight     : 700;
+    font-size       : 1.5rem;
+    text-align      : left;
+    text-transform  : capitalize;
+}
+
+.Committee_right div h2 {
+    width           : 100%;
+    color           : #fff;
+    font-family     : Montserrat;
+    background-color: #374f8a;
+    border-left     : 1.6rem solid #f7961e;
+    padding         : 1rem 1.6rem;
+    font-weight     : 700;
+    font-size       : 1.5rem;
+    text-align      : left;
+    text-transform  : capitalize;
+}
+
+.Committee_right div p {
+    padding-left: 40px;
+    margin      : 10px 10px;
+    font-size   : 1.1rem;
+}
+
+.Committee_item {
+    margin-bottom: 30px;
 }
 

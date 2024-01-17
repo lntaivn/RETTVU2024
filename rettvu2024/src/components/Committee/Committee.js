@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Committee.css";
 import { Carousel } from "antd";
 
@@ -98,18 +99,44 @@ const Committee = () => {
                     />
                 </div>
             </Carousel>
-            {Committees.map((cm, index) => {
-                return (
-                    <div className="Committee_item" key={index}>
-                        <h2>{cm.title}</h2>
-                        <div>
-                            {cm.content.map((ct, index) => {
-                                return <p>{`${index}: ${ct}`}</p>;
-                            })}
-                        </div>
+            <div className="Committee-content">
+                <div className="Committee-left">
+                    {Committees.map((cm, index) => {
+                        return (
+                            <div className="Committee_item" key={index}>
+                                <h2>{cm.title}</h2>
+                                <div>
+                                    {cm.content.map((ct, index) => {
+                                        return <p>{`${index}: ${ct}`}</p>;
+                                    })}
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+                <div className="Committee_right">
+                    <div className="Committee_item">
+                        <h2>Latest News</h2>
+                        <p>February 15th, 2024: </p>
+                        <p>
+                            The extension submission deadline (FIRM DEADLINE)
+                            for CITA 2024.{" "}
+                        </p>
                     </div>
-                );
-            })}
+                    <div className="Committee_item">
+                        <h2>Previous Conferences</h2>
+                        <p>
+                            <Link to="/">RET 2023</Link>
+                        </p>
+                        <p>
+                            <Link to="/">RET 2022</Link>
+                        </p>
+                        <p>
+                            <Link to="/">RET 2021</Link>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
