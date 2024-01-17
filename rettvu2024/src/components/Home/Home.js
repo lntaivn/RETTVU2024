@@ -1,7 +1,8 @@
 
-import { Carousel } from 'antd';
+import { Carousel, Avatar } from 'antd';
 import "./Home.css"
 import { Link } from 'react-router-dom';
+import { UserOutlined } from '@ant-design/icons';
 
 const Home = () => {
     return (
@@ -17,6 +18,48 @@ const Home = () => {
                     <img src="https://image.bnews.vn/MediaUpload/Org/2020/06/15/trung-tam-hoc-lieu-tvu.jpg" alt="" />
                 </div>
             </Carousel>
+            <div className='Speakers'>
+                <div className='Speakers_item'>
+                    <div className='Speakers_item_img'>
+                        <img src="https://www.jaist.ac.jp/~ogata/ogata.png" alt=""/>
+                    </div>
+                    <h3>Kazuhiro Ogata</h3>
+                    <span>Professor</span>
+                    <p>Keynote 1: Security Protocol Model Checking based on Algebraic Specifications</p>
+                </div>
+                <div className='Speakers_item'>
+                    <div className='Speakers_item_img'>
+                        <img src="https://isds.ctu.edu.vn/2023/images/upload/keynotes/masayuki_fukuzawa.png" alt=""/>
+                    </div>
+                    <h3>Kazuhiro Ogata</h3>
+                    <span>Professor</span>
+                    <p>Keynote 1: Security Protocol Model Checking based on Algebraic Specifications</p>
+                </div>
+                <div className='Speakers_item'>
+                    <div className='Speakers_item_img'>
+                        <img src="https://isds.ctu.edu.vn/2023/images/upload/keynotes/masayuki_fukuzawa.png" alt=""/>
+                    </div>
+                    <h3>Kazuhiro Ogata</h3>
+                    <span>Professor</span>
+                    <p>Keynote 1: Security Protocol Model Checking based on Algebraic Specifications</p>
+                </div>
+                <div className='Speakers_item'>
+                    <div className='Speakers_item_img'>
+                        <img src="https://isds.ctu.edu.vn/2023/images/upload/keynotes/masayuki_fukuzawa.png" alt=""/>
+                    </div>
+                    <h3>Kazuhiro Ogata</h3>
+                    <span>Professor</span>
+                    <p>Keynote 1: Security Protocol Model Checking based on Algebraic Specifications</p>
+                </div>
+                <div className='Speakers_item'>
+                    <div className='Speakers_item_img'>
+                        <img src="https://isds.ctu.edu.vn/2023/images/upload/keynotes/masayuki_fukuzawa.png" alt=""/>
+                    </div>
+                    <h3>Kazuhiro Ogata</h3>
+                    <span>Professor</span>
+                    <p>Keynote 1: Security Protocol Model Checking based on Algebraic Specifications</p>
+                </div>
+            </div>
         </div>
     )
 }
