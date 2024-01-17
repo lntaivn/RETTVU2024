@@ -5,14 +5,15 @@ import { Link, Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Committee from "./components/Committee/Committee";
 import Header from "./components/Header/Header";
-
+import Program from "./components/program/program";
+import Map from "./components/map/map";
 const { Content, Footer } = Layout;
 
 const items = [
   {
     label: 'Program',
-    key: 'home',
-    path: '/', // Add the path for Program
+    key: 'mail',
+    path: '/', 
   },
   {
     label: 'Organizing Committee',
@@ -49,11 +50,13 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/committee" element={<Committee />} />
+              <Route path="/program" element={<Program />} />
+              <Route path="/map" element={<Map />} />
             </Routes>
           </div>
         </Content>
         <Footer>
-          <div className='Footer'></div>
+          <div className='Footer'>Footer</div>
         </Footer>
       </Layout>
     </div>
