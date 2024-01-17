@@ -1,4 +1,4 @@
-.Committee_item > p{
+.Committee_item > div{
     white-space: pre-line;
     padding-left: 30px;
 }

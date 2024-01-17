@@ -4,14 +4,15 @@ import { Layout, Menu, ConfigProvider } from 'antd';
 import { Link, Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Committee from "./components/Committee/Committee";
-
+import Program from "./components/program/program";
+import Map from "./components/map/map";
 const { Header, Content, Footer } = Layout;
 
 const items = [
   {
     label: 'Program',
     key: 'mail',
-    path: '/', // Add the path for Program
+    path: '/', 
   },
   {
     label: 'Organizing Committee',
@@ -87,11 +88,13 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/committee" element={<Committee />} />
+              <Route path="/program" element={<Program />} />
+              <Route path="/map" element={<Map />} />
             </Routes>
           </div>
         </Content>
         <Footer>
-          <div className='Footer'></div>
+          <div className='Footer'>Footer</div>
         </Footer>
       </Layout>
     </div>

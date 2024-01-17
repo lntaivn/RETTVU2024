@@ -1,7 +1,7 @@
 
-import "./Committee.css"
+import "./program.css"
 
-const Committee = () => {
+const Program = () => {
 
     const Committees = [
         {
@@ -95,7 +95,7 @@ const Committee = () => {
                 Committees.map((cm, index) => {
                     return (
                         <div className="Committee_item" key={index}>
-                            <h2>{cm.title}</h2>
+                            <h2>hi</h2>
                             <div>
                                 {
                                     cm.content.map((ct, index) => {
@@ -111,8 +111,9 @@ const Committee = () => {
                     )
                 })
             }
+
         </div>
     )
 }
 
-export default Committee;
+export default Program;
