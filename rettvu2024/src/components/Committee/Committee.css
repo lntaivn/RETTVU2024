@@ -1,4 +1,36 @@
+.Slide-img{
+    margin-bottom: 30px;
+    /* object-fit: cover; */
+
+}
+.Committee_item{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .Committee_item > p{
     white-space: pre-line;
-    padding-left: 30px;
 }
+
+p{
+    padding-left: 40px;
+    margin: 10px 10px;
+    font-size: 1.1rem;
+
+}
+
+.Committee_item > h2 {
+    margin-left: 30px;
+    width: 1000px;
+    color: #fff;
+    font-family: Montserrat;
+    background-color: #374f8a;
+    border-left: 1.6rem solid #f7961e;
+    padding: 1rem 1.6rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: left;
+    text-transform: capitalize;
+}
+

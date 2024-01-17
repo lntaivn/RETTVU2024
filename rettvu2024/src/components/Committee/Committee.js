@@ -1,28 +1,27 @@
-
-import "./Committee.css"
+import "./Committee.css";
+import { Carousel } from "antd";
 
 const Committee = () => {
-
     const Committees = [
         {
             title: "Chairman Program Committee:",
             content: [
                 "Assoc. Prof. Nguyen Minh Hoa - Rector of Tra Vinh University",
-            ]
+            ],
         },
         {
             title: "Vice Chairman Program Committee:",
             content: [
                 "Dr. Vo Phuoc Hung - Dean of School of Engineering and Technology, Tra Vinh University",
-                "Dr. Huynh Cong Khoi - Head of Science and Technology Office, Tra Vinh University"
-            ]
+                "Dr. Huynh Cong Khoi - Head of Science and Technology Office, Tra Vinh University",
+            ],
         },
         {
             title: "Technical Program Chairs:",
             content: [
                 "Dr. Pham Quoc Phong - Vice Dean of School of Engineering and Technology, Tra Vinh University",
-                "Assoc. Prof. Nguyen Thai Son - Director of Resource Development Institute, Tra Vinh University"
-            ]
+                "Assoc. Prof. Nguyen Thai Son - Director of Resource Development Institute, Tra Vinh University",
+            ],
         },
         {
             title: "Co-Program Chair:",
@@ -30,8 +29,8 @@ const Committee = () => {
                 "Dr. Truong Van Men - Deputy Head of Mechanical Engineering Department;",
                 "Dr. Nguyen Nhut Lam - Head of Information Technology;",
                 "Dr. Cao Phuong Thao - Head of Electrical - Electronics Department;",
-                "Dr. Huynh Van Hiep - Head of Civil Engineering Department;"
-            ]
+                "Dr. Huynh Van Hiep - Head of Civil Engineering Department;",
+            ],
         },
         {
             title: "Technical Program Committee:",
@@ -75,8 +74,8 @@ const Committee = () => {
                 "Dr. Quach Ngoc Thinh - Can Tho University;",
                 "Dr. Nguyen Hoang Vu - Can Tho University;",
                 "Dr. Luong Vinh Quoc Danh - Can Tho University;",
-                "Dr. Phan Tan Tai - Tra Vinh University;"
-            ]
+                "Dr. Phan Tan Tai - Tra Vinh University;",
+            ],
         },
         {
             title: "Secretary:",
@@ -84,36 +83,35 @@ const Committee = () => {
                 "MEng. Dang Hoang Vu - Tra Vinh University;",
                 "MEng. Ha Thi Thuy Vi - Tra Vinh University;",
                 "MEng. Bui Thi Thu Thuy - Tra Vinh University;",
-                "MEng. Huynh Thi My Dung - Tra Vinh University;"
-            ]
-        }
+                "MEng. Huynh Thi My Dung - Tra Vinh University;",
+            ],
+        },
     ];
 
     return (
         <div className="Committee">
-            {
-                Committees.map((cm, index) => {
-                    return (
-                        <div className="Committee_item" key={index}>
-                            <h2>{cm.title}</h2>
-                            <div>
-                                {
-                                    cm.content.map((ct, index) => {
-                                        return(
-                                            <p>
-                                                {`${index}:${ct}`}
-                                            </p>
-                                        )
-                                    })
-                                }
-                            </div>
+            <Carousel autoplay>
+                <div className="Slide-img">
+                    <img
+                        src="https://image.bnews.vn/MediaUpload/Org/2020/06/15/trung-tam-hoc-lieu-tvu.jpg"
+                        alt=""
+                    />
+                </div>
+            </Carousel>
+            {Committees.map((cm, index) => {
+                return (
+                    <div className="Committee_item" key={index}>
+                        <h2>{cm.title}</h2>
+                        <div>
+                            {cm.content.map((ct, index) => {
+                                return <p>{`${index}: ${ct}`}</p>;
+                            })}
                         </div>
-                    )
-                })
-            }
-
+                    </div>
+                );
+            })}
         </div>
-    )
-}
+    );
+};
 
 export default Committee;
