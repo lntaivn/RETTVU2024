@@ -63,6 +63,9 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+            <div className="Header-middle">
+                <input type="text" placeholder="Tìm kiếm"/>
+            </div>
             <div className="Header-right">
                 <i className="fa-solid fa-magnifying-glass"></i>
             </div>
