@@ -53,9 +53,9 @@ const App = () => {
         <Content>
           <div className='Content'>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<About />} />
               <Route path="/committee" element={<Committee />} />
-              <Route path="/program" element={<Program />} />
+              <Route path="/program" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/map" element={<Map />} />
               <Route path="/map" element={<Map />} />

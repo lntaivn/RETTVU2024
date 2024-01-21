@@ -1,59 +1,110 @@
 .About{
     display: flex;
     gap: 20px;
-    padding: 10px 10px;
+    padding: 40px;
+    justify-content: center;
+    align-items: flex-start;
 }
-
 .About_content{
     display: flex;
     font-size: 15px;
     line-height: 1.5;
     flex-direction: column;
-    padding:10px 50px;
+    gap: 30px;
+}
+.About_content_text{
+    text-align: justify;
+    width: 600px;
+    padding: 0px 40px 0px 80px;
+}
+.About_content_topics{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 40px 40px 80px;
+}
+.About_content_topics h2{
+    padding: 5px;
+    text-align: center;
+    color: rgb(0, 24, 66);
+}
+.About_content_text h2{
+    padding: 5px;
+    text-align: center;
+    color: rgb(0, 24, 66);
 }
 
-.About_content h2 {
-    padding:20px 0;
+.About_image {
+    width: 600px;
+    height: 550px;
 }
 
-.About_content div ul li{
-    padding: 4px 60px;
+.About_image img {
+    width: 600px;
+    height: 550px;
 }
 
 
-::marker{
-    margin-left: 20px;
-}
 
-.About_image img{
-    height: 500px;
-    
+
+
+
+
+
+
+
+.About_Important_Date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 80px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.About_Important_Date h1{
+    padding: 5px;
+    text-align: center;
+    color: rgb(0, 24, 66);
+    margin-bottom: 20px;
 }
 
 .import_date{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-
+    gap: 20px;
 }
 
-.About_content.import_date {
-    justify-items: center;
-    text-align: center;
+.About_content_layout {
+    padding: 40px 30px;
+    display: flex;
+    align-items: center;
+    
+    gap: 10px;
+    width: 600px;
+    border: 1px solid #c0b7b7;
+   
+}
+.import_date .import_date_icon {
+    height: 100%;
+    width: 100px;
 }
 
-.import_date div h3{
-    font-size: 27px;
+.fa-calendar-days {
+    font-size: 80px;
+    color: #c0b7b7;
 }
-
-.import_date div span{
-    font-size: 15px;
-    color: rgb(47, 47, 47);
-}
-
-.import_date div {
+.ACL-flex{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 24, 66);
+    gap: 10px;
+}
+.ACL-flex h2 {
+    font-weight: bold;
 }
 
 .Speakers{
@@ -64,8 +115,17 @@
     margin: 0 auto;
     justify-items: center;
     text-align: left;
+    padding-bottom: 100px;
 }
-
+.Speakers_tital {
+    width: 100%;
+    margin-bottom: 40px;
+}
+.Speakers_tital h1{
+    padding: 5px;
+    text-align: center;
+    color: rgb(0, 24, 66);
+}
 .Speakers_item{
     display: flex;
     flex-direction: column;
@@ -89,4 +149,42 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+
+
+
+
+
+.Submission_Guideline_tital h1 {
+    padding: 5px;
+    text-align: center;
+    color: rgb(0, 24, 66);
+}
+
+.Submission_Guideline {
+    width: 100%;
+    text-align: justify;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    line-height: 2;
+    gap: 5px;
+}
+.Submission_Guideline_header {
+    width: 100%;
+    max-width: 1100px;
+    
+}
+.Submission_Guideline_body{
+    width: 100%;
+    max-width: 1100px;
+}
+.Submission_Guideline_header p {
+    font-size: 16px;
+}
+.Submission_Guideline_body ul {
+    margin-left: 20px;
+    list-style-type: square;
 }
