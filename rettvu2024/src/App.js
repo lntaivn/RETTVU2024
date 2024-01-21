@@ -9,6 +9,7 @@ import Program from "./components/program/program";
 import Map from "./components/map/map";
 import Footer from "./components/Footer/Footer";
 import logo from "./components/imgs/logoTVU.png";
+import About from "./components/About/About";
 
 const { Content } = Layout;
 
@@ -55,7 +56,7 @@ const App = () => {
               <Route path="/" element={<Home />} />
               <Route path="/committee" element={<Committee />} />
               <Route path="/program" element={<Program />} />
-              <Route path="/map" element={<Map />} />
+              <Route path="/about" element={<About />} />
               <Route path="/map" element={<Map />} />
               <Route path="/map" element={<Map />} />
             </Routes>

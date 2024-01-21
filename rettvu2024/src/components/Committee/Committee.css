@@ -43,13 +43,13 @@
 }
 
 .Committee_item>h2 {
-    color           : #fff;
+    color           : black;
     font-family     : Montserrat;
-    background-color: #374f8a;
-    border-left     : 1.6rem solid #f7961e;
+    /* background-color: #374f8a; */
+    border-left     : 1.2rem solid #f7961e;
     padding         : 1rem 1.6rem;
     font-weight     : 700;
-    font-size       : 1.5rem;
+    font-size       : 1.2rem;
     text-align      : left;
     text-transform  : capitalize;
 }
@@ -58,7 +58,7 @@
     width           : 100%;
     color           : #fff;
     font-family     : Montserrat;
-    background-color: #374f8a;
+    /* background-color: #374f8a; */
     border-left     : 1.6rem solid #f7961e;
     padding         : 1rem 1.6rem;
     font-weight     : 700;
