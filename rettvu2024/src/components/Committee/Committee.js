@@ -133,13 +133,22 @@ const Committee = () => {
                     <div className="Committee_item">
                         <h2>Previous Conferences</h2>
                         <p>
-                            <Link to="/">RET 2023</Link>
+                            <Link to="/ret-2023">RET 2023</Link>
                         </p>
                         <p>
-                            <Link to="/">RET 2022</Link>
+                            <Link to="/ret-2022">RET 2022</Link>
                         </p>
                         <p>
-                            <Link to="/">RET 2021</Link>
+                            <Link to="/ret-2021">RET 2021</Link>
+                        </p>
+                        <p>
+                            <Link to="/ret-2020">RET 2020</Link>
+                        </p>
+                        <p>
+                            <Link to="/ret-2019">RET 2019</Link>
+                        </p>
+                        <p>
+                            <Link to="/ret-2018">RET 2018</Link>
                         </p>
                     </div>
                 </div>

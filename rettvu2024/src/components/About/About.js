@@ -75,7 +75,7 @@ const About = () => {
                 </div>
             </div>
             <div className="About_Important_Date">
-                <h1>Important dates:</h1>
+                <h1>Important dates</h1>
                 <div className="import_date">
                     <div className="About_content_layout">
                         <div className="import_date_icon"><i class="fa-solid fa-calendar-days"></i></div> 
@@ -203,7 +203,7 @@ const About = () => {
                 <div className="Submission_Guideline_body">
                     <ul>
                         <li>All submitted papers should be the original ones and must not be considered elsewhere for under review or publication.</li>
-                        <li>Full-text papers (pdf only) should be submitted to the conference via the EasyChair system ( https://easychair.org/conferences/?conf=tvu-ret2024 ) for peer-reviewed by the conference committee.</li>
+                        <li>Full-text papers (pdf only) should be submitted to the conference via the EasyChair system (https://easychair.org/conferences/?conf=tvu-ret2024) for peer-reviewed by the conference committee.</li>
                         <li> Accepted full papers will be presented onsite at the conference and published in the conference proceedings with the ISBN index. (Papers published in the proceedings must be presented by at least one author at the conference).</li>
                         <li>Excellent papers will be recommended to publish on The Scientific Journal of Tra Vinh University; ISSN: 2815-6072; E-ISSN: 2815-6099 or other Journals (if any).</li>
                         <li> RET is respectful of the rights of authors and therefore we are intolerant of plagiarism. Manuscripts are expected to contain original work and should be cited adequately, properly, and academically. Consequently, the overall similarity rate of a manuscript should not exceed 30 percent, and the similarity rate to a single source should not exceed 15 percent.</li>
