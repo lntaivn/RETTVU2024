@@ -8,6 +8,7 @@
     top: 0;
     z-index: 99;
     background-color: rgb(0, 24, 66);
+    gap: 30px;
 }
 
 .Header-left{
@@ -45,6 +46,7 @@
 .Heade-active{
     background-color: rgb(255, 153, 0);
     color: rgb(0, 24, 66);
+    font-weight: 600;
 }
 
 .Header-tab{
@@ -100,4 +102,18 @@
 
 .Heade-group-active{
     border-bottom: 4px solid rgb(255, 153, 0);
+}
+
+.Header-middle{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.Header-middle > input{
+    height: 38px;
+    font-weight: 500;
+    padding-left: 10px;
+    width: 100%;
 }
