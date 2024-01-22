@@ -82,7 +82,7 @@ const Home = () => {
                 <h2>
                     I. Session 1, Saturday July 22nd, 2023
                 </h2>
-                <div className="program_title_detail"><ul><li> <h2>Room:</h2> <h1>E21.105</h1> <Link to="/map">View map</Link></li></ul></div>
+                <div className="program_title_detail"><ul><li> <h2>Room:</h2> <h1>E21.105</h1> <Link to="../map">View map</Link></li></ul></div>
                 <div className="schedule">
                     <ul>
                         {SESSION_1.map(item => (
