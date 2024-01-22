@@ -19,6 +19,18 @@
     .About {
         padding: 40px 20px !important;
     }
+    
+    .Committee-content{
+        padding: 30px 10px !important;
+    }
+
+    .Committee_item>p {
+        padding-left: 15px !important;
+    }
+
+    .Committee_item div p {
+        padding-left: 15px !important;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -60,5 +72,14 @@
 
     .Header-mobile-right {
         display: block !important;
+    }
+
+    .Committee-content{
+        flex-direction: column;
+        gap: 0 !important;
+    }
+
+    .Committee_right {
+        width: 100% !important;
     }
 }
