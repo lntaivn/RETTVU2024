@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import "./About.css";
-import { Carousel, Collapse } from "antd";
 import { DataStore } from "../Database";
 
 const About = () => {
@@ -12,54 +11,8 @@ const About = () => {
     const Speakers = database?.Speakers;
     const About_Important_Date = database?.About_Important_Date;
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
-
     return (
-        <>
-            <div className="List_Slide">
-                <Carousel autoplay>
-                    <div>
-                        <img
-                            src="https://www.tvu.edu.vn/wp-content/uploads/2022/01/TVUXuan2022_1.jpg"
-                            alt=""
-                            className="List_Slide_img"
-                        />
-                    </div>
-                    <div>
-                        <img
-                            src="https://www.tvu.edu.vn/wp-content/uploads/2021/12/anh1.jpg"
-                            alt=""
-                            className="List_Slide_img"
-                        />
-                    </div>
-                    <div>
-                        <img
-                            src="https://image.bnews.vn/MediaUpload/Org/2020/06/15/trung-tam-hoc-lieu-tvu.jpg"
-                            alt=""
-                            className="List_Slide_img"
-                        />
-                    </div>
-                </Carousel>
-               
-                <div className="List_Slide_stital">
-                    <ul>
-                        <li className="modify_color_red">February 15th, 2024: Extension submission deadline (FIRM DEADLINE)</li>
-
-                        <li>March 31th, 2024: Notification of acceptance</li>
-
-                        <li>April 20th, 2024: Camera ready and Registration</li>
-
-                        <li>July 19th-20th, 2024: Conference</li>
-
-                    </ul>
-                </div>
-                <div className="List_Slide_overplay">
-                    
-                </div>
-            </div>
-            
+        <>  
             <div className="About">
                 <div className="About_content_text">
                     <h2>About Tra Vinh University</h2>

@@ -19,9 +19,9 @@
     .About {
         padding: 40px 20px !important;
     }
-    
-    .Committee-content{
-        padding: 30px 10px !important;
+
+    .Committee-content, .TravelInformation {
+        padding: 30px 15px !important;
     }
 
     .Committee_item>p {
@@ -30,6 +30,40 @@
 
     .Committee_item div p {
         padding-left: 15px !important;
+    }
+
+    .List_Slide_stital {
+        font-size: 18px !important;
+        padding: 0 20px;
+    }
+
+    .List_Slide_img {
+        height: 340px !important;
+    }
+
+    .program {
+        padding: 0 15px !important;
+    }
+
+    .schedule ul {
+        padding-left: 10px !important;
+    }
+
+    .TravelInformation_item_img {
+        height: 250px !important;
+    }
+
+    .TravelInformation_left p {
+        text-indent: 25px !important;
+    }
+
+    .Footer {
+        height: 200px !important;
+    }
+
+    .Footer_info {
+        flex-direction: column;
+        gap: 0;
     }
 }
 
@@ -74,12 +108,12 @@
         display: block !important;
     }
 
-    .Committee-content{
+    .Committee-content, .TravelInformation {
         flex-direction: column;
         gap: 0 !important;
     }
 
-    .Committee_right {
+    .Committee_right, .TravelInformation_right {
         width: 100% !important;
     }
 }

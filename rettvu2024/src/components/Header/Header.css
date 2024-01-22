@@ -23,6 +23,7 @@
     font-weight: 700;
     color: white;
     width: fit-content;
+    margin-left: 10px;
 }
 
 .Header-right i{
@@ -31,7 +32,9 @@
 }
 
 .Header-logo{
+    display: flex;
     margin-right: 30px;
+    align-items: center;
 }
 
 .Header-link{

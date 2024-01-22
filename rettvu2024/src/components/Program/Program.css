@@ -16,14 +16,14 @@
 
 /* ----------------------program--------------------- */
 .program {
-    width: 1155px;
     margin: auto;
-
+    padding: 0 30px;
 }
+
 .program > h1 {
     text-align: center;
     color: #20629D;
-    padding: 40px;
+    padding:     40px;
 
 }
 .program >h2 {
