@@ -3,10 +3,13 @@ import { Avatar } from "antd";
 import logo from "../imgs/logoTVU.png"
 import "./Header.css"
 import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
 
 const Header = () => {
 
     const location = useLocation();
+
+    const [openSearch, setOpenSearch] = useState(false);
 
     return (
         <div className="Header">
@@ -42,12 +45,12 @@ const Header = () => {
                 </div>
                 <div className="Header-tab">
                     <h3
-                        className={location.pathname.startsWith('/ret-2023') 
-                        || location.pathname.startsWith('/ret-2022') 
-                        || location.pathname.startsWith('/ret-2021')
-                        || location.pathname.startsWith('/ret-2020') 
-                        || location.pathname.startsWith('/ret-2019')
-                        || location.pathname.startsWith('/ret-2018')
+                        className={location.pathname.startsWith('/ret-2023')
+                            || location.pathname.startsWith('/ret-2022')
+                            || location.pathname.startsWith('/ret-2021')
+                            || location.pathname.startsWith('/ret-2020')
+                            || location.pathname.startsWith('/ret-2019')
+                            || location.pathname.startsWith('/ret-2018')
                             ? "Header-link Heade-group-active Header-group"
                             : "Header-link Header-group"}
                     >
@@ -63,10 +66,13 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className="Header-middle">
-                <input type="text" placeholder="Tìm kiếm"/>
-            </div>
-            <div className="Header-right">
+            {
+                openSearch &&
+                <div className="Header-middle">
+                    <input type="text" placeholder="Tìm kiếm" />
+                </div>
+            }
+            <div className="Header-right" onClick={() => {setOpenSearch(!openSearch)}}>
                 <i className="fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
