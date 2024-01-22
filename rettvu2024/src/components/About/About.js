@@ -1,16 +1,22 @@
 import { Link } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import "./About.css";
 import { Carousel, Collapse } from "antd";
 import { DataStore } from "../Database";
 
 const About = () => {
+
     const database = useContext(DataStore);
     const About_content = database?.About_content;
     const About_content_topic = database?.About_content_topic;
     const Submission_Guideline = database?.Submission_Guideline;
     const Speakers = database?.Speakers;
     const About_Important_Date = database?.About_Important_Date;
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
         <>
             <Carousel autoplay>
@@ -34,25 +40,25 @@ const About = () => {
                 </div>
             </Carousel>
             <div className="About">
-                <div className="About_content">
-                    <div className="About_content_text" >
-                        <h2>
-                            About Tra Vinh University
-                        </h2>
+                <div className="About_content_text" >
+                    <h2>
+                        About Tra Vinh University
+                    </h2>
+                    <p>
                         {About_content.map(item => (
                             item.Text
                         ))}
-                    </div>
-                    <div className="About_content_topics">
+                    </p>
+                </div>
+                <div className="About_content_topics">
                     {About_content_topic.map((item) => (
-                            <>
-                                <h2>{item.header}</h2>
-                                {item.body.map((itemEvent, innerIndex) => (
-                                    <p key={innerIndex}>{itemEvent}</p>
-                                ))}
-                            </>
-                        ))}
-                    </div>
+                        <>
+                            <h2>{item.header}</h2>
+                            {item.body.map((itemEvent, innerIndex) => (
+                                <p key={innerIndex}>{itemEvent}</p>
+                            ))}
+                        </>
+                    ))}
                 </div>
                 <div className="About_image">
                     <img
@@ -61,7 +67,7 @@ const About = () => {
                     />
                 </div>
             </div>
-            
+
             <div className="About_Important_Date">
                 <h1>Important dates</h1>
                 <div className="import_date">
@@ -81,23 +87,23 @@ const About = () => {
                 <h1> Keynote Speakers</h1>
             </div>
             <div className="Speakers">
-                {Speakers.map(speaker =>(
-                        <div className="Speakers_item">
-                            <div className="Speakers_item_img">
-                                <img
-                                    src={speaker.imgSrc}
-                                    alt=""
-                                />
-                            </div>
-                            <h3>{speaker.title}</h3>
-                            <span>{speaker.title}</span>
-                            <p>
-                                {speaker.topic}
-                            </p>
+                {Speakers.map(speaker => (
+                    <div className="Speakers_item">
+                        <div className="Speakers_item_img">
+                            <img
+                                src={speaker.imgSrc}
+                                alt=""
+                            />
                         </div>
-                    ))
+                        <h3>{speaker.title}</h3>
+                        <span>{speaker.title}</span>
+                        <p>
+                            {speaker.topic}
+                        </p>
+                    </div>
+                ))
                 }
-              
+
             </div>
 
             <div className="Submission_Guideline_tital">

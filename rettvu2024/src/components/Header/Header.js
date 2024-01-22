@@ -17,6 +17,7 @@ const Header = () => {
                 <div className="Header-logo" >
                     <Avatar src={logo} size={35} />
                 </div>
+                <div className="Header-name">RET 2024</div>
                 <div className="Header-tab">
                     <Link to="/about" className={location.pathname.startsWith('/about') ? "Header-link Heade-active" : "Header-link"}>About RET</Link>
                 </div>
@@ -66,16 +67,16 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            {
+            {/* {
                 openSearch &&
                 <div className="Header-middle">
                     <input type="text" placeholder="Tìm kiếm" />
                 </div>
-            }
+            } */}
             <div className="Header-right" onClick={() => { setOpenSearch(!openSearch) }}>
                 <i className="fa-solid fa-magnifying-glass"></i>
             </div>
-            <div className="Header-right" onClick={() => { setOpenSearch(!openSearch) }}>
+            <div className="Header-mobile-right" onClick={() => { setOpenSearch(!openSearch) }}>
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>

@@ -1,5 +1,5 @@
 
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Carousel, Collapse } from 'antd';
 import "./Program.css"
 import { Link } from 'react-router-dom';
@@ -20,6 +20,10 @@ const Program = () => {
     const SESSION_1 = database?.SESSION_1;
     const SESSION_2 = database?.SESSION_2;
     const ITEMS_LIST_ROOM = database?.ITEMS_LIST_ROOM;
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
 
     const items = ITEMS_LIST_ROOM.map((item, index) => {

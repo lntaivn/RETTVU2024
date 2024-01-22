@@ -17,6 +17,14 @@
     height: 100%;
 }
 
+.Header-name{
+    display: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    width: fit-content;
+}
+
 .Header-right i{
     color: white;
     font-size: 20px;
@@ -116,4 +124,14 @@
     font-weight: 500;
     padding-left: 10px;
     width: 100%;
+}
+
+
+.Header-mobile-right{
+    display: none;
+}
+
+.Header-mobile-right i{
+    color: white;
+    font-size: 25px;
 }
