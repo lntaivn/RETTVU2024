@@ -205,3 +205,5 @@ const ITEMS_LIST_ROOM = [
         ]
     }
 ]
+
+export {SESSION_1,SESSION_2,ITEMS_LIST_ROOM}

@@ -2,6 +2,7 @@ import { useState, createContext, useEffect } from "react";
 
 import { Committees } from "./CommitteeData";
 import {ITEMS_LIST_ROOM,SESSION_1,SESSION_2} from "./ProgramData"
+import {About_content,About_content_topic,Submission_Guideline,Speakers,About_Important_Date} from "./AboutData"
 const DataStore = createContext();
 
 function DataStoreProvider({ children }) {
@@ -9,7 +10,13 @@ function DataStoreProvider({ children }) {
         Committees,
         ITEMS_LIST_ROOM,
         SESSION_1,
-        SESSION_2
+        SESSION_2,
+
+        About_content,
+        About_content_topic,
+        Submission_Guideline,
+        Speakers,
+        About_Important_Date
     }
 
     return (
