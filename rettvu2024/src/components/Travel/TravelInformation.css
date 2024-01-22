@@ -2,11 +2,10 @@
     display        : flex;
     justify-content: center;
     padding        : 30px 50px;
-    gap            : 30px;
+    gap            : 40px;
     position       : relative;
     align-items    : flex-start;
 }
-
 
 
 .TravelInformation_right {
@@ -15,20 +14,26 @@
     top     : 80px;
 }
 
+.TravelInformation_right div p {
+    padding-left: 20px;
+}
+
 .TravelInformation_left {
     flex: 1;
     text-align: justify;
-
 }
 
 .TravelInformation_left p{
     white-space: pre-line;
-    padding-left: 30px;
-    margin: 10px 10px;
-    font-size: 1.1rem;
+    /* padding-left: 30px; */
+    /* margin: 10px 10px; */
+    font-size: 18px;
+    line-height: 1.5;
+    text-indent: 50px;
 }
 
 .TravelInformation_item span{
+    display: flex;
     color: rgb(104, 113, 118);
     font-size: 13px;
     font-weight: 500;
@@ -36,6 +41,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 10px auto;
+    font-style: italic;
 }
 
 .TravelInformation_item {
@@ -44,52 +51,44 @@
 
 .TravelInformation_item>p {
     white-space : pre-line;
-    padding-left: 30px;
-    margin      : 10px 10px;
-    font-size   : 1.1rem;
-}
-
-.TravelInformation_item div p {
-    padding-left: 30px;
-    margin      : 10px 10px;
-    font-size   : 1.1rem;
+    /* padding-left: 30px; */
+    /* margin      : 10px 10px; */
+    font-size   : 18px;
+    line-height: 1.5;
 }
 
 .TravelInformation_item>h2 {
-    color              : rgb(0, 58, 159);
-    font-family        : Montserrat;
-    padding            : 1rem 10px 1rem 1.6rem;
-    font-weight        : 700;
-    font-size          : 1.2rem;
-    text-align         : left;
-    text-transform     : capitalize;
-    position           : relative;
-    width              : fit-content;
-    margin-bottom      : 20px;
+    color           : rgb(0, 58, 159);
+    font-family     : Montserrat;
+    background-color: rgba(224, 224, 224, 0.449);
+    padding         : 14px 10px 14px 20px;
+    font-weight     : 700;
+    font-size       : 20px;
+    text-align      : left;
+    text-transform  : capitalize;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    border-left: 5px solid #f7961e;
 }
-
-.TravelInformation_item>h2::after {
-    content         : "";
-    height          : 2.5px;
-    width           : 100%;
-    background-color: #f7961e;
-    position        : absolute;
-    left            : 1.6rem;
-    bottom          : 0;
-}
-
-.TravelInformation_item>h2::before {
-    content         : "";
-    height          : 10px;
-    width           : 10px;
-    background-color: #f7961e;
-    position        : absolute;
-    right           : -1.6rem;
-    bottom          : -4px;
-    transform       : rotate(45deg);
-}
-
 
 .TravelInformation_item>p>a {
     color: rgb(0, 73, 200);
+}
+
+.TravelInformation_item_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.TravelInformation_item_img > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

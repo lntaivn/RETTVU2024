@@ -14,14 +14,6 @@ const Committee = () => {
 
     return (
         <div className="Committee">
-            <Carousel autoplay>
-                <div className="Slide-img">
-                    <img
-                        src="https://image.bnews.vn/MediaUpload/Org/2020/06/15/trung-tam-hoc-lieu-tvu.jpg"
-                        alt=""
-                    />
-                </div>
-            </Carousel>
             <div className="Committee-content">
                 <div className="Committee_left">
                     {Committees.map((cm, index) => {

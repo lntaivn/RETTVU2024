@@ -15,7 +15,9 @@ const TravelInformation = () => {
                         explore and build the South. The thousand-year-old Ba Om
                         pond relic is one of the prides of the people here.
                     </p>
-                    <img src="https://thamhiemmekong.com/wp-content/uploads/2020/06/aobaom-02.jpg" />
+                    <div className="TravelInformation_item_img">
+                        <img src="https://thamhiemmekong.com/wp-content/uploads/2020/06/aobaom-02.jpg" />
+                    </div>
                     <span>Ba Om Pond – A Must-See in Tra Vinh</span>
                 </div>
                 <div className="TravelInformation_item">
@@ -29,7 +31,10 @@ const TravelInformation = () => {
                         Ethnic Culture – one of the two largest Khmer museums in
                         Vietnam.
                     </p>
-                    <img src="https://mytourcdn.com/upload_images/Image/Quang%20Huy/bao%20tang/khmerNew%20Folder/IMG_6778.JPG" />
+                    <div className="TravelInformation_item_img">
+                        <img src="https://mytourcdn.com/upload_images/Image/Quang%20Huy/bao%20tang/khmerNew%20Folder/IMG_6778.JPG" />
+
+                    </div>
                     <span>Khmer Minority People’s Museum in Tra Vinh</span>
                 </div>
                 <div className="TravelInformation_item">
@@ -42,7 +47,10 @@ const TravelInformation = () => {
                         whispering in the wind, known as the most beautiful
                         beach in Tra Vinh.
                     </p>
-                    <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/7/14/1068102/Bien-Ba-Dong-1.jpg" />
+                    <div className="TravelInformation_item_img">
+
+                        <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/7/14/1068102/Bien-Ba-Dong-1.jpg" />
+                    </div>
                     <span>Ba Dong Beach</span>
                 </div>
             </div>

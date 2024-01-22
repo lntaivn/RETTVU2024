@@ -31,22 +31,22 @@ const Header = () => {
     }
 
     const items = [
-        getItem(<Link to="/" onClick={() => {onClose()}}>About RET</Link>, 'about', <MailOutlined />),
-        getItem(<Link to="/committee" onClick={() => {onClose()}}>Committee</Link>, 'committee', <MailOutlined />),
-        getItem(<Link to="/program" onClick={() => {onClose()}}>Program</Link>, 'program', <MailOutlined />),
-        getItem(<Link to="/submission" onClick={() => {onClose()}}>Submission</Link>, 'submission', <MailOutlined />),
-        getItem('Support', 'support', <AppstoreOutlined />, [
-            getItem('Travel Information', 'travel-information'),
-            getItem('Travel Notes', 'travel-note'),
-            getItem('Contact Us', 'contact us'),
+        getItem(<Link to="/" onClick={() => {onClose()}}>About RET</Link>, 'about'),
+        getItem(<Link to="/committee" onClick={() => {onClose()}}>Committee</Link>, 'committee'),
+        getItem(<Link to="/program" onClick={() => {onClose()}}>Program</Link>, 'program'),
+        getItem(<Link to="/submission" onClick={() => {onClose()}}>Submission</Link>, 'submission'),
+        getItem('Support', 'support', null, [
+            getItem(<Link to="/travel-information" onClick={() => {onClose()}}>Travel Information</Link>, 'travel-information'),
+            getItem(<Link to="/travel-notes" onClick={() => {onClose()}}>Travel Notes</Link>, 'travel-notes'),
+            getItem(<Link to="/contact-us" onClick={() => {onClose()}}>Contact Us</Link>, 'contact us'),
         ]),
-        getItem('History', 'sub4', <SettingOutlined />, [
-            getItem('RET 2023', 'ret-2023'),
-            getItem('RET 2022', 'ret-2022'),
-            getItem('RET 2021', 'ret-2021'),
-            getItem('RET 2020', 'ret-2020'),
-            getItem('RET 2019', 'ret-2019'),
-            getItem('RET 2018', 'ret-2018'),
+        getItem('History', 'sub4', null, [
+            getItem(<Link to="/ret-2023" onClick={() => {onClose()}}>RET 2023</Link>, 'ret-2023'),
+            getItem(<Link to="/ret-2022" onClick={() => {onClose()}}>RET 2022</Link>, 'ret-2022'),
+            getItem(<Link to="/ret-2021" onClick={() => {onClose()}}>RET 2021</Link>, 'ret-2021'),
+            getItem(<Link to="/ret-2020" onClick={() => {onClose()}}>RET 2020</Link>, 'ret-2020'),
+            getItem(<Link to="/ret-2019" onClick={() => {onClose()}}>RET 2019</Link>, 'ret-2019'),
+            getItem(<Link to="/ret-2018" onClick={() => {onClose()}}>RET 2018</Link>, 'ret-2018'),
         ]),
     ];
 
@@ -137,7 +137,7 @@ const Header = () => {
                     openKeys={openKeys}
                     onOpenChange={onOpenChange}
                     items={items}
-                    style={{ width: "100%", border: "none" }}
+                    style={{ width: "100%", border: "none", fontWeight: "500", fontSize: "16px" }}
                 />
             </Drawer>
         </div >
