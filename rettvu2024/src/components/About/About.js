@@ -104,22 +104,22 @@ const About = () => {
                 <h1> Submission Guidelines</h1>
             </div>
             <div className="Submission_Guideline">
-            {Submission_Guideline.map((item, index) => (
-                <div key={index}>
-                    <div className="Submission_Guideline_header">
-                        {item.header.map((itemEvent, innerIndex) => (
-                            <p key={innerIndex} dangerouslySetInnerHTML={{ __html: itemEvent }} />
-                        ))}
-                    </div>
-                    <div className="Submission_Guideline_body">
-                        <ul>
-                            {item.body.map((itemEvent, innerIndex) => (
-                                <li key={innerIndex}>{itemEvent}</li>
+                {Submission_Guideline.map((item, index) => (
+                    <div key={index}>
+                        <div className="Submission_Guideline_header">
+                            {item.header.map((itemEvent, innerIndex) => (
+                                <p key={innerIndex} dangerouslySetInnerHTML={{ __html: itemEvent }} />
                             ))}
-                        </ul>
+                        </div>
+                        <div className="Submission_Guideline_body">
+                            <ul>
+                                {item.body.map((itemEvent, innerIndex) => (
+                                    <li key={innerIndex}>{itemEvent}</li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            ))}
+                ))}
             </div>
         </>
     );
