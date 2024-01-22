@@ -1,5 +1,6 @@
 
-import { Avatar } from "antd";
+import { Avatar, Drawer, Menu, ConfigProvider } from "antd";
+import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 import logo from "../imgs/logoTVU.png"
 import "./Header.css"
 import { Link, useLocation } from "react-router-dom";
@@ -10,6 +11,56 @@ const Header = () => {
     const location = useLocation();
 
     const [openSearch, setOpenSearch] = useState(false);
+    const [openMobileMenu, setOpenMobileMenu] = useState(false);
+
+    const showDrawer = () => {
+        setOpenMobileMenu(true);
+    };
+    const onClose = () => {
+        setOpenMobileMenu(false);
+    };
+
+    const getItem = (label, key, icon, children, type) => {
+        return {
+            key,
+            icon,
+            children,
+            label,
+            type,
+        };
+    }
+
+    const items = [
+        getItem(<Link to="/">About RET</Link>, 'about', <MailOutlined />),
+        getItem(<Link to="/committee">Committee</Link>, 'committee', <MailOutlined />),
+        getItem(<Link to="/program">Program</Link>, 'program', <MailOutlined />),
+        getItem(<Link to="/submission">Submission</Link>, 'submission', <MailOutlined />),
+        getItem('Support', 'support', <AppstoreOutlined />, [
+            getItem('Travel Information', 'travel-information'),
+            getItem('Travel Notes', 'travel-note'),
+            getItem('Contact Us', 'contact us'),
+        ]),
+        getItem('History', 'sub4', <SettingOutlined />, [
+            getItem('RET 2023', 'ret-2023'),
+            getItem('RET 2022', 'ret-2022'),
+            getItem('RET 2021', 'ret-2021'),
+            getItem('RET 2020', 'ret-2020'),
+            getItem('RET 2019', 'ret-2019'),
+            getItem('RET 2018', 'ret-2018'),
+        ]),
+    ];
+
+    const rootSubmenuKeys = ['sub1', 'sub2', 'sub4'];
+
+    const [openKeys, setOpenKeys] = useState(['sub1']);
+    const onOpenChange = (keys) => {
+        const latestOpenKey = keys.find((key) => openKeys.indexOf(key) === -1);
+        if (latestOpenKey && rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
+            setOpenKeys(keys);
+        } else {
+            setOpenKeys(latestOpenKey ? [latestOpenKey] : []);
+        }
+    };
 
     return (
         <div className="Header">
@@ -66,6 +117,7 @@ const Header = () => {
                         <Link to="/ret-2018" className={location.pathname.startsWith('/ret-2018') ? "Header-link Heade-active" : "Header-link"}>RET 2018</Link>
                     </div>
                 </div>
+
             </div>
             {/* {
                 openSearch &&
@@ -76,9 +128,18 @@ const Header = () => {
             <div className="Header-right" onClick={() => { setOpenSearch(!openSearch) }}>
                 <i className="fa-solid fa-magnifying-glass"></i>
             </div>
-            <div className="Header-mobile-right" onClick={() => { setOpenSearch(!openSearch) }}>
+            <div className="Header-mobile-right" onClick={() => { showDrawer() }}>
                 <i class="fa-solid fa-bars"></i>
             </div>
+            <Drawer title="TVU RET 2024" onClose={onClose} open={openMobileMenu} width={300} >
+                <Menu
+                    mode="inline"
+                    openKeys={openKeys}
+                    onOpenChange={onOpenChange}
+                    items={items}
+                    style={{ width: "100%", border: "none" }}
+                />
+            </Drawer>
         </div>
     )
 }

@@ -135,3 +135,7 @@
     color: white;
     font-size: 25px;
 }
+
+.ant-drawer-body{
+    padding: 10px !important;
+}
