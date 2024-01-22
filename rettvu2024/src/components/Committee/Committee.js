@@ -27,7 +27,7 @@ const Committee = () => {
                 </div>
             </Carousel>
             <div className="Committee-content">
-                <div className="Committee-left">
+                <div className="Committee_left">
                     {Committees.map((cm, index) => {
                         return (
                             <div className="Committee_item" key={index}>
