@@ -44,7 +44,16 @@ const About = () => {
                 </Carousel>
                
                 <div className="List_Slide_stital">
-                    <h1>Kinh nghiệm, Kiến Thức, Trãi Nghiệm</h1>
+                    <ul>
+                        <li className="modify_color_red">February 15th, 2024: Extension submission deadline (FIRM DEADLINE)</li>
+
+                        <li>March 31th, 2024: Notification of acceptance</li>
+
+                        <li>April 20th, 2024: Camera ready and Registration</li>
+
+                        <li>July 19th-20th, 2024: Conference</li>
+
+                    </ul>
                 </div>
                 <div className="List_Slide_overplay">
                     
