@@ -19,26 +19,39 @@ const About = () => {
 
     return (
         <>
-            <Carousel autoplay>
-                <div className="Slide-img">
-                    <img
-                        src="https://www.tvu.edu.vn/wp-content/uploads/2022/01/TVUXuan2022_1.jpg"
-                        alt=""
-                    />
+            <div className="List_Slide">
+                <Carousel autoplay>
+                    <div>
+                        <img
+                            src="https://www.tvu.edu.vn/wp-content/uploads/2022/01/TVUXuan2022_1.jpg"
+                            alt=""
+                            className="List_Slide_img"
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src="https://www.tvu.edu.vn/wp-content/uploads/2021/12/anh1.jpg"
+                            alt=""
+                            className="List_Slide_img"
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src="https://image.bnews.vn/MediaUpload/Org/2020/06/15/trung-tam-hoc-lieu-tvu.jpg"
+                            alt=""
+                            className="List_Slide_img"
+                        />
+                    </div>
+                </Carousel>
+               
+                <div className="List_Slide_stital">
+                    <h1>Kinh nghiệm, Kiến Thức, Trãi Nghiệm</h1>
                 </div>
-                <div className="Slide-img">
-                    <img
-                        src="https://www.tvu.edu.vn/wp-content/uploads/2021/12/anh1.jpg"
-                        alt=""
-                    />
+                <div className="List_Slide_overplay">
+                    
                 </div>
-                <div className="Slide-img">
-                    <img
-                        src="https://image.bnews.vn/MediaUpload/Org/2020/06/15/trung-tam-hoc-lieu-tvu.jpg"
-                        alt=""
-                    />
-                </div>
-            </Carousel>
+            </div>
+            
             <div className="About">
                 <div className="About_content_text" >
                     <h2>
@@ -75,8 +88,9 @@ const About = () => {
                         <div key={index} className="About_content_layout">
                             <div className="import_date_icon"><i className="fa-solid fa-calendar-days"></i></div>
                             <div className="ACL-flex">
-                                <h2>{date.Date}</h2>
-                                <h3>{date.TitleDate}</h3>
+                            <h3>{date.TitleDate}</h3>
+                                <h2 className={date.ChangeDate!=="" && "modify_underline"}>{date.Date}</h2>
+                                {date.ChangeDate!=="" && <h2>{date.ChangeDate}</h2>}
                             </div>
                         </div>
                     ))}

@@ -52,7 +52,51 @@ html {
 .list_Slide_img{
   background-color: black;
 }
+
 .list_Slide_img.Slide-img img {
-  
-  height: 1000px !important;
+  display: block;
+  width: 100%;
+  object-fit: cover ;
+  height: 100%;
+}
+
+
+
+
+/* ---------------------------------------- */
+.List_Slide {
+  width: 100%;
+  position: relative;
+}
+.List_Slide_stital {
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: bisque;
+  z-index: 6;
+  width: 100%;
+}
+.List_Slide_overplay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background-image: linear-gradient(to top,rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0));
+  z-index: 5;
+}
+.Slide-img {
+  height: 500px;
+}
+.Slide-img img {
+  height: 100%;
+}
+
+.List_Slide_img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
