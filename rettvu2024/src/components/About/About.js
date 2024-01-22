@@ -81,21 +81,21 @@ const About = () => {
                         <div className="import_date_icon"><i class="fa-solid fa-calendar-days"></i></div> 
                         <div className="ACL-flex">
                             <h2>21,22.06.2024</h2>
-                            <h3>Extended to</h3>
+                            <h3>Submission deadline</h3>
                         </div>
                     </div>
                     <div className="About_content_layout">           
                         <div className="import_date_icon"><i class="fa-solid fa-calendar-days"></i></div>           
                         <div className="ACL-flex">
                             <h2>12.05.2024</h2>
-                            <h3>Submission deadline</h3>
+                            <h3>Notification</h3>
                         </div>
                     </div>
                     <div className="About_content_layout">
                         <div className="import_date_icon"><i class="fa-solid fa-calendar-days"></i></div>  
                         <div className="ACL-flex">
                             <h2>21,22.06.2024</h2>
-                            <h3>Conference dates</h3>
+                            <h3>Camera readly</h3>
                         </div>
                     </div>
                     <div className="About_content_layout">            
