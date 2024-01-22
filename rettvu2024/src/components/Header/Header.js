@@ -72,8 +72,11 @@ const Header = () => {
                     <input type="text" placeholder="Tìm kiếm" />
                 </div>
             }
-            <div className="Header-right" onClick={() => {setOpenSearch(!openSearch)}}>
+            <div className="Header-right" onClick={() => { setOpenSearch(!openSearch) }}>
                 <i className="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div className="Header-right" onClick={() => { setOpenSearch(!openSearch) }}>
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
     )
