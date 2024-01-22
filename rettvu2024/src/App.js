@@ -1,8 +1,9 @@
 
 import "./Responsive.css"
 import "./App.css"
-import { Layout, Menu, ConfigProvider, Avatar } from 'antd';
-import { Link, Route, Routes } from 'react-router-dom';
+import { useContext, useEffect, useState } from "react";
+import { Layout, Menu, ConfigProvider, Avatar, Spin } from 'antd';
+import { Link, Route, Routes, useLocation } from 'react-router-dom';
 import Committee from "./components/Committee/Committee";
 import Header from "./components/Header/Header";
 import Map from "./components/map/map";
@@ -13,37 +14,28 @@ import Program from "./components/Program/Program";
 
 const { Content } = Layout;
 
-const items = [
-  {
-    label: 'Program',
-    key: 'mail',
-    path: '/',
-  },
-  {
-    label: 'Organizing Committee',
-    key: 'committee',
-    path: '/committee', // Add the path for Organizing Committee
-  },
-  {
-    label: 'Contact',
-    key: 'contact',
-    path: '/contact', // Add the path for Organizing Committee
-  },
-  {
-    label: 'History',
-    key: 'history',
-    path: '/history', // Add the path for Organizing Committee
-  },
-  {
-    label: 'About RET',
-    key: 'about',
-    path: '/about', // Add the path for Organizing Committee
-  },
-];
-
 const App = () => {
+
+  const location = useLocation();
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    setLoading(true);
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
+
+  }, [location.pathname])
+
   return (
     <div className='App'>
+      {
+        loading &&
+        <Spin fullscreen />
+      }
       <Layout>
         <div className='Banner'>
           <Avatar src={logo} size={50} />

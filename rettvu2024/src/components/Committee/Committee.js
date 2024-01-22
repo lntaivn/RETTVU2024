@@ -1,14 +1,10 @@
 import { Link } from "react-router-dom";
 import "./Committee.css";
 import { Carousel } from "antd";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { DataStore } from "../Database";
 
 const Committee = () => {
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [])
 
     const database = useContext(DataStore);
 

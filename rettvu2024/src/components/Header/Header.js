@@ -31,10 +31,10 @@ const Header = () => {
     }
 
     const items = [
-        getItem(<Link to="/">About RET</Link>, 'about', <MailOutlined />),
-        getItem(<Link to="/committee">Committee</Link>, 'committee', <MailOutlined />),
-        getItem(<Link to="/program">Program</Link>, 'program', <MailOutlined />),
-        getItem(<Link to="/submission">Submission</Link>, 'submission', <MailOutlined />),
+        getItem(<Link to="/" onClick={() => {onClose()}}>About RET</Link>, 'about', <MailOutlined />),
+        getItem(<Link to="/committee" onClick={() => {onClose()}}>Committee</Link>, 'committee', <MailOutlined />),
+        getItem(<Link to="/program" onClick={() => {onClose()}}>Program</Link>, 'program', <MailOutlined />),
+        getItem(<Link to="/submission" onClick={() => {onClose()}}>Submission</Link>, 'submission', <MailOutlined />),
         getItem('Support', 'support', <AppstoreOutlined />, [
             getItem('Travel Information', 'travel-information'),
             getItem('Travel Notes', 'travel-note'),
@@ -66,9 +66,9 @@ const Header = () => {
         <div className="Header">
             <div className="Header-left">
                 <div className="Header-logo" >
-                    <Avatar src={logo} size={35} />
+                    <Link to="/"><Avatar src={logo} size={35} /></Link>
+                    <Link to="/"><div className="Header-name">RET 2024</div></Link>
                 </div>
-                <div className="Header-name">RET 2024</div>
                 <div className="Header-tab">
                     <Link to="/about" className={location.pathname.startsWith('/about') ? "Header-link Heade-active" : "Header-link"}>About RET</Link>
                 </div>
@@ -140,7 +140,7 @@ const Header = () => {
                     style={{ width: "100%", border: "none" }}
                 />
             </Drawer>
-        </div>
+        </div >
     )
 }
 

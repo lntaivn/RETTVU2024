@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import "./About.css";
-import { Carousel, Collapse } from "antd";
+import { Carousel } from "antd";
 import { DataStore } from "../Database";
 
 const About = () => {
@@ -12,10 +12,6 @@ const About = () => {
     const Submission_Guideline = database?.Submission_Guideline;
     const Speakers = database?.Speakers;
     const About_Important_Date = database?.About_Important_Date;
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [])
 
     return (
         <>
