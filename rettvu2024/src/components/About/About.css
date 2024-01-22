@@ -1,58 +1,55 @@
-.About{
-    display: flex;
-    gap: 20px;
+.About {
+    display: grid;
+    gap: 40px;
     padding: 40px;
     justify-content: center;
     align-items: flex-start;
-}
-.About_content{
-    display: flex;
-    font-size: 15px;
+    width: 100%;
+    grid-template-areas: "about img"
+                        "topic img";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 30px;
     line-height: 1.5;
-    flex-direction: column;
-    gap: 30px;
 }
-.About_content_text{
+
+.About_content_text {
+    grid-area: about;
     text-align: justify;
-    width: 600px;
-    padding: 0px 40px 0px 80px;
+    height: fit-content;
 }
-.About_content_topics{
-    width: 600px;
+
+.About_content_topics {
+    grid-area: topic;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px 40px 40px 80px;
+    height: fit-content;
 }
-.About_content_topics h2{
-    padding: 5px;
-    text-align: center;
-    color: rgb(0, 24, 66);
+
+.About_content_topics h2, .About_content_text h2 {
+    color: rgb(0, 58, 159);
+    font-size: 22px;
+    margin-bottom: 10px;
 }
-.About_content_text h2{
-    padding: 5px;
-    text-align: center;
-    color: rgb(0, 24, 66);
+
+.About_content_topics p, .About_content_text p {
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
 .About_image {
-    width: 600px;
+    grid-area: img;
+    width: 100%;
     height: 550px;
 }
 
 .About_image img {
-    width: 600px;
-    height: 550px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
-
-
-
-
-
-
-
-
 
 .About_Important_Date {
     display: flex;
@@ -63,70 +60,79 @@
     font-size: 15px;
     line-height: 1.5;
 }
-.About_Important_Date h1{
+
+.About_Important_Date h1 {
     padding: 5px;
     text-align: center;
-    color: rgb(0, 24, 66);
+    color: rgb(0, 58, 159);
     margin-bottom: 20px;
 }
 
-.import_date{
+.import_date {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    padding: 0 50px;
 }
 
 .About_content_layout {
-    padding: 40px 30px;
+    padding: 30px 30px;
     display: flex;
     align-items: center;
-    
-    gap: 10px;
-    width: 600px;
+    gap: 25px;
+    width: 100%;
     border: 1px solid #c0b7b7;
-   
-}
-.import_date .import_date_icon {
-    height: 100%;
-    width: 100px;
+
 }
 
 .fa-calendar-days {
-    font-size: 80px;
-    color: #c0b7b7;
-}
-.ACL-flex{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgb(0, 24, 66);
-    gap: 10px;
-}
-.ACL-flex h2 {
-    font-weight: bold;
+    font-size: 60px;
+    color: rgba(0, 58, 159, 0.427);
+    margin-bottom: 4px;
 }
 
-.Speakers{
-    width: 80%;
+.ACL-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: rgb(0, 58, 159);
+    gap: 10px;
+}
+
+.ACL-flex h3{
+    color: #000000;
+}
+
+.ACL-flex h2 {
+    font-weight: bold;
+    
+}
+
+.Speakers {
+    width: 90%;
     display: grid;
-    grid-template-columns: repeat( 5, 1fr );
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 30px;
     margin: 0 auto;
     justify-items: center;
     text-align: left;
     padding-bottom: 100px;
 }
+
 .Speakers_tital {
     width: 100%;
     margin-bottom: 40px;
 }
-.Speakers_tital h1{
+
+.Speakers_tital h1 {
     padding: 5px;
     text-align: center;
-    color: rgb(0, 24, 66);
+    color: rgb(0, 58, 159);
 }
-.Speakers_item{
+
+.Speakers_item {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -135,7 +141,7 @@
     width: 100%;
 }
 
-.Speakers_item > .Speakers_item_img{
+.Speakers_item>.Speakers_item_img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,7 +150,7 @@
     width: 100%;
 }
 
-.Speakers_item > .Speakers_item_img > img{
+.Speakers_item>.Speakers_item_img>img {
     display: block;
     object-fit: cover;
     width: 100%;
@@ -158,32 +164,36 @@
 .Submission_Guideline_tital h1 {
     padding: 5px;
     text-align: center;
-    color: rgb(0, 24, 66);
+    color: rgb(0, 58, 159);
 }
 
 .Submission_Guideline {
     width: 100%;
     text-align: justify;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 15px;
+    justify-content: center;
+    font-size: 18px;
     line-height: 2;
     gap: 5px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
+
 .Submission_Guideline_header {
     width: 100%;
-    max-width: 1100px;
-    
 }
-.Submission_Guideline_body{
+
+.Submission_Guideline_body {
     width: 100%;
-    max-width: 1100px;
 }
+
 .Submission_Guideline_header p {
-    font-size: 16px;
+    font-size: 18px;
 }
+
 .Submission_Guideline_body ul {
     margin-left: 20px;
     list-style-type: square;

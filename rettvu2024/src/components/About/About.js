@@ -8,7 +8,7 @@ const About_content = [
     }
 ];
 
- 
+
 
 const About = () => {
     return (
@@ -35,11 +35,11 @@ const About = () => {
             </Carousel>
 
             <div className="About">
-                <div className="About_content">
-                    <div  className="About_content_text" >
-                        <h2>
-                             About Tra Vinh University
-                        </h2>
+                <div className="About_content_text" >
+                    <h2>
+                        About Tra Vinh University
+                    </h2>
+                    <p>
                         The International Conference on Research in Engineering
                         and Technology (RET) is held annually at Tra Vinh
                         University. The conference is a forum for researchers to
@@ -51,21 +51,21 @@ const About = () => {
                         research papers to RET and share their latest research
                         findings and valuable experiences with other engineers,
                         scientists, and scholars around the world.
-                    </div>
-                    <div className="About_content_topics">
-                        <h2>
-                            The topics of the conference include, but are not
-                            limited to:
-                        </h2>
-                        <p>- Information Technology</p>
-                        <p>- Electrical and Electronics Engineering</p>
-                        <p>- Automation Control Engineering</p>
-                        <p>- Civil Engineering</p>
-                        <p>- Mechanical Engineering</p>
-                        <p>- Automotive Engineering</p>
-                        <p>- Optical Electronics</p>
-                        <p>- AI Applications</p>
-                    </div>
+                    </p>
+                </div>
+                <div className="About_content_topics">
+                    <h2>
+                        The topics of the conference include, but are not
+                        limited to
+                    </h2>
+                    <p>- Information Technology</p>
+                    <p>- Electrical and Electronics Engineering</p>
+                    <p>- Automation Control Engineering</p>
+                    <p>- Civil Engineering</p>
+                    <p>- Mechanical Engineering</p>
+                    <p>- Automotive Engineering</p>
+                    <p>- Optical Electronics</p>
+                    <p>- AI Applications</p>
                 </div>
                 <div className="About_image">
                     <img
@@ -78,39 +78,39 @@ const About = () => {
                 <h1>Important dates</h1>
                 <div className="import_date">
                     <div className="About_content_layout">
-                        <div className="import_date_icon"><i class="fa-solid fa-calendar-days"></i></div> 
+                        <i class="fa-solid fa-calendar-days"></i>
                         <div className="ACL-flex">
-                            <h2>21,22.06.2024</h2>
                             <h3>Extended to</h3>
-                        </div>
-                    </div>
-                    <div className="About_content_layout">           
-                        <div className="import_date_icon"><i class="fa-solid fa-calendar-days"></i></div>           
-                        <div className="ACL-flex">
-                            <h2>12.05.2024</h2>
-                            <h3>Submission deadline</h3>
+                            <h2>21,22.06.2024</h2>
                         </div>
                     </div>
                     <div className="About_content_layout">
-                        <div className="import_date_icon"><i class="fa-solid fa-calendar-days"></i></div>  
+                        <i class="fa-solid fa-calendar-days"></i>
                         <div className="ACL-flex">
-                            <h2>21,22.06.2024</h2>
-                            <h3>Conference dates</h3>
+                            <h3>Submission deadline</h3>
+                            <h2>12.05.2024</h2>
                         </div>
                     </div>
-                    <div className="About_content_layout">            
-                        <div className="import_date_icon"><i class="fa-solid fa-calendar-days"></i></div>  
+                    <div className="About_content_layout">
+                        <i class="fa-solid fa-calendar-days"></i>
                         <div className="ACL-flex">
-                            <h2>06.06.2024</h2>
-                            <h3>Acceptance notification</h3>
+                            <h3>Conference dates</h3>
+                            <h2>21,22.06.2024</h2>
                         </div>
-                    </div>  
+                    </div>
+                    <div className="About_content_layout">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <div className="ACL-flex">
+                            <h3>Acceptance notification</h3>
+                            <h2>06.06.2024</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="Speakers_tital">
                 <h1> Keynote Speakers</h1>
             </div>
-            <div className="Speakers">   
+            <div className="Speakers">
                 <div className="Speakers_item">
                     <div className="Speakers_item_img">
                         <img
@@ -190,7 +190,7 @@ const About = () => {
                 <div className="Submission_Guideline_header">
                     <p>
                         Full papers should be with at least 4 pages, but not
-                        exceed 10 pages. All papers are required to adopt the <Link  to='https://www.ieee.org/content/dam/ieee-org/ieee/web/org/conferences/conference-template-a4.docx'> IEEE template </Link>
+                        exceed 10 pages. All papers are required to adopt the <Link to='https://www.ieee.org/content/dam/ieee-org/ieee/web/org/conferences/conference-template-a4.docx'> IEEE template </Link>
                         format in English.
                     </p>
                     <p>

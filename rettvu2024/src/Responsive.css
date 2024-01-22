@@ -1,0 +1,64 @@
+/* Mobile */
+@media screen and (max-width: 500px) {
+    .Header {
+        padding: 0 30px !important;
+    }
+
+    .Banner {
+        padding: 10px !important;
+    }
+
+    .Banner>h2 {
+        font-size: 18px;
+    }
+
+    .import_date {
+        padding: 0 20px !important;
+    }
+
+    .About {
+        padding: 40px 20px !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .About {
+        grid-template-areas: "about"
+            "img"
+            "topic" !important;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr !important;
+    }
+
+    .import_date {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 1100px) {
+
+    .Header-name {
+        display: block !important;
+    }
+
+    .Header-left {
+        gap: 0;
+    }
+
+    .Header-logo {
+        margin-right: 15px !important;
+    }
+
+    .Header-right {
+        display: none;
+    }
+
+    .Header-tab {
+        display: none;
+    }
+
+    .Header-mobile-right {
+        display: block !important;
+    }
+}
