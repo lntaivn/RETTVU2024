@@ -5,7 +5,6 @@ import { Carousel } from "antd";
 import { DataStore } from "../Database";
 
 const About = () => {
-
     const database = useContext(DataStore);
     const About_content = database?.About_content;
     const About_content_topic = database?.About_content_topic;
@@ -15,36 +14,52 @@ const About = () => {
 
     return (
         <>
-            <Carousel autoplay>
-                <div className="Slide-img">
-                    <img
-                        src="https://www.tvu.edu.vn/wp-content/uploads/2022/01/TVUXuan2022_1.jpg"
-                        alt=""
-                    />
+            <div className="List_Slide">
+                <Carousel autoplay>
+                    <div>
+                        <img
+                            src="https://www.tvu.edu.vn/wp-content/uploads/2022/01/TVUXuan2022_1.jpg"
+                            alt=""
+                            className="List_Slide_img"
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src="https://www.tvu.edu.vn/wp-content/uploads/2021/12/anh1.jpg"
+                            alt=""
+                            className="List_Slide_img"
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src="https://image.bnews.vn/MediaUpload/Org/2020/06/15/trung-tam-hoc-lieu-tvu.jpg"
+                            alt=""
+                            className="List_Slide_img"
+                        />
+                    </div>
+                </Carousel>
+               
+                <div className="List_Slide_stital">
+                    <ul>
+                        <li className="modify_color_red">February 15th, 2024: Extension submission deadline (FIRM DEADLINE)</li>
+
+                        <li>March 31th, 2024: Notification of acceptance</li>
+
+                        <li>April 20th, 2024: Camera ready and Registration</li>
+
+                        <li>July 19th-20th, 2024: Conference</li>
+
+                    </ul>
                 </div>
-                <div className="Slide-img">
-                    <img
-                        src="https://www.tvu.edu.vn/wp-content/uploads/2021/12/anh1.jpg"
-                        alt=""
-                    />
+                <div className="List_Slide_overplay">
+                    
                 </div>
-                <div className="Slide-img">
-                    <img
-                        src="https://image.bnews.vn/MediaUpload/Org/2020/06/15/trung-tam-hoc-lieu-tvu.jpg"
-                        alt=""
-                    />
-                </div>
-            </Carousel>
+            </div>
+            
             <div className="About">
-                <div className="About_content_text" >
-                    <h2>
-                        About Tra Vinh University
-                    </h2>
-                    <p>
-                        {About_content.map(item => (
-                            item.Text
-                        ))}
-                    </p>
+                <div className="About_content_text">
+                    <h2>About Tra Vinh University</h2>
+                    <p>{About_content.map((item) => item.Text)}</p>
                 </div>
                 <div className="About_content_topics">
                     {About_content_topic.map((item) => (
@@ -69,10 +84,13 @@ const About = () => {
                 <div className="import_date">
                     {About_Important_Date.map((date, index) => (
                         <div key={index} className="About_content_layout">
-                            <div className="import_date_icon"><i className="fa-solid fa-calendar-days"></i></div>
+                            <div className="import_date_icon">
+                                <i className="fa-solid fa-calendar-days"></i>
+                            </div>
                             <div className="ACL-flex">
-                                <h2>{date.Date}</h2>
-                                <h3>{date.TitleDate}</h3>
+                            <h3>{date.TitleDate}</h3>
+                                <h2 className={date.ChangeDate!=="" && "modify_underline"}>{date.Date}</h2>
+                                {date.ChangeDate!=="" && <h2>{date.ChangeDate}</h2>}
                             </div>
                         </div>
                     ))}
@@ -83,23 +101,16 @@ const About = () => {
                 <h1> Keynote Speakers</h1>
             </div>
             <div className="Speakers">
-                {Speakers.map(speaker => (
+                {Speakers.map((speaker) => (
                     <div className="Speakers_item">
                         <div className="Speakers_item_img">
-                            <img
-                                src={speaker.imgSrc}
-                                alt=""
-                            />
+                            <img src={speaker.imgSrc} alt="" />
                         </div>
                         <h3>{speaker.title}</h3>
                         <span>{speaker.title}</span>
-                        <p>
-                            {speaker.topic}
-                        </p>
+                        <p>{speaker.topic}</p>
                     </div>
-                ))
-                }
-
+                ))}
             </div>
 
             <div className="Submission_Guideline_tital">
@@ -110,7 +121,12 @@ const About = () => {
                     <div key={index}>
                         <div className="Submission_Guideline_header">
                             {item.header.map((itemEvent, innerIndex) => (
-                                <p key={innerIndex} dangerouslySetInnerHTML={{ __html: itemEvent }} />
+                                <p
+                                    key={innerIndex}
+                                    dangerouslySetInnerHTML={{
+                                        __html: itemEvent,
+                                    }}
+                                />
                             ))}
                         </div>
                         <div className="Submission_Guideline_body">

@@ -69,9 +69,9 @@ const Speakers = [
 
 const About_Important_Date = [
     {
-        Date: "21,22.06.2024",
+        Date: "21 to 22.06.2024",
         TitleDate: "Extended to",
-        ChangeDate: "",
+        ChangeDate: "26 to 29.06.2024",
     },
     {
         Date: "12.05.2024",
@@ -79,14 +79,14 @@ const About_Important_Date = [
         ChangeDate: "",
     },
     {
-        Date: "21,22.06.2024",
+        Date: "21 to 22.06.2024",
         TitleDate: "Conference dates",
         ChangeDate: "",
     },
     {
         Date: "06.06.2024",
         TitleDate: "Acceptance notification",
-        ChangeDate: "",
+        ChangeDate: "09.06.2024",
     }
 ];
 export {About_content,About_content_topic,Submission_Guideline,Speakers,About_Important_Date}
