@@ -1,119 +1,139 @@
 
-import "./program.css"
+import { useContext } from "react";
+import { Carousel, Collapse } from 'antd';
+import "./Program.css"
+import { Link } from 'react-router-dom';
+import { DataStore } from "../Database";
+const { Panel } = Collapse;
+
+const contentStyle = {
+    height: '160px',
+    color: '#fff',
+    lineHeight: '160px',
+    textAlign: 'center',
+    background: '#364d79',
+  };
 
 const Program = () => {
+    const database = useContext(DataStore);
 
-    const Committees = [
-        {
-            title: "Chairman Program Committee:",
-            content: [
-                "Assoc. Prof. Nguyen Minh Hoa - Rector of Tra Vinh University",
-            ]
-        },
-        {
-            title: "Vice Chairman Program Committee:",
-            content: [
-                "Dr. Vo Phuoc Hung - Dean of School of Engineering and Technology, Tra Vinh University",
-                "Dr. Huynh Cong Khoi - Head of Science and Technology Office, Tra Vinh University"
-            ]
-        },
-        {
-            title: "Technical Program Chairs:",
-            content: [
-                "Dr. Pham Quoc Phong - Vice Dean of School of Engineering and Technology, Tra Vinh University",
-                "Assoc. Prof. Nguyen Thai Son - Director of Resource Development Institute, Tra Vinh University"
-            ]
-        },
-        {
-            title: "Co-Program Chair:",
-            content: [
-                "Dr. Truong Van Men - Deputy Head of Mechanical Engineering Department;",
-                "Dr. Nguyen Nhut Lam - Head of Information Technology;",
-                "Dr. Cao Phuong Thao - Head of Electrical - Electronics Department;",
-                "Dr. Huynh Van Hiep - Head of Civil Engineering Department;"
-            ]
-        },
-        {
-            title: "Technical Program Committee:",
-            content: [
-                "Prof. Tang-Chieh Liu - FCU, Taiwan;",
-                "Prof. Cheng Ching - Hwa - FCU, Taiwan;",
-                "Prof. Nguyen Tat Dac - Tra Vinh University;",
-                "Prof. Tze-Yee-Ho -  FCU, Taiwan;",
-                "Assoc. Prof. Đo Đuc Ton -  Đại học Nazarbayev, Kazakhstan;",
-                "Prof. Hsi-Min Chen -  FCU, Taiwan;",
-                "Assoc. Prof. Nguyen Hieu Minh - Tra Vinh University;",
-                "Assoc. Prof. Tran Van Chinh - Tra Vinh University;",
-                "Dr. Brian Dick - VIU, Canada;",
-                "Dr. Bui Van Tung - Thai Nguyen University;",
-                "Dr. Dang Xuan Trong - Hositco, Viet Nam;",
-                "Dr. Hoang Trung Kien - Tra Vinh University;",
-                "Dr. Lam Thanh Thep - Tra Vinh University;",
-                "Dr. Le Nam Tuan - Tra Vinh University;",
-                "Dr. Le Tuong Thanh - Tra Vinh University;",
-                "Dr. Ngo Huu Huy - Thai Nguyen University;",
-                "Dr. Nguyen Bao An - Tra Vinh University;",
-                "Dr. Nguyen Duc Tue - Tra Vinh University;",
-                "Dr. Nguyen Khac Huan - Tra Vinh University;",
-                "Dr. Nguyen Thanh Tam - Tra Vinh University;",
-                "Dr. Nguyen Tran Diem Hạnh - Tra Vinh University;",
-                "Dr. Nguyen Tuan Nghia - Tra Vinh University;",
-                "Dr. Nguyen Viet Phan - Tra Vinh University;",
-                "Dr. Pham Van Hoan - Tra Vinh University;",
-                "Dr. Tran Song Toan - Tra Vinh University;",
-                "Dr. Tran Van Tan - Tra Vinh University;",
-                "Dr. Truong Hoang Linh - Tra Vinh University;",
-                "Dr. Truong Van Men - Tra Vinh University;",
-                "Dr. Van Huu Hue - Tra Vinh University;",
-                "Dr. Van Huu Thinh - Tra Vinh University;",
-                "Dr. Vu Quang Hieu - Tra Vinh University;",
-                "Dr. Vu Thang - Tra Vinh University;",
-                "Dr. Nguyen Duc Binh - Thai Nguyen University;",
-                "Dr. Duong Van Hieu - Tien Giang University;",
-                "Dr. Nguyen Thanh Tuan - Kien Giang Colleges;",
-                "Dr. Do Nguyen Duy Phuong - Can Tho University;",
-                "Dr. Quach Ngoc Thinh - Can Tho University;",
-                "Dr. Nguyen Hoang Vu - Can Tho University;",
-                "Dr. Luong Vinh Quoc Danh - Can Tho University;",
-                "Dr. Phan Tan Tai - Tra Vinh University;"
-            ]
-        },
-        {
-            title: "Secretary:",
-            content: [
-                "MEng. Dang Hoang Vu - Tra Vinh University;",
-                "MEng. Ha Thi Thuy Vi - Tra Vinh University;",
-                "MEng. Bui Thi Thu Thuy - Tra Vinh University;",
-                "MEng. Huynh Thi My Dung - Tra Vinh University;"
-            ]
-        }
-    ];
+    const SESSION_1 = database?.SESSION_1;
+    const SESSION_2 = database?.SESSION_2;
+    const ITEMS_LIST_ROOM = database?.ITEMS_LIST_ROOM;
+
+
+    const items = ITEMS_LIST_ROOM.map((item, index) => {
+        return ({
+            key: index,
+            label: (
+                <div>
+                    <span>
+                        <span style={{ color: 'red' }}>{item.label_room_sessions}</span>
+                        <span className='modify_Upto'>{item.label_room_details}</span>
+                        <br />
+                        <span><b>Session chairs:</b>{item.Session_chairs}</span>
+                    </span>
+                </div>
+            ),
+            children: (
+                <div>
+                    {
+                        item.children.map((itm, index) => {
+                            return (
+                                <ul>
+                                    <li>
+                                        <strong>{itm.time}</strong>
+                                        <br />
+                                        <strong>[Paper {itm.paper}]</strong>{itm.description}
+                                        <br />
+                                        <em>Authors:</em>{itm.author}
+                                        <br />
+                                        <em>Chairs:</em>{itm.chair}
+                                    </li>
+                                </ul>   
+                            )
+                        })
+                    }
+                </div>
+            )
+        })
+    })
 
     return (
-        <div className="Committee">
-            {
-                Committees.map((cm, index) => {
-                    return (
-                        <div className="Committee_item" key={index}>
-                            <h2>hi</h2>
-                            <div>
-                                {
-                                    cm.content.map((ct, index) => {
-                                        return(
-                                            <p>
-                                                {`${index}:${ct}`}
-                                            </p>
-                                        )
-                                    })
-                                }
-                            </div>
-                        </div>
-                    )
-                })
-            }
+        <div className="Program">
+            <div className='list_Slide_img'>
+            <Carousel autoplay>
+                <div>
+                <h3 style={contentStyle}>1</h3>
+                </div>
+                <div>
+                <h3 style={contentStyle}>2</h3>
+                </div>
+                <div>
+                <h3 style={contentStyle}>3</h3>
+                </div>
+                <div>
+                <h3 style={contentStyle}>4</h3>
+                </div>
+            </Carousel>
+            </div>
+            <div className="program">
+                <h1>CONFERENCE PROGRAM</h1>
+                <h2>
+                    I. Session 1, Saturday July 22nd, 2023
+                </h2>
+                <div className="program_title_detail"><ul><li> <h2>Room:</h2> <h1>E21.105</h1> <Link to="/map">View map</Link></li></ul></div>
+                <div className="schedule">
+                    <ul>
+                        {SESSION_1.map(item => (
+                            <li>
+                                <span className="time">{item.time}</span>
+
+                                {item.event.map(itemEvent => (
+                                    <>
+                                        <span className='event' dangerouslySetInnerHTML={{ __html: itemEvent }} />
+                                    </>
+                                ))}
+
+                            </li>
+                        ))}
+
+                    </ul>
+                </div>
+                <h2>
+                    II. Session 2, Saturday July 22nd, 2023
+                </h2>
+
+                <div className="schedule">
+                    <ul>
+                        {SESSION_2.map((item, index) => (
+                            <li key={index}>
+                                <span className="time">{item.time}</span>
+
+                                {item.event.map((itemEvent, index) => (
+                                    <>
+                                        <span key={index} className='event' dangerouslySetInnerHTML={{ __html: itemEvent }} />
+                                    </>
+                                ))}
+
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <h1 className="modify_program_h1">Parallel sessions (13:00-14:00, <Link to="/map">View map</Link>)</h1>
+                <div className="program_event_click_arrow">
+
+                    <Collapse>
+                        {items.map(item => (
+                            <Panel key={item.key} header={item.label}>
+                                {item.children}
+                            </Panel>
+                        ))}
+                    </Collapse>
+                </div>
+            </div>
 
         </div>
     )
 }
-
 export default Program;

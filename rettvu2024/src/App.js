@@ -2,14 +2,13 @@
 import "./App.css"
 import { Layout, Menu, ConfigProvider, Avatar } from 'antd';
 import { Link, Route, Routes } from 'react-router-dom';
-import Home from './components/Home/Home';
 import Committee from "./components/Committee/Committee";
 import Header from "./components/Header/Header";
-import Program from "./components/program/program";
 import Map from "./components/map/map";
 import Footer from "./components/Footer/Footer";
 import logo from "./components/imgs/logoTVU.png";
 import About from "./components/About/About";
+import Program from "./components/Program/Program";
 
 const { Content } = Layout;
 
@@ -55,7 +54,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<About />} />
               <Route path="/committee" element={<Committee />} />
-              <Route path="/program" element={<Home />} />
+              <Route path="/program" element={<Program />} />
               <Route path="/about" element={<About />} />
               <Route path="/map" element={<Map />} />
        
