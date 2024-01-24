@@ -2,27 +2,27 @@
 
 const Committees = [
     {
-        title: "Chairman Program Committee:",
+        title: "Chairman Program Committee",
         content: [
             "Assoc. Prof. Nguyen Minh Hoa - Rector of Tra Vinh University",
         ],
     },
     {
-        title: "Vice Chairman Program Committee:",
+        title: "Vice Chairman Program Committee",
         content: [
             "Dr. Vo Phuoc Hung - Dean of School of Engineering and Technology, Tra Vinh University",
             "Dr. Huynh Cong Khoi - Head of Science and Technology Office, Tra Vinh University",
         ],
     },
     {
-        title: "Technical Program Chairs:",
+        title: "Technical Program Chairs",
         content: [
             "Dr. Pham Quoc Phong - Vice Dean of School of Engineering and Technology, Tra Vinh University",
             "Assoc. Prof. Nguyen Thai Son - Director of Resource Development Institute, Tra Vinh University",
         ],
     },
     {
-        title: "Co-Program Chair:",
+        title: "Co-Program Chair",
         content: [
             "Dr. Truong Van Men - Deputy Head of Mechanical Engineering Department;",
             "Dr. Nguyen Nhut Lam - Head of Information Technology;",
@@ -31,7 +31,7 @@ const Committees = [
         ],
     },
     {
-        title: "Technical Program Committee:",
+        title: "Technical Program Committee",
         content: [
             "Prof. Tang-Chieh Liu - FCU, Taiwan;",
             "Prof. Cheng Ching - Hwa - FCU, Taiwan;",
@@ -76,7 +76,7 @@ const Committees = [
         ],
     },
     {
-        title: "Secretary:",
+        title: "Secretary",
         content: [
             "MEng. Dang Hoang Vu - Tra Vinh University;",
             "MEng. Ha Thi Thuy Vi - Tra Vinh University;",

@@ -82,7 +82,7 @@ const TravelNote = () => {
                     <h2>Invitation Letter</h2>
 
                     <p>
-                        he invitation letter will be sent from the conference organization after you register and transfer the reserve fee successfully. It is noticed that the invitation letter may help but not guarantee you a visa.
+                        The invitation letter will be sent from the conference organization after you register and transfer the reserve fee successfully. It is noticed that the invitation letter may help but not guarantee you a visa.
                     </p>
                 </div>
             </div>

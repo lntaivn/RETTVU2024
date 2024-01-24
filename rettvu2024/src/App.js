@@ -42,8 +42,8 @@ const App = () => {
       }
       <Layout>
         <div className='Banner'>
-          <Avatar src={logo} size={50} />
-          <h2>RET 2024 BY TRA VINH UNIVERSITY</h2>
+          {/* <Avatar src={logo} size={50} /> */}
+          <h2>The International Conference on Research in Engineering and Technology 2024 (RET2024)</h2>
         </div>
         <Header />
         <Content>

@@ -1,3 +1,8 @@
+
+import prof1 from "../imgs/pro1.jpg"
+import prof2 from "../imgs/pro2.jpg"
+import prof3 from "../imgs/pro3.jpg"
+
 const About_content = [
     {
         "Text": "The International Conference on Research in Engineering and Technology (RET) is held annually at Tra Vinh University. The conference is a forum for researchers to present and exchange ideas in the fields of Information Technology, Electrical and Electronic Engineering, Automation, Mechanical Engineering, Automotive Engineering, Civil Engineering, AI applications. Tra Vinh University welcomes potential authors to submit research papers to RET and share their latest research findings and valuable experiences with other engineers, scientists, and scholars around the world."
@@ -36,20 +41,20 @@ const Submission_Guideline = [
 
 const Speakers = [
     {
-        imgSrc: "https://firebasestorage.googleapis.com/v0/b/chat-app-5b28c.appspot.com/o/RET%2Fz5097586831865_e276821a692ae11a4591548a2db8a4f0.jpg?alt=media&token=687ea50e-5e36-480a-a25b-be590edcdbc7",
+        imgSrc: "https://firebasestorage.googleapis.com/v0/b/ret-tvu.appspot.com/o/RET%2Fpro1.jpg?alt=media&token=7ede8c39-054a-4d83-8340-42e2dc9398be",
         name: "Assoc.Prof. Lu Jau Huai",
         title: "Associate Professor",
         topic: "National Chung Hsing University, Taiwan",
     },
     {
-        imgSrc: "https://firebasestorage.googleapis.com/v0/b/chat-app-5b28c.appspot.com/o/RET%2Fz5097671742642_b6859b112aa8665783735bb289b5f1a7.jpg?alt=media&token=f0552f87-bdcf-4314-ad74-92ba040c9ab2",
+        imgSrc: "https://firebasestorage.googleapis.com/v0/b/ret-tvu.appspot.com/o/RET%2Fpro2.jpg?alt=media&token=d92a0189-488f-4a4d-a916-8caa06fb5ab8",
         name: "Assoc. Prof. Ton Duc Do",
         title: "Associate Professor",
         topic: "Department of Robotics, Nazarbayev University",
     },
     {
-        imgSrc: "https://firebasestorage.googleapis.com/v0/b/chat-app-5b28c.appspot.com/o/RET%2Fz5097582559106_ee8085af48e39d81f56828e9e13ff4f3.jpg?alt=media&token=4af7c649-2dc6-4667-a051-2bc5c8c1c73f",
-        name: "Prof. Ming-Hung Wang",
+        imgSrc: "https://firebasestorage.googleapis.com/v0/b/ret-tvu.appspot.com/o/RET%2Fpro3.jpg?alt=media&token=dd350825-7553-45e0-b951-7ef14a3d8e07",
+        name: "Prof. Ming Thành, Dr. Ming-Hung Wang",
         title: "Professor",
         topic: "National Chung Cheng University, Taiwan",
     }

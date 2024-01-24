@@ -38,6 +38,7 @@ html {
   justify-content: center;
   color: rgb(0, 24, 66);
   gap: 10px;
+  text-align: center;
 }
 
 .Content {
