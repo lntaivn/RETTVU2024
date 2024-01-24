@@ -71,11 +71,11 @@
 .import_date {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 0 50px;
 }
-
+    
 .About_content_layout {
     padding: 30px 30px;
     display: flex;
