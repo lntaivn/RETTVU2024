@@ -13,6 +13,7 @@ import About from "./components/About/About";
 import Program from "./components/Program/Program";
 import TravelInformation from "./components/Travel/TravelInformation";
 import Slider from "./components/Slider/Slider";
+import TravelNote from "./components/Travel/TravelNote";
 
 const { Content } = Layout;
 
@@ -53,6 +54,7 @@ const App = () => {
               <Route path="/program" element={<Program />} />
               <Route path="/about" element={<About />} />
               <Route path="/travel-information" element={<TravelInformation />} />
+              <Route path="/travel-notes" element={<TravelNote />} />
               <Route path="/map" element={<Map />} />
             </Routes>
           </div>

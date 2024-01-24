@@ -29,7 +29,8 @@
     /* margin: 10px 10px; */
     font-size: 18px;
     line-height: 1.5;
-    text-indent: 50px;
+    /* text-indent: 50px; */
+    padding: 10px 0;
 }
 
 .TravelInformation_item span{
