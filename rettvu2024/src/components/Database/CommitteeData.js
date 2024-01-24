@@ -21,10 +21,16 @@ const Committees = [
         ],
     },
     {
-        title: "Co-Deputy Program Committee Heads",
+        
+        title: "Deputy Program Committee Heads",
         content: [
             "Prof. Assoc. Dr. Nguyen Thai Son – Head of the Resource Development Institute",
             "Dr. Pham Quoc Phong – Vice Head of the Faculty of Engineering and Technology",
+        ],
+    },
+    {
+        title: "Co-Deputy Program Committee Heads",
+        content: [
             "Dr. Truong Van Men – Vice Head of the Mechanical Engineering Department",
             "Dr. Nguyen Bao Linh – Vice Head of the Information Technology Department",
             "Dr. Cao Phuong Thao – Head of the Electrical and Electronic Department",
@@ -32,7 +38,6 @@ const Committees = [
         ],
     },
     {
-        title: "Technical Program Committee",
         title: "Technical Program Committee",
         content: [
             "Prof. Dr. Tang-Chieh Liu - FCU, Taiwan",
