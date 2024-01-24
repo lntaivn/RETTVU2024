@@ -23,6 +23,7 @@ const App = () => {
 
   const location = useLocation();
   const [loading, setLoading] = useState(true);
+  const [showScrollButton, setShowScrollButton] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -34,6 +35,24 @@ const App = () => {
     }, 500);
 
   }, [location.pathname])
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+
+      setShowScrollButton(scrollY > 250);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <div className='App'>
@@ -49,7 +68,7 @@ const App = () => {
         <Header />
         <Content>
           <div className='Content'>
-            <Slider/>
+            <Slider />
             <Routes>
               <Route path="/" element={<About />} />
               <Route path="/committee" element={<Committee />} />
@@ -64,6 +83,11 @@ const App = () => {
           </div>
         </Content>
         <Footer />
+        {showScrollButton && (
+          <div className="scroll-to-top-button" onClick={scrollToTop}>
+            <i class="fa-solid fa-chevron-up"></i>
+          </div>
+        )}
       </Layout>
     </div>
   );

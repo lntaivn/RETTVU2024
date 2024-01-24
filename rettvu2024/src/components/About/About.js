@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import Kazakhstan from "../imgs/Kazakhstan.png"
+import Taiwan from "../imgs/Taiwan.png"
 import { useContext } from "react";
 import "./About.css";
 import { DataStore } from "../Database";
@@ -12,7 +14,7 @@ const About = () => {
     const About_Important_Date = database?.About_Important_Date;
 
     return (
-        <>  
+        <>
             <div className="About">
                 <div className="About_content_text">
                     <h2>About RET</h2>
@@ -33,6 +35,7 @@ const About = () => {
                         src="https://reviewedu.net/wp-content/uploads/2021/10/159839653_3724976647552257_3313842260640766887_n.jpg"
                         alt=""
                     />
+                    <span>Tra Vinh University</span>
                 </div>
             </div>
 
@@ -45,9 +48,9 @@ const About = () => {
                                 <i className="fa-solid fa-calendar-days"></i>
                             </div>
                             <div className="ACL-flex">
-                            <h3>{date.TitleDate}</h3>
-                                <h2 className={date.ChangeDate!=="" && "modify_underline"}>{date.Date}</h2>
-                                {date.ChangeDate!=="" && <h2>{date.ChangeDate}</h2>}
+                                <h3>{date.TitleDate}</h3>
+                                <h2 className={date.ChangeDate !== "" && "modify_underline"}>{date.Date}</h2>
+                                {date.ChangeDate !== "" && <h2>{date.ChangeDate}</h2>}
                             </div>
                         </div>
                     ))}
