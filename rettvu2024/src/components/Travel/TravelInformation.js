@@ -52,7 +52,7 @@ const TravelInformation = () => {
                     <span>Ba Dong Beach</span>
                 </div>
                 <div className="TravelInformation_item">
-                    <h2>Ba Dong Beach</h2>
+                    <h2>Uncle Ho Temple</h2>
 
                     <p>
                         Uncle Ho Temple “Heart construction”, a symbol of Tra

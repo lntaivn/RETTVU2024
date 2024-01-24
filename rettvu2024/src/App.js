@@ -15,6 +15,7 @@ import TravelInformation from "./components/Travel/TravelInformation";
 import TravelNote from "./components/Travel/TravelNote";
 import Slider from "./components/Slider/Slider";
 import Submission from "./components/Submission/submission";
+import ContactUs from "./components/Travel/ContactUs";
 
 const { Content } = Layout;
 
@@ -57,6 +58,7 @@ const App = () => {
               <Route path="/submission" element={<Submission />} />
               <Route path="/travel-information" element={<TravelInformation />} />
               <Route path="/travel-notes" element={<TravelNote />} />
+              <Route path="/contact-us" element={<ContactUs />} />
               <Route path="/map" element={<Map />} />
             </Routes>
           </div>

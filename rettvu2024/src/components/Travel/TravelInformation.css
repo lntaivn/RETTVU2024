@@ -130,3 +130,22 @@
     background-color: rgb(235, 235, 235);
 }
 
+/* Contact */
+
+.Contact-Card{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px; 
+    background-color: #eaeaea;
+    width: 30%;
+}
+.Contact-Card-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Contact-Card-item > p{
+    padding: 0;
+}
