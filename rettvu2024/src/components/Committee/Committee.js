@@ -30,14 +30,14 @@ const Committee = () => {
                     })}
                 </div>
                 <div className="Committee_right">
-                    <div className="Committee_item">
+                    {/* <div className="Committee_item">
                         <h2>Latest News</h2>
                         <p>February 15th, 2024: </p>
                         <p>
                             The extension submission deadline (FIRM DEADLINE)
                             for CITA 2024.{" "}
                         </p>
-                    </div>
+                    </div> */}
                     <div className="Committee_item">
                         <h2>Previous Conferences</h2>
                         <p>

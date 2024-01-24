@@ -38,13 +38,13 @@ const Slider = () => {
 
             <div className="List_Slide_stital">
                 <ul>
-                    <li className="modify_color_red">February 15th, 2024: Extension submission deadline (FIRM DEADLINE)</li>
 
-                    <li>March 31th, 2024: Notification of acceptance</li>
+                    <li className="modify_color_red">May 12<sup>th</sup>, 2024: Submission Deadline</li>
 
-                    <li>April 20th, 2024: Camera ready and Registration</li>
+                    <li>May 26<sup>th</sup>, 2024: Acceptance Notification</li>
+                    
+                    <li className="modify_color_yellow">July 21<sup>th</sup> - 22<sup>th</sup>, 2024: Conference</li>
 
-                    <li>July 19th-20th, 2024: Conference</li>
 
                 </ul>
             </div>
