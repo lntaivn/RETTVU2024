@@ -36,58 +36,46 @@ const Submission_Guideline = [
 
 const Speakers = [
     {
-        imgSrc: "https://www.jaist.ac.jp/~ogata/ogata.png",
-        name: "Kazuhiro Ogata",
-        title: "Professor",
-        topic: "Keynote 1: Security Protocol Model Checking based on Algebraic Specifications",
+        imgSrc: "https://firebasestorage.googleapis.com/v0/b/chat-app-5b28c.appspot.com/o/RET%2Fz5097586831865_e276821a692ae11a4591548a2db8a4f0.jpg?alt=media&token=687ea50e-5e36-480a-a25b-be590edcdbc7",
+        name: "Assoc.Prof. Lu Jau Huai",
+        title: "Associate Professor",
+        topic: "National Chung Hsing University, Taiwan",
     },
     {
-        imgSrc: "https://www.jaist.ac.jp/~ogata/ogata.png",
-        name: "Kazuhiro Ogata",
-        title: "Professor",
-        topic: "Keynote 1: Security Protocol Model Checking based on Algebraic Specifications",
+        imgSrc: "https://firebasestorage.googleapis.com/v0/b/chat-app-5b28c.appspot.com/o/RET%2Fz5097671742642_b6859b112aa8665783735bb289b5f1a7.jpg?alt=media&token=f0552f87-bdcf-4314-ad74-92ba040c9ab2",
+        name: "Assoc. Prof. Ton Duc Do",
+        title: "Associate Professor",
+        topic: "Department of Robotics, Nazarbayev University",
     },
     {
-        imgSrc: "https://www.jaist.ac.jp/~ogata/ogata.png",
-        name: "Kazuhiro Ogata",
+        imgSrc: "https://firebasestorage.googleapis.com/v0/b/chat-app-5b28c.appspot.com/o/RET%2Fz5097582559106_ee8085af48e39d81f56828e9e13ff4f3.jpg?alt=media&token=4af7c649-2dc6-4667-a051-2bc5c8c1c73f",
+        name: "Prof. Ming-Hung Wang",
         title: "Professor",
-        topic: "Keynote 1: Security Protocol Model Checking based on Algebraic Specifications",
-    },
-    {
-        imgSrc: "https://www.jaist.ac.jp/~ogata/ogata.png",
-        name: "Kazuhiro Ogata",
-        title: "Professor",
-        topic: "Keynote 1: Security Protocol Model Checking based on Algebraic Specifications",
-    },
-    {
-        imgSrc: "https://www.jaist.ac.jp/~ogata/ogata.png",
-        name: "Kazuhiro Ogata",
-        title: "Professor",
-        topic: "Keynote 1: Security Protocol Model Checking based on Algebraic Specifications",
-    },
+        topic: "National Chung Cheng University, Taiwan",
+    }
 ];
 
 const About_Important_Date = [
-    {
-        Date: "21 to 22.06.2024",
-        TitleDate: "Extended to",
-        ChangeDate: "26 to 29.06.2024",
-    },
+    // {
+    //     Date: "21 to 22.06.2024",
+    //     TitleDate: "Extended to",
+    //     ChangeDate: "26 to 29.06.2024",
+    // },
     {
         Date: "12.05.2024",
         TitleDate: "Submission deadline",
         ChangeDate: "",
     },
     {
-        Date: "21 to 22.06.2024",
-        TitleDate: "Conference dates",
+        Date: "26.05.2024",
+        TitleDate: "Acceptance notification",
         ChangeDate: "",
     },
     {
-        Date: "06.06.2024",
-        TitleDate: "Acceptance notification",
-        ChangeDate: "09.06.2024",
-    }
+        Date: "21, 22.06.2024",
+        TitleDate: "Conference dates",
+        ChangeDate: "",
+    },
 ];
 export {About_content,About_content_topic,Submission_Guideline,Speakers,About_Important_Date}
 

@@ -76,6 +76,10 @@
         grid-template-columns: 1fr !important;
     }
 
+    .Speakers{
+        width: 80% !important;
+    }
+
     .import_date {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
     }

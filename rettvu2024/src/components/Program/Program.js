@@ -64,7 +64,7 @@ const Program = () => {
 
     return (
         <div className="Program">
-            <div className='program'>
+            {/* <div className='program'>
                 <h1>CONFERENCE PROGRAM</h1>
                 <h2>I. Session 1, Saturday July 22nd, 2023</h2>
                 <div className="program_title_detail"><ul><li> <h2>Room:</h2> <h1>E21.105</h1> <Link to="/map">View map</Link></li></ul></div>
@@ -116,8 +116,8 @@ const Program = () => {
                         ))}
                     </Collapse>
                 </div>
-            </div>
-
+            </div> */}
+            <h3 style={{padding: "20px", textAlign: "center"}}>Updating...</h3>
         </div>
     )
 }

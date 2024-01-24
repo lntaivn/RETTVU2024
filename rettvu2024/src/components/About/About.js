@@ -15,7 +15,7 @@ const About = () => {
         <>  
             <div className="About">
                 <div className="About_content_text">
-                    <h2>About Tra Vinh University</h2>
+                    <h2>About RET</h2>
                     <p>{About_content.map((item) => item.Text)}</p>
                 </div>
                 <div className="About_content_topics">
@@ -63,7 +63,7 @@ const About = () => {
                         <div className="Speakers_item_img">
                             <img src={speaker.imgSrc} alt="" />
                         </div>
-                        <h3>{speaker.title}</h3>
+                        <h3>{speaker.name}</h3>
                         <span>{speaker.title}</span>
                         <p>{speaker.topic}</p>
                     </div>
