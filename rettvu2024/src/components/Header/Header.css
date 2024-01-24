@@ -7,7 +7,7 @@
     position: sticky;
     top: 0;
     z-index: 99;
-    background-color: rgb(0, 24, 66);
+    background-color: rgb(0, 36, 98);
     gap: 30px;
 }
 
@@ -51,12 +51,12 @@
 
 .Header-link:hover{
     background-color: rgb(255, 153, 0);
-    color: rgb(0, 24, 66);
+    color: rgb(0, 36, 98);
 }
 
 .Heade-active{
     background-color: rgb(255, 153, 0);
-    color: rgb(0, 24, 66);
+    color: rgb(0, 36, 98);
     font-weight: 600;
 }
 
