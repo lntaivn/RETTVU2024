@@ -7,7 +7,7 @@ const Committees = [
         ],
     },
     {
-        title: "Deputy Head of Organizing Committee, Program Committee Member",
+        title: "Vice Chairman Program Committee",
         content: [
             "Dr. Phan Quoc Nghia – Vice Rector of Tra Vinh University",
             "Dr. Vo Phuoc Hung – Head of the Faculty of Engineering and Technology (Permanent)",
@@ -15,7 +15,7 @@ const Committees = [
         ],
     },
     {
-        title: "Program Committee Head",
+        title: "Technical Program Chairs",
         content: [
             "Dr. Nguyen Nhut Lam – Vice Head of the Faculty of Engineering and Technology",
         ],
@@ -33,6 +33,7 @@ const Committees = [
     },
     {
         title: "Technical Program Committee",
+        title: "Technical Program Committee",
         content: [
             "Prof. Dr. Tang-Chieh Liu - FCU, Taiwan",
             "Prof. Dr. Cheng Ching-Hwa - FCU, Taiwan",
@@ -46,11 +47,11 @@ const Committees = [
             "Dr. Brian Dick - VIU, Canada",
             "Dr. Nguyen Viet Phan - Tra Vinh University",
             "Dr. Thai Minh Tuan - Can Tho University",
-            "Dr. Bui Van Tung – University of Information Technology and Communication - Thai Nguyen University",
+            "Dr. Bui Van Tung – Thai Nguyen University",
             "Dr. Dang Xuan Trong – Hositco, Vietnam",
             "Dr. Hoang Trung Kien - Tra Vinh University",
             "Dr. Le Tuong Thanh - Tra Vinh University",
-            "Dr. Ngo Huu Huy - University of Information Technology and Communication - Thai Nguyen University",
+            "Dr. Ngo Huu Huy - Thai Nguyen University",
             "Dr. Nguyen Bao Linh – Tra Vinh University",
             "Dr. Nguyen Duc Tue - Tra Vinh University",
             "Dr. Nguyen Thanh Tam - Tra Vinh University",
@@ -79,10 +80,10 @@ const Committees = [
     {
         title: "Secretary",
         content: [
-            "M.Sc. Ngo Thanh Ha – Lecturer of the Department of Mechanical Engineering",
-            "M.Sc. Ha Thi Thuy Vi – Lecturer of the Department of Information Technology",
-            "M.Sc. Bui Thi Thu Thuy – Lecturer of the Department of Electrical and Electronic",
-            "M.Sc. Huynh Thi My Dung – Lecturer of the Department of Construction",
+            "MEng. Dang Hoang Vu - Tra Vinh University;",
+            "MEng. Ha Thi Thuy Vi - Tra Vinh University;",
+            "MEng. Bui Thi Thu Thuy - Tra Vinh University;",
+            "MEng. Huynh Thi My Dung - Tra Vinh University;",
         ],
     },
 ];

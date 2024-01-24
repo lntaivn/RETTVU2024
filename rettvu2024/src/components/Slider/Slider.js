@@ -1,7 +1,7 @@
 
 import "./Slider.css"
 import logo from "../imgs/logoTVU.png"
-import flyVideo from "../imgs/Fly.mp4"
+import Fly from "../imgs/Fly.mp4"
 import { Link, useLocation } from "react-router-dom";
 import { Carousel, Avatar } from "antd";
 
@@ -11,7 +11,7 @@ const Slider = () => {
         <div className="List_Slide">
             <Carousel autoplay>
                 <div className="Slide_video_fr">
-                    <video autoPlay muted className="List_Slide_img" loop src="https://firebasestorage.googleapis.com/v0/b/chat-app-5b28c.appspot.com/o/courses%2FFly.mp4?alt=media&token=edcd56d0-58f9-4a8f-a952-2b41a54f4a90"></video>
+                    <video autoPlay muted className="List_Slide_img" loop src={Fly}></video>
                 </div>
                 {/* <div>
                     <img
@@ -42,7 +42,7 @@ const Slider = () => {
                     <li className="modify_color_red">May 12<sup>th</sup>, 2024: Submission Deadline</li>
 
                     <li>May 26<sup>th</sup>, 2024: Acceptance Notification</li>
-                    
+
                     <li className="modify_color_yellow">July 21<sup>th</sup> - 22<sup>th</sup>, 2024: Conference</li>
 
 

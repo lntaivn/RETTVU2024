@@ -59,15 +59,16 @@
 /* ---------------------chỉnh Carousel------------------------------------- */
 
 .modify_color_yellow {
-    color: yellow
+    color: yellow;
 }
 
 .modify_color_red {
-    color: white;
-    background-color: rgba(255, 0, 0, 0.734);
-    width: fit-content;
-    margin: 0 auto;
-    padding: 0 20px;
-    margin-bottom: 5px;
+    color: rgb(255, 64, 0);
+    text-shadow: 
+    -1px -1px 0 white,  
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white,
+    0 0 5px white;
 }
 

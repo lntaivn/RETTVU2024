@@ -64,7 +64,6 @@ const About = () => {
                             <img src={speaker.imgSrc} alt="" />
                         </div>
                         <h3>{speaker.name}</h3>
-                        <span>{speaker.title}</span>
                         <p>{speaker.topic}</p>
                     </div>
                 ))}
