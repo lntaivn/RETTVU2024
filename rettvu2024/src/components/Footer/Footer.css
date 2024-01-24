@@ -13,5 +13,6 @@
 
 .Footer_info{
     display: flex;
-    gap: 8px;
+    flex-direction: column;
+    gap: 5px;
 }
