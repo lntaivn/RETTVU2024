@@ -11,8 +11,8 @@ const Footer = () => {
         <div className="Footer">
             <Avatar src={logo} size={40} />
             <div className="Footer_info">
-                <h2>Copyright © RET 2024</h2>
-                <h2>TRA VINH UNIVERSITY</h2>
+                <h3>Copyright © RET 2024</h3>
+                <h2>Tra Vinh University</h2>
             </div>
             <p>Email: ret_conf@tvu.edu.vn</p>
         </div>

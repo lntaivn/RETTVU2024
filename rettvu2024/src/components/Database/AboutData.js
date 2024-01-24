@@ -54,7 +54,7 @@ const Speakers = [
     },
     {
         imgSrc: "https://firebasestorage.googleapis.com/v0/b/ret-tvu.appspot.com/o/RET%2Fpro3.jpg?alt=media&token=dd350825-7553-45e0-b951-7ef14a3d8e07",
-        name: "Prof. Ming Thành, Dr. Ming-Hung Wang",
+        name: "Dr. Ming-Hung Wang",
         title: "Professor",
         topic: "National Chung Cheng University, Taiwan",
     }

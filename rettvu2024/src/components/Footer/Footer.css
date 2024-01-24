@@ -16,3 +16,7 @@
     flex-direction: column;
     gap: 5px;
 }
+
+.Footer_info > h3{
+    font-weight: 400;
+}
