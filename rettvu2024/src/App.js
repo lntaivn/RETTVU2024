@@ -12,7 +12,9 @@ import logo from "./components/imgs/logoTVU.png";
 import About from "./components/About/About";
 import Program from "./components/Program/Program";
 import TravelInformation from "./components/Travel/TravelInformation";
+import TravelNote from "./components/Travel/TravelNote";
 import Slider from "./components/Slider/Slider";
+import Submission from "./components/Submission/submission";
 
 const { Content } = Layout;
 
@@ -54,6 +56,7 @@ const App = () => {
               <Route path="/about" element={<About />} />
               <Route path="/submission" element={<Submission />} />
               <Route path="/travel-information" element={<TravelInformation />} />
+              <Route path="/travel-notes" element={<TravelNote />} />
               <Route path="/map" element={<Map />} />
             </Routes>
           </div>
