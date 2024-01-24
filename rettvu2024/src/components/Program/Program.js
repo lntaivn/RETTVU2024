@@ -1,4 +1,3 @@
-
 import { useContext, useEffect } from "react";
 import { Carousel, Collapse } from 'antd';
 import "./Program.css"
@@ -65,27 +64,9 @@ const Program = () => {
 
     return (
         <div className="Program">
-            <div className='list_Slide_img'>
-            <Carousel autoplay>
-                <div>
-                <h3 style={contentStyle}>1</h3>
-                </div>
-                <div>
-                <h3 style={contentStyle}>2</h3>
-                </div>
-                <div>
-                <h3 style={contentStyle}>3</h3>
-                </div>
-                <div>
-                <h3 style={contentStyle}>4</h3>
-                </div>
-            </Carousel>
-            </div>
-            <div className="program">
+            <div className='program'>
                 <h1>CONFERENCE PROGRAM</h1>
-                <h2>
-                    I. Session 1, Saturday July 22nd, 2023
-                </h2>
+                <h2>I. Session 1, Saturday July 22nd, 2023</h2>
                 <div className="program_title_detail"><ul><li> <h2>Room:</h2> <h1>E21.105</h1> <Link to="/map">View map</Link></li></ul></div>
                 <div className="schedule">
                     <ul>

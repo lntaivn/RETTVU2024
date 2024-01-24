@@ -1,14 +1,10 @@
 import { Link } from "react-router-dom";
 import "./Committee.css";
 import { Carousel } from "antd";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { DataStore } from "../Database";
 
 const Committee = () => {
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [])
 
     const database = useContext(DataStore);
 
@@ -18,14 +14,6 @@ const Committee = () => {
 
     return (
         <div className="Committee">
-            <Carousel autoplay>
-                <div className="Slide-img">
-                    <img
-                        src="https://image.bnews.vn/MediaUpload/Org/2020/06/15/trung-tam-hoc-lieu-tvu.jpg"
-                        alt=""
-                    />
-                </div>
-            </Carousel>
             <div className="Committee-content">
                 <div className="Committee_left">
                     {Committees.map((cm, index) => {
