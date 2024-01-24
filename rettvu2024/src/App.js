@@ -13,7 +13,6 @@ import About from "./components/About/About";
 import Program from "./components/Program/Program";
 import TravelInformation from "./components/Travel/TravelInformation";
 import Slider from "./components/Slider/Slider";
-import Submission from "./components/Submission/submission";
 
 const { Content } = Layout;
 
@@ -55,7 +54,7 @@ const App = () => {
               <Route path="/about" element={<About />} />
               <Route path="/submission" element={<Submission />} />
               <Route path="/travel-information" element={<TravelInformation />} />
-              {/* <Route path="/map" element={<Map />} /> */}
+              <Route path="/map" element={<Map />} />
             </Routes>
           </div>
         </Content>
