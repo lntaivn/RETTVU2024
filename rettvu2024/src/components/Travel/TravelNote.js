@@ -1,5 +1,31 @@
 import { Link } from "react-router-dom";
 import "./TravelInformation.css";
+const travelNoteTable = [
+    {
+        Name: "Nha khach Tra Vinh (Tra Vinh guest house)",
+        Address: "25 Vo Nguyen Giap, Tp. Tra Vinh, tinh Tra Vinh",
+        tel: "074 246 0001",
+        Room: "600.000 (30USD) - 1.500.000 (75USD) Breakfast included"
+    },
+    {
+        Name: "Thanh Binh Hotel 1",
+        Address: "199 Nguyen Thi Minh Khai, phuong 7, tp. Tra Vinh, tinh Tra Vinh",
+        tel: "074 6266 789",
+        Room: "300.000 (15USD) - 500.000 (25USD)"
+    },
+    {
+        Name: "Thanh Binh Hotel 2",
+        Address: "199 Nguyen Thi Minh Khai, phuong 7, tp. Tra Vinh, tinh Tra Vinh",
+        tel: "074 6260 999 - 0946 478 567",
+        Room: "300.000 (15USD) - 450.000 (22USD)"
+    },
+    {
+        Name: "Cuu Long Hotel",
+        Address: "210 Nguyen Thi Minh Khai, phuong 7, tp. Tra Vinh, tinh Tra Vinh",
+        tel: "074 3862 615 - 074 3866 867",
+        Room: "400.000 (20USD) - 1.100.000 (55USD) Breakfast included"
+    },
+];
 
 const TravelNote = () => {
     return (
@@ -57,10 +83,10 @@ const TravelNote = () => {
                         among others.
                     </p>
                     <p>
-                    <strong>By bus</strong>: Overland travel is possible from Cambodia and Laos.
+                        <strong>By bus</strong>: Overland travel is possible from Cambodia and Laos.
                     </p>
                     <p>
-                    There are 03 bus companies:
+                        There are 03 bus companies:
                     </p>
                     <p><strong>Phuong Trang Bus</strong>: (recommended)</p>
                     <p>Tel: 19006067 – Address: 190 Le Hong Phong District 5 – HCMC</p>
@@ -74,9 +100,29 @@ const TravelNote = () => {
                     <p>Address: 248 Tran Phu Street, Ward 8, District 5 – Ho Chi Minh City, District 5 – HCMC</p>
                     <p> From the airport to the bus station: Fare for taxi is around 350000VND (17USD)/pax</p>
                     <p><strong>Accommodation</strong>:</p>
-                    <div className="TravelInformation_item_img">
-                        <img src="https://lh3.googleusercontent.com/j1GhtYDelfSRP9DYLFzM7mOsflMl6Jb5hVJYIWtZvNyPezTlyu5P-Iph7ojXg0ZGFmq9aGjZJl1LNYWamg8IGstXscSCDSWrEYvEo169ZFMOYZS_kMAP7v3i6KOAzebl5w=w1280" />
+                    <div>
+                        <table className="travel-note-table">
+                            <thead>
+                                <tr>
+                                    <th className="travel-note-table__header">Name</th>
+                                    <th className="travel-note-table__header">Address</th>
+                                    <th className="travel-note-table__header">Telephone</th>
+                                    <th className="travel-note-table__header">Room</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {travelNoteTable.map((hotel, index) => (
+                                    <tr key={index}>
+                                        <td className="travel-note-table__cell">{hotel.Name}</td>
+                                        <td className="travel-note-table__cell">{hotel.Address}</td>
+                                        <td className="travel-note-table__cell">{hotel.tel}</td>
+                                        <td className="travel-note-table__cell">{hotel.Room}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
                     </div>
+
                 </div>
                 <div className="TravelInformation_item">
                     <h2>Invitation Letter</h2>
