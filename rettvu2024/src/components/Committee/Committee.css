@@ -34,7 +34,7 @@
     margin      : 10px 10px;
     font-size   : 18px;
     line-height: 1.5;
-    
+    list-style-type: circle;
 }
 
 .Committee_item div p {
@@ -43,6 +43,24 @@
     font-size   : 18px;
     line-height: 1.5;
 }
+
+
+.Committee_item div ul li {
+    
+    margin      : 10px 10px;
+    font-size   : 18px;
+    line-height: 1.5;
+    list-style-type: disc;
+}
+.Committee_item div ul {
+    padding-left: 30px;
+}
+
+
+
+
+
+
 
 .Committee_item>h2 {
     color           : rgb(0, 58, 159);

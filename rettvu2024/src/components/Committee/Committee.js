@@ -21,9 +21,11 @@ const Committee = () => {
                             <div className="Committee_item" key={index}>
                                 <h2>{cm.title}</h2>
                                 <div>
-                                    {cm.content.map((ct, index) => {
-                                        return <p>{`- ${ct}`}</p>;
-                                    })}
+                                    <ul>
+                                        {cm.content.map((ct, index) => {
+                                            return <li>{`${ct}`}</li>;
+                                        })}
+                                    </ul>
                                 </div>
                             </div>
                         );

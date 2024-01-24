@@ -72,8 +72,8 @@ const TravelNote = () => {
                     <p>
                         <strong>Visa</strong>: Visas are required for most
                         foreign nationals. More information for visa application
-                        at
-                        https://evisa.xuatnhapcanh.gov.vn/en_US/web/guest/trang-chu-ttdt
+                        at <a href="https://evisa.xuatnhapcanh.gov.vn/en_US/web/guest/trang-chu-ttdt">https://evisa.xuatnhapcanh.gov.vn/en_US/web/guest/trang-chu-ttdt</a>
+                        
                     </p>
                     <p>
                         <strong>By plane</strong>: Tan Son Nhat International Airport (SGN)
@@ -90,16 +90,17 @@ const TravelNote = () => {
                     </p>
                     <p><strong>Phuong Trang Bus</strong>: (recommended)</p>
                     <p>Tel: 19006067 – Address: 190 Le Hong Phong District 5 – HCMC</p>
-                    <p>Online booking can be made at https://futabus.vn/?lang=en-US at least one day before departure</p>
+                    <p>Online booking can be made at <a href="https://futabus.vn/?lang=en-US">https://futabus.vn/?lang=en-US</a> at least one day before departure</p>
                     <p><strong>Thanh Thuy Bus:</strong>:</p>
                     <p>Tel: 08.39242526 – Address: 267 Tran Phu Street</p>
                     <p>District 5 – HCMC</p>
                     <p><strong>Kim Hoang Bus</strong>:</p>
                     <p>Tel: (028) 39.242.424</p>
                     <p>Address: 248 Tran Phu Street, Ward 8, District 5 – Ho Chi Minh City, District 5 – HCMC</p>
-                    <p> From the airport to the bus station: Fare for taxi is around 350000VND (17USD)/pax</p>
+                    <p> From the airport to the bus station: Fare for taxi is around 350.000VND (17USD)/pax</p>
                     <p><strong>Accommodation</strong>:</p>
-                    <div>
+
+                    <div className="travel-note-table-info">
                         <table className="travel-note-table">
                             <thead>
                                 <tr>
