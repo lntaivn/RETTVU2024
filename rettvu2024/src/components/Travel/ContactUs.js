@@ -1,13 +1,10 @@
-
-
 import { Link, useLocation } from "react-router-dom";
 
 const ContactUs = () => {
-
     return (
         <div className="ContactUs">
-            <div className="TravelInformation_left">
-                <div className="TravelInformation_item">
+            <div className="Contact_left">
+                <div className="contact_item">
                     <h2>Contact Us</h2>
                     <div className="Contact-Card">
                         <h3>Dr. Nguyen Nhut Lam</h3>
@@ -28,13 +25,23 @@ const ContactUs = () => {
                         </div>
                     </div>
                     <div className="Contact-Card">
-                        <p>Email: ret_conf@tvu.edu.vn</p>
-                        <p>Working hours: 8-11am, 2-4:30pm (GMT+7)</p>
+                        <div className="Contact-Card-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>Email: ret_conf@tvu.edu.vn</p>
+                        </div>
+                        <div className="Contact-Card-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>Working hours: 8-11am, 2-4:30pm (GMT+7)</p>
+                        </div>
                     </div>
                 </div>
+                <div className="contact_image">
+                    <img src="https://www.tvu.edu.vn/wp-content/uploads/2021/12/anh-4.jpg"></img>
+                </div>
             </div>
+
         </div>
-    )
-}
+    );
+};
 
 export default ContactUs;

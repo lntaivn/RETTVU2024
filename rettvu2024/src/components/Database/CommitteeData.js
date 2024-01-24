@@ -32,7 +32,7 @@ const Committees = [
         title: "Co-Deputy Program Committee Heads",
         content: [
             "Dr. Truong Van Men – Vice Head of the Mechanical Engineering Department",
-            "Dr. Nguyen Bao Linh – Vice Head of the Information Technology Department",
+            "Dr. Nguyen Bao An – Vice Head of the Information Technology Department",
             "Dr. Cao Phuong Thao – Head of the Electrical and Electronic Department",
             "Dr. Huynh Van Hiep – Head of the Construction Department",
         ],
@@ -57,14 +57,12 @@ const Committees = [
             "Dr. Hoang Trung Kien - Tra Vinh University",
             "Dr. Le Tuong Thanh - Tra Vinh University",
             "Dr. Ngo Huu Huy - Thai Nguyen University",
-            "Dr. Nguyen Bao Linh – Tra Vinh University",
             "Dr. Nguyen Duc Tue - Tra Vinh University",
             "Dr. Nguyen Thanh Tam - Tra Vinh University",
             "Dr. Nguyen Tran Diem Hanh- Tra Vinh University",
             "Dr. Nguyen Tuan Nghia - Tra Vinh University",
             "Dr. Pham Van Hoan - Tra Vinh University",
             "Dr. Tran Song Toan – Tra Vinh University",
-            "Dr. Truong Hoang Linh - Tra Vinh University",
             "Dr. Truong Van Men – Tra Vinh University",
             "Dr. Van Huu Hue - Tra Vinh University",
             "Dr. Vu Quang Hieu - Tra Vinh University",
@@ -85,7 +83,7 @@ const Committees = [
     {
         title: "Secretary",
         content: [
-            "MEng. Dang Hoang Vu - Tra Vinh University;",
+            "MEng. Ngo Thanh Ha - Tra Vinh University;",
             "MEng. Ha Thi Thuy Vi - Tra Vinh University;",
             "MEng. Bui Thi Thu Thuy - Tra Vinh University;",
             "MEng. Huynh Thi My Dung - Tra Vinh University;",
