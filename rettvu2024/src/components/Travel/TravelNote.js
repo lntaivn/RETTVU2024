@@ -95,6 +95,7 @@ const TravelNote = () => {
                     <p>Tel: 08.39242526 – Address: 267 Tran Phu Street</p>
                     <p>District 5 – HCMC</p>
                     <p><strong>Kim Hoang Bus</strong>:</p>
+                 
                     <p>Tel: (028) 39.242.424</p>
                     <p>Address: 248 Tran Phu Street, Ward 8, District 5 – Ho Chi Minh City, District 5 – HCMC</p>
                     <p> From the airport to the bus station: Fare for taxi is around 350.000VND (17USD)/pax</p>
