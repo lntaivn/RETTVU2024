@@ -45,18 +45,21 @@ const Speakers = [
         name: "Assoc.Prof. Lu Jau Huai",
         title: "Associate Professor",
         topic: "National Chung Hsing University, Taiwan",
+        scholar: ""
     },
     {
         imgSrc: "https://firebasestorage.googleapis.com/v0/b/ret-tvu.appspot.com/o/RET%2Fpro2.jpg?alt=media&token=d92a0189-488f-4a4d-a916-8caa06fb5ab8",
         name: "Assoc. Prof. Ton Duc Do",
         title: "Associate Professor",
         topic: "Department of Robotics, Nazarbayev University",
+        scholar: "https://scholar.google.com/citations?hl=en&user=8C_C3NQAAAAJ"
     },
     {
         imgSrc: "https://firebasestorage.googleapis.com/v0/b/ret-tvu.appspot.com/o/RET%2Fpro3.jpg?alt=media&token=dd350825-7553-45e0-b951-7ef14a3d8e07",
         name: "Dr. Ming-Hung Wang",
         title: "Professor",
         topic: "National Chung Cheng University, Taiwan",
+        scholar: "https://scholar.google.com/citations?user=ZuP97eoAAAAJ"
     }
 ];
 

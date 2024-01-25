@@ -61,6 +61,15 @@
         flex-direction: column;
         gap: 0;
     }
+
+    .ContactUs{
+        padding: 15px !important;
+    }
+    
+    .TravelInformation_item-plug{
+        gap: 15px !important;
+        margin: 10px 0 !important;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -79,6 +88,20 @@
     .import_date {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
     }
+
+    .Contact_left{
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .contact_item{
+        width: 100% !important;
+    }
+    
+    .contact_image{
+        width: 100% !important;
+    }
+
 }
 
 /* Tablet */
