@@ -9,6 +9,7 @@
     z-index: 99;
     background-color: #07223C;
     gap: 30px;
+    border-bottom: 4px solid #ffde17;
 }
 
 .Header-left{
@@ -50,12 +51,12 @@
 }
 
 .Header-link:hover{
-    background-color: rgb(255, 153, 0);
-    color: rgb(0, 36, 98);
+    background-color: #ffde17;
+    color: #07223C;
 }
 
 .Heade-active{
-    background-color: rgb(255, 153, 0);
+    background-color: #ffde17;
     color: rgb(0, 36, 98);
     font-weight: 600;
 }
@@ -112,7 +113,7 @@
 }
 
 .Heade-group-active{
-    border-bottom: 4px solid rgb(255, 153, 0);
+    border-bottom: 4px solid #ffde17;
 }
 
 .Header-middle{
