@@ -63,9 +63,15 @@ const About = () => {
             <div className="Speakers">
                 {Speakers.map((speaker) => (
                     <div className="Speakers_item">
-                        <div className="Speakers_item_img">
-                            <img src={speaker.imgSrc} alt="" />
-                        </div>
+                        {
+                            speaker.scholar !== "" ?
+                                <Link className="Speakers_item_img" to={speaker.scholar} target="_blank">
+                                    <img src={speaker.imgSrc} alt="" />
+                                </Link>
+                                : <Link className="Speakers_item_img">
+                                    <img src={speaker.imgSrc} alt="" />
+                                </Link>
+                        }
                         <h3>{speaker.name}</h3>
                         <p>{speaker.topic}</p>
                     </div>

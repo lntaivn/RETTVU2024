@@ -41,12 +41,12 @@ const Header = () => {
             getItem(<Link to="/contact-us" onClick={() => {onClose()}}>Contact Us</Link>, 'contact us'),
         ]),
         getItem('History', 'sub4', null, [
-            getItem(<Link to="/ret-2023" onClick={() => {onClose()}}>RET 2023</Link>, 'ret-2023'),
-            getItem(<Link to="/ret-2022" onClick={() => {onClose()}}>RET 2022</Link>, 'ret-2022'),
-            getItem(<Link to="/ret-2021" onClick={() => {onClose()}}>RET 2021</Link>, 'ret-2021'),
-            getItem(<Link to="/ret-2020" onClick={() => {onClose()}}>RET 2020</Link>, 'ret-2020'),
-            getItem(<Link to="/ret-2019" onClick={() => {onClose()}}>RET 2019</Link>, 'ret-2019'),
-            getItem(<Link to="/ret-2018" onClick={() => {onClose()}}>RET 2018</Link>, 'ret-2018'),
+            getItem(<Link to="https://sites.google.com/tvu.edu.vn/ret/program" onClick={() => {onClose()}}>RET 2023</Link>, 'ret-2023'),
+            getItem(<Link to="https://sites.google.com/tvu.edu.vn/ret/history/ret-2022" onClick={() => {onClose()}}>RET 2022</Link>, 'ret-2022'),
+            getItem(<Link to="https://sites.google.com/tvu.edu.vn/ret/history/ret-2021" onClick={() => {onClose()}}>RET 2021</Link>, 'ret-2021'),
+            getItem(<Link to="https://sites.google.com/tvu.edu.vn/ret/history/ret-2020" onClick={() => {onClose()}}>RET 2020</Link>, 'ret-2020'),
+            getItem(<Link to="https://sites.google.com/tvu.edu.vn/ret/history/ret-2019" onClick={() => {onClose()}}>RET 2019</Link>, 'ret-2019'),
+            getItem(<Link to="https://sites.google.com/tvu.edu.vn/ret/history/ret-2018" onClick={() => {onClose()}}>RET 2018</Link>, 'ret-2018'),
         ]),
     ];
 

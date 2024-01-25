@@ -101,7 +101,7 @@
 
 /* TABLE */
 
-.travel-note-table-info{
+.travel-note-table-info {
     overflow: auto;
     width: 100%;
 }
@@ -130,16 +130,34 @@
     background-color: rgb(235, 235, 235);
 }
 
+.TravelInformation_item-plug{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 15px auto;
+    width: 100%;
+    max-width: 500px;
+    gap: 20px;
+}
+
+.TravelInformation_item-plug > img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
 /* Contact */
 
 
-.Contact_left{
+.Contact_left {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
 }
+
 .contact_item>h2 {
     color: rgb(0, 58, 159);
     font-family: Montserrat;
@@ -151,22 +169,25 @@
     text-transform: capitalize;
     position: relative;
     width: 100%;
-    
+
     border-left: 5px solid #f7961e;
 }
-.Contact-Card{
+
+.Contact-Card {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 20px 30px; 
+    padding: 20px 30px;
     background-color: #eaeaea;
     height: 100%;
 }
-.Contact_right{
+
+.Contact_right {
     /* flex: 2; */
     height: 100%;
     flex: 1;
 }
+
 .contact_item {
     width: 50%;
     height: 100%;
@@ -174,35 +195,40 @@
     padding: 0;
     display: flex;
     flex-direction: column;
-   justify-content: space-between;
-   gap: 10px;
-   
+    justify-content: space-between;
+    gap: 10px;
+
 }
 
 
-.Contact-Card-item{
+.Contact-Card-item {
     flex: 1;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.Contact-Card  p{
+.Contact-Card h3 {
+    font-size: 18px;
+}
+
+.Contact-Card p {
     padding: 0 !important;
-    
+    font-size: 16px;
+
 }
 
 .ContactUs {
     display: flex;
     gap: 20px;
-    padding:  30px 40px;
+    padding: 40px;
     padding-bottom: 0;
 }
 
 .contact_image {
     gap: 1;
     height: 100%;
-    
+    width: 50%;
 }
 
 
@@ -211,5 +237,5 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-   
+
 }

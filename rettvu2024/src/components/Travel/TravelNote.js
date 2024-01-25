@@ -58,6 +58,10 @@ const TravelNote = () => {
                         Vietnam is 220v-50Hz. The types of plug are A and C (as
                         pictures below)
                     </p>
+                    <div className="TravelInformation_item-plug">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/ret-tvu.appspot.com/o/RET%2FGroup%205.png?alt=media&token=a7956651-7e8a-42e1-9011-9c344663febd" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/ret-tvu.appspot.com/o/RET%2FGroup%206.png?alt=media&token=00c030c3-356e-4b3a-9c89-55c4fce720b8" />
+                    </div>
                     <p>
                         <strong>Food</strong>: Vietnamese food is popular with
                         foreigners.
@@ -73,7 +77,7 @@ const TravelNote = () => {
                         <strong>Visa</strong>: Visas are required for most
                         foreign nationals. More information for visa application
                         at <a href="https://evisa.xuatnhapcanh.gov.vn/en_US/web/guest/trang-chu-ttdt">https://evisa.xuatnhapcanh.gov.vn/en_US/web/guest/trang-chu-ttdt</a>
-                        
+
                     </p>
                     <p>
                         <strong>By plane</strong>: Tan Son Nhat International Airport (SGN)
@@ -134,25 +138,31 @@ const TravelNote = () => {
             </div>
 
             <div className="TravelInformation_right">
-                <div className="TravelInformation_item">
+                <div className="Committee_item">
                     <h2>Previous Conferences</h2>
                     <p>
-                        <Link to="/ret-2023">RET 2023</Link>
+                        <Link to="https://sites.google.com/tvu.edu.vn/ret/program">RET 2023</Link>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </p>
                     <p>
-                        <Link to="/ret-2022">RET 2022</Link>
+                        <Link to="https://sites.google.com/tvu.edu.vn/ret/history/ret-2022">RET 2022</Link>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </p>
                     <p>
-                        <Link to="/ret-2021">RET 2021</Link>
+                        <Link to="https://sites.google.com/tvu.edu.vn/ret/history/ret-2021">RET 2021</Link>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </p>
                     <p>
-                        <Link to="/ret-2020">RET 2020</Link>
+                        <Link to="https://sites.google.com/tvu.edu.vn/ret/history/ret-2020">RET 2020</Link>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </p>
                     <p>
-                        <Link to="/ret-2019">RET 2019</Link>
+                        <Link to="https://sites.google.com/tvu.edu.vn/ret/history/ret-2019">RET 2019</Link>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </p>
                     <p>
-                        <Link to="/ret-2018">RET 2018</Link>
+                        <Link to="https://sites.google.com/tvu.edu.vn/ret/history/ret-2018">RET 2018</Link>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </p>
                 </div>
             </div>

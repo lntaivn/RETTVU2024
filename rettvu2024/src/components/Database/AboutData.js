@@ -45,21 +45,21 @@ const Speakers = [
         name: "Assoc.Prof. Lu Jau Huai",
         title: "Associate Professor",
         topic: "National Chung Hsing University, Taiwan",
-        flag: "https://firebasestorage.googleapis.com/v0/b/ret-tvu.appspot.com/o/RET%2FTaiwan.png?alt=media&token=0c11b0e4-6f55-4f0d-9c40-f56ab107478d"
+        scholar: ""
     },
     {
         imgSrc: "https://firebasestorage.googleapis.com/v0/b/ret-tvu.appspot.com/o/RET%2Fpro2.jpg?alt=media&token=d92a0189-488f-4a4d-a916-8caa06fb5ab8",
         name: "Assoc. Prof. Ton Duc Do",
         title: "Associate Professor",
         topic: "Department of Robotics, Nazarbayev University",
-        flag: "https://firebasestorage.googleapis.com/v0/b/ret-tvu.appspot.com/o/RET%2FKazakhstan.png?alt=media&token=6a8fe6c8-8087-403f-8c56-2235db84bfc0"
+        scholar: "https://scholar.google.com/citations?hl=en&user=8C_C3NQAAAAJ"
     },
     {
         imgSrc: "https://firebasestorage.googleapis.com/v0/b/ret-tvu.appspot.com/o/RET%2Fpro3.jpg?alt=media&token=dd350825-7553-45e0-b951-7ef14a3d8e07",
         name: "Dr. Ming-Hung Wang",
         title: "Professor",
         topic: "National Chung Cheng University, Taiwan",
-        flag: "https://firebasestorage.googleapis.com/v0/b/ret-tvu.appspot.com/o/RET%2FTaiwan.png?alt=media&token=0c11b0e4-6f55-4f0d-9c40-f56ab107478d"
+        scholar: "https://scholar.google.com/citations?user=ZuP97eoAAAAJ"
     }
 ];
 

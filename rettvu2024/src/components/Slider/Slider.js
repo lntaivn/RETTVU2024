@@ -39,11 +39,11 @@ const Slider = () => {
             <div className="List_Slide_stital">
                 <ul>
 
-                    <li className="modify_color_red">May 12<sup>th</sup>, 2024: Submission Deadline</li>
+                    <li className="modify_color_red">May 12, 2024: Submission Deadline</li>
 
-                    <li>May 26<sup>th</sup>, 2024: Acceptance Notification</li>
+                    <li>May 26, 2024: Acceptance Notification</li>
 
-                    <li className="modify_color_yellow">July 21<sup>th</sup> - 22<sup>th</sup>, 2024: Conference</li>
+                    <li className="modify_color_yellow">July 21, 22, 2024: Conference</li>
 
 
                 </ul>
