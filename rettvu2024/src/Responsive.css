@@ -20,7 +20,8 @@
         padding: 40px 20px !important;
     }
 
-    .Committee-content, .TravelInformation {
+    .Committee-content,
+    .TravelInformation {
         padding: 30px 15px !important;
     }
 
@@ -34,10 +35,15 @@
 
     .List_Slide_stital {
         font-size: 18px !important;
-        padding: 0 20px;
+        padding  : 0 20px;
     }
 
-    .Slide_video_fr{
+    .List_Slide_logo{
+        font-size: 24px !important;
+        padding: 0 15px !important;
+    }
+
+    .Slide_video_fr {
         height: 350px !important;
     }
 
@@ -59,15 +65,15 @@
 
     .Footer_info {
         flex-direction: column;
-        gap: 0;
+        gap           : 0;
     }
 
-    .ContactUs{
+    .ContactUs {
         padding: 15px !important;
     }
-    
-    .TravelInformation_item-plug{
-        gap: 15px !important;
+
+    .TravelInformation_item-plug {
+        gap   : 15px !important;
         margin: 10px 0 !important;
     }
 }
@@ -77,11 +83,11 @@
         grid-template-areas: "about"
             "img"
             "topic" !important;
-        grid-template-rows: auto 1fr;
+        grid-template-rows   : auto 1fr;
         grid-template-columns: 1fr !important;
     }
 
-    .Speakers{
+    .Speakers {
         width: 80% !important;
     }
 
@@ -89,16 +95,16 @@
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
     }
 
-    .Contact_left{
+    .Contact_left {
         flex-direction: column !important;
-        gap: 20px !important;
+        gap           : 20px !important;
     }
 
-    .contact_item{
+    .contact_item {
         width: 100% !important;
     }
-    
-    .contact_image{
+
+    .contact_image {
         width: 100% !important;
     }
 
@@ -131,12 +137,14 @@
         display: block !important;
     }
 
-    .Committee-content, .TravelInformation {
+    .Committee-content,
+    .TravelInformation {
         flex-direction: column;
-        gap: 0 !important;
+        gap           : 0 !important;
     }
 
-    .Committee_right, .TravelInformation_right {
+    .Committee_right,
+    .TravelInformation_right {
         width: 100% !important;
     }
 }

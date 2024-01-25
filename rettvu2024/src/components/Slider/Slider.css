@@ -15,6 +15,28 @@
     position: relative;
 }
 
+.List_Slide_logo{
+    top: 20px;
+    z-index: 6;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    color: #07223C;
+
+    
+}
+
+.List_Slide_logo p {
+    text-shadow: 
+    -0.5px -0.5px 0 white,  
+    0.5px -0.5px 0 white,
+    -0.5px 0.5px 0 white,
+    0.5px 0.5px 0 white,
+    0 0 3px white;
+}
+
 .List_Slide_stital {
     position: absolute;
     bottom: 40px;
@@ -59,7 +81,7 @@
 /* ---------------------chỉnh Carousel------------------------------------- */
 
 .modify_color_yellow {
-    color: yellow;
+    color: #f8f046;
 }
 
 .modify_color_red {

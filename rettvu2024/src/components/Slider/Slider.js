@@ -9,6 +9,11 @@ const Slider = () => {
 
     return (
         <div className="List_Slide">
+            <div className="List_Slide_logo">
+                <p>The International Conference on Research in
+                    <br/>
+                    Engineering and Technology 2024</p>
+            </div>
             <Carousel autoplay>
                 <div className="Slide_video_fr">
                     <video autoPlay muted className="List_Slide_img" loop src={Fly}></video>

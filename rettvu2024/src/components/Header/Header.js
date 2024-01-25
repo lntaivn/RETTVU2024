@@ -66,7 +66,7 @@ const Header = () => {
         <div className="Header">
             <div className="Header-left">
                 <div className="Header-logo" >
-                    <Link to="/"><Avatar src={logo} size={35} /></Link>
+                    <Link to="/"><Avatar src={logo} size={40} /></Link>
                     <Link to="/"><div className="Header-name">RET 2024</div></Link>
                 </div>
                 <div className="Header-tab">

@@ -61,10 +61,9 @@ const App = () => {
         <Spin fullscreen />
       }
       <Layout>
-        <div className='Banner'>
-          {/* <Avatar src={logo} size={50} /> */}
+        {/* <div className='Banner'>
           <h2>The International Conference on Research in Engineering and Technology 2024 (RET2024)</h2>
-        </div>
+        </div> */}
         <Header />
         <Content>
           <div className='Content'>
