@@ -212,7 +212,13 @@
     list-style-type: square;
 }
 
+.Submission_Guideline_body ul li{
+    margin-bottom: 10px;
+}
 
+.Submission_Guideline_body ul li a{
+    word-wrap: break-word;
+}
 
 
 

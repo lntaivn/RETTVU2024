@@ -19,22 +19,18 @@
     top: 20px;
     z-index: 6;
     position: absolute;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
     width: 100%;
     text-align: center;
-    color: #07223C;
-
-    
+    color: white;  
+    text-shadow: 2px 2px 5px #00000080;
 }
 
 .List_Slide_logo p {
-    text-shadow: 
-    -0.5px -0.5px 0 white,  
-    0.5px -0.5px 0 white,
-    -0.5px 0.5px 0 white,
-    0.5px 0.5px 0 white,
-    0 0 3px white;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .List_Slide_stital {
@@ -76,6 +72,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    image-rendering: pixelated;
 }
 
 /* ---------------------chỉnh Carousel------------------------------------- */

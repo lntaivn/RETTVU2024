@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import Kazakhstan from "../imgs/Kazakhstan.png"
-import Taiwan from "../imgs/Taiwan.png"
 import { useContext } from "react";
 import "./About.css";
 import { DataStore } from "../Database";
@@ -97,7 +95,7 @@ const About = () => {
                         <div className="Submission_Guideline_body">
                             <ul>
                                 {item.body.map((itemEvent, innerIndex) => (
-                                    <li key={innerIndex}>{itemEvent}</li>
+                                    <li key={innerIndex} dangerouslySetInnerHTML={{ __html: itemEvent }} />
                                 ))}
                             </ul>
                         </div>

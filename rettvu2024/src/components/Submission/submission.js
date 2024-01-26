@@ -32,7 +32,7 @@ const Submission = () => {
                         <div className="Submission_Guideline_body">
                             <ul>
                                 {item.body.map((itemEvent, innerIndex) => (
-                                    <li key={innerIndex}>{itemEvent}</li>
+                                    <li key={innerIndex} dangerouslySetInnerHTML={{ __html: itemEvent }} />
                                 ))}
                             </ul>
                         </div>
