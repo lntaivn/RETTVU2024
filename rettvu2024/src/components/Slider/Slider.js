@@ -1,50 +1,32 @@
 
 import "./Slider.css"
-import logo from "../imgs/logoTVU.png"
-import flyVideo from "../imgs/Fly.mp4"
-import { Link, useLocation } from "react-router-dom";
-import { Carousel, Avatar } from "antd";
+import Fly from "../imgs/Fly.webm"
+import { Carousel } from "antd";
 
 const Slider = () => {
 
     return (
         <div className="List_Slide">
+            <div className="List_Slide_logo">
+                <p>The International Conference on Research in Engineering and Technology 2024</p>
+            </div>
             <Carousel autoplay>
                 <div className="Slide_video_fr">
-                    <video autoPlay muted className="List_Slide_img" loop src="https://firebasestorage.googleapis.com/v0/b/chat-app-5b28c.appspot.com/o/courses%2FFly.mp4?alt=media&token=edcd56d0-58f9-4a8f-a952-2b41a54f4a90"></video>
+                    <video autoPlay muted className="List_Slide_img" loop>
+                        <source src={Fly} type="video/webm" />
+                    </video>
                 </div>
-                {/* <div>
-                    <img
-                        src="https://www.tvu.edu.vn/wp-content/uploads/2022/01/TVUXuan2022_1.jpg"
-                        alt=""
-                        className="List_Slide_img"
-                    />
-                </div>
-                <div>
-                    <img
-                        src="https://www.tvu.edu.vn/wp-content/uploads/2021/12/anh1.jpg"
-                        alt=""
-                        className="List_Slide_img"
-                    />
-                </div>
-                <div>
-                    <img
-                        src="https://image.bnews.vn/MediaUpload/Org/2020/06/15/trung-tam-hoc-lieu-tvu.jpg"
-                        alt=""
-                        className="List_Slide_img"
-                    />
-                </div> */}
             </Carousel>
 
             <div className="List_Slide_stital">
                 <ul>
-                    <li className="modify_color_red">February 15th, 2024: Extension submission deadline (FIRM DEADLINE)</li>
 
-                    <li>March 31th, 2024: Notification of acceptance</li>
+                    <li className="modify_color_red">May 12, 2024: Submission Deadline</li>
 
-                    <li>April 20th, 2024: Camera ready and Registration</li>
+                    <li>May 25, 2024: Acceptance Notification</li>
 
-                    <li>July 19th-20th, 2024: Conference</li>
+                    <li className="modify_color_yellow">July 21, 22, 2024: Conference</li>
+
 
                 </ul>
             </div>

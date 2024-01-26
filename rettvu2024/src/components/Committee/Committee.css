@@ -28,12 +28,13 @@
     width: 100%;
 }
 
-.Committee_item>p {
+.Committee_item > p {
     white-space : pre-line;
     padding-left: 30px;
     margin      : 10px 10px;
     font-size   : 18px;
     line-height: 1.5;
+    list-style-type: circle;
 }
 
 .Committee_item div p {
@@ -43,8 +44,47 @@
     line-height: 1.5;
 }
 
+
+.Committee_item div ul li {
+    
+    margin      : 10px 10px;
+    font-size   : 18px;
+    line-height: 1.5;
+    list-style-type: disc;
+}
+.Committee_item div ul {
+    padding-left: 30px;
+}
+
+.Committee_right .Committee_item > p, .TravelInformation_right .Committee_item > p {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    gap: 15px;
+}
+
+.Committee_right .Committee_item > p > i, .TravelInformation_right .Committee_item > p > i {
+    opacity: 0;
+    color: rgb(0, 58, 159);
+    font-size: 15px;
+    transition: 0.1s;
+}
+
+.Committee_right .Committee_item > p:hover > i{
+    opacity: 1;
+}
+
+.TravelInformation_right .Committee_item > p:hover > i{
+    opacity: 1;
+}
+
+
+
+
 .Committee_item>h2 {
-    color           : rgb(0, 58, 159);
+    color           : #07223C;
     font-family     : Montserrat;
     background-color: rgba(224, 224, 224, 0.449);
     padding         : 14px 10px 14px 20px;
@@ -55,7 +95,7 @@
     position: relative;
     width: 100%;
     margin-bottom: 20px;
-    border-left: 5px solid #f7961e;
+    border-left: 5px solid #f8f046;
 }
 
 /* .Committee_item>h2::after{

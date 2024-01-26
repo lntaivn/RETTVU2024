@@ -12,10 +12,10 @@ const About = () => {
     const About_Important_Date = database?.About_Important_Date;
 
     return (
-        <>  
+        <>
             <div className="About">
                 <div className="About_content_text">
-                    <h2>About Tra Vinh University</h2>
+                    <h2>About RET</h2>
                     <p>{About_content.map((item) => item.Text)}</p>
                 </div>
                 <div className="About_content_topics">
@@ -33,6 +33,7 @@ const About = () => {
                         src="https://reviewedu.net/wp-content/uploads/2021/10/159839653_3724976647552257_3313842260640766887_n.jpg"
                         alt=""
                     />
+                    <span>Tra Vinh University</span>
                 </div>
             </div>
 
@@ -45,9 +46,9 @@ const About = () => {
                                 <i className="fa-solid fa-calendar-days"></i>
                             </div>
                             <div className="ACL-flex">
-                            <h3>{date.TitleDate}</h3>
-                                <h2 className={date.ChangeDate!=="" && "modify_underline"}>{date.Date}</h2>
-                                {date.ChangeDate!=="" && <h2>{date.ChangeDate}</h2>}
+                                <h3>{date.TitleDate}</h3>
+                                <h2 className={date.ChangeDate !== "" && "modify_underline"}>{date.Date}</h2>
+                                {date.ChangeDate !== "" && <h2>{date.ChangeDate}</h2>}
                             </div>
                         </div>
                     ))}
@@ -60,11 +61,16 @@ const About = () => {
             <div className="Speakers">
                 {Speakers.map((speaker) => (
                     <div className="Speakers_item">
-                        <div className="Speakers_item_img">
-                            <img src={speaker.imgSrc} alt="" />
-                        </div>
-                        <h3>{speaker.title}</h3>
-                        <span>{speaker.title}</span>
+                        {
+                            speaker.scholar !== "" ?
+                                <Link className="Speakers_item_img" to={speaker.scholar} target="_blank">
+                                    <img src={speaker.imgSrc} alt="" />
+                                </Link>
+                                : <Link className="Speakers_item_img">
+                                    <img src={speaker.imgSrc} alt="" />
+                                </Link>
+                        }
+                        <h3>{speaker.name}</h3>
                         <p>{speaker.topic}</p>
                     </div>
                 ))}
@@ -89,7 +95,7 @@ const About = () => {
                         <div className="Submission_Guideline_body">
                             <ul>
                                 {item.body.map((itemEvent, innerIndex) => (
-                                    <li key={innerIndex}>{itemEvent}</li>
+                                    <li key={innerIndex} dangerouslySetInnerHTML={{ __html: itemEvent }} />
                                 ))}
                             </ul>
                         </div>

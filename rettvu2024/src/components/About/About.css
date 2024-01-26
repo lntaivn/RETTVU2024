@@ -28,7 +28,7 @@
 }
 
 .About_content_topics h2, .About_content_text h2 {
-    color: rgb(0, 58, 159);
+    color: #07223C;
     font-size: 22px;
     margin-bottom: 10px;
 }
@@ -51,6 +51,19 @@
     object-fit: cover;
 }
 
+.About_image > span{
+    display: flex;
+    color: rgb(104, 113, 118);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px auto;
+    font-style: italic;
+}
+
 .About_Important_Date {
     display: flex;
     flex-direction: column;
@@ -64,18 +77,18 @@
 .About_Important_Date h1 {
     padding: 5px;
     text-align: center;
-    color: rgb(0, 58, 159);
+    color: #07223C;
     margin-bottom: 20px;
 }
 
 .import_date {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 0 50px;
 }
-
+    
 .About_content_layout {
     padding: 30px 30px;
     display: flex;
@@ -97,7 +110,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    color: rgb(0, 58, 159);
+    color: #07223C;
     gap: 10px;
 }
 
@@ -111,7 +124,7 @@
 }
 
 .Speakers {
-    width: 90%;
+    width: 60%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 30px;
@@ -129,7 +142,7 @@
 .Speakers_tital h1 {
     padding: 5px;
     text-align: center;
-    color: rgb(0, 58, 159);
+    color: #07223C;
 }
 
 .Speakers_item {
@@ -148,6 +161,7 @@
     overflow: hidden;
     aspect-ratio: 1/1;
     width: 100%;
+    position: relative;
 }
 
 .Speakers_item>.Speakers_item_img>img {
@@ -160,11 +174,10 @@
 
 
 
-
 .Submission_Guideline_tital h1 {
     padding: 5px;
     text-align: center;
-    color: rgb(0, 58, 159);
+    color: #07223C;
 }
 
 .Submission_Guideline {
@@ -199,7 +212,13 @@
     list-style-type: square;
 }
 
+.Submission_Guideline_body ul li{
+    margin-bottom: 10px;
+}
 
+.Submission_Guideline_body ul li a{
+    word-wrap: break-word;
+}
 
 
 

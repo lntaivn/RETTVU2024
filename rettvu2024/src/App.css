@@ -38,6 +38,7 @@ html {
   justify-content: center;
   color: rgb(0, 24, 66);
   gap: 10px;
+  text-align: center;
 }
 
 .Content {
@@ -49,3 +50,13 @@ html {
   position: relative;
 }
 
+.scroll-to-top-button{
+  cursor: pointer;
+  display: flex;
+  padding: 10px;
+  background-color: rgb(0, 52, 141);
+  color: white;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}

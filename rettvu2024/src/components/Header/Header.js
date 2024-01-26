@@ -41,12 +41,12 @@ const Header = () => {
             getItem(<Link to="/contact-us" onClick={() => {onClose()}}>Contact Us</Link>, 'contact us'),
         ]),
         getItem('History', 'sub4', null, [
-            getItem(<Link to="/ret-2023" onClick={() => {onClose()}}>RET 2023</Link>, 'ret-2023'),
-            getItem(<Link to="/ret-2022" onClick={() => {onClose()}}>RET 2022</Link>, 'ret-2022'),
-            getItem(<Link to="/ret-2021" onClick={() => {onClose()}}>RET 2021</Link>, 'ret-2021'),
-            getItem(<Link to="/ret-2020" onClick={() => {onClose()}}>RET 2020</Link>, 'ret-2020'),
-            getItem(<Link to="/ret-2019" onClick={() => {onClose()}}>RET 2019</Link>, 'ret-2019'),
-            getItem(<Link to="/ret-2018" onClick={() => {onClose()}}>RET 2018</Link>, 'ret-2018'),
+            getItem(<Link to="https://sites.google.com/tvu.edu.vn/ret/program" onClick={() => {onClose()}}>RET 2023</Link>, 'ret-2023'),
+            getItem(<Link to="https://sites.google.com/tvu.edu.vn/ret/history/ret-2022" onClick={() => {onClose()}}>RET 2022</Link>, 'ret-2022'),
+            getItem(<Link to="https://sites.google.com/tvu.edu.vn/ret/history/ret-2021" onClick={() => {onClose()}}>RET 2021</Link>, 'ret-2021'),
+            getItem(<Link to="https://sites.google.com/tvu.edu.vn/ret/history/ret-2020" onClick={() => {onClose()}}>RET 2020</Link>, 'ret-2020'),
+            getItem(<Link to="https://sites.google.com/tvu.edu.vn/ret/history/ret-2019" onClick={() => {onClose()}}>RET 2019</Link>, 'ret-2019'),
+            getItem(<Link to="https://sites.google.com/tvu.edu.vn/ret/history/ret-2018" onClick={() => {onClose()}}>RET 2018</Link>, 'ret-2018'),
         ]),
     ];
 
@@ -66,7 +66,7 @@ const Header = () => {
         <div className="Header">
             <div className="Header-left">
                 <div className="Header-logo" >
-                    <Link to="/"><Avatar src={logo} size={35} /></Link>
+                    <Link to="/"><Avatar src={logo} size={40} /></Link>
                     <Link to="/"><div className="Header-name">RET 2024</div></Link>
                 </div>
                 <div className="Header-tab">
@@ -109,12 +109,12 @@ const Header = () => {
                         <span>History</span><i class="fa-solid fa-caret-down"></i>
                     </h3>
                     <div className="Header-tab_child">
-                        <Link to="/ret-2023" className={location.pathname.startsWith('/ret-2023') ? "Header-link Heade-active" : "Header-link"}>RET 2023</Link>
-                        <Link to="/ret-2022" className={location.pathname.startsWith('/ret-2022') ? "Header-link Heade-active" : "Header-link"}>RET 2022</Link>
-                        <Link to="/ret-2021" className={location.pathname.startsWith('/ret-2021') ? "Header-link Heade-active" : "Header-link"}>RET 2021</Link>
-                        <Link to="/ret-2020" className={location.pathname.startsWith('/ret-2020') ? "Header-link Heade-active" : "Header-link"}>RET 2020</Link>
-                        <Link to="/ret-2019" className={location.pathname.startsWith('/ret-2019') ? "Header-link Heade-active" : "Header-link"}>RET 2019</Link>
-                        <Link to="/ret-2018" className={location.pathname.startsWith('/ret-2018') ? "Header-link Heade-active" : "Header-link"}>RET 2018</Link>
+                        <Link to="https://sites.google.com/tvu.edu.vn/ret/program" className={location.pathname.startsWith('/ret-2023') ? "Header-link Heade-active" : "Header-link"}>RET 2023</Link>
+                        <Link to="https://sites.google.com/tvu.edu.vn/ret/history/ret-2022" className={location.pathname.startsWith('/ret-2022') ? "Header-link Heade-active" : "Header-link"}>RET 2022</Link>
+                        <Link to="https://sites.google.com/tvu.edu.vn/ret/history/ret-2021" className={location.pathname.startsWith('/ret-2021') ? "Header-link Heade-active" : "Header-link"}>RET 2021</Link>
+                        <Link to="https://sites.google.com/tvu.edu.vn/ret/history/ret-2020" className={location.pathname.startsWith('/ret-2020') ? "Header-link Heade-active" : "Header-link"}>RET 2020</Link>
+                        <Link to="https://sites.google.com/tvu.edu.vn/ret/history/ret-2019" className={location.pathname.startsWith('/ret-2019') ? "Header-link Heade-active" : "Header-link"}>RET 2019</Link>
+                        <Link to="https://sites.google.com/tvu.edu.vn/ret/history/ret-2018" className={location.pathname.startsWith('/ret-2018') ? "Header-link Heade-active" : "Header-link"}>RET 2018</Link>
                     </div>
                 </div>
 

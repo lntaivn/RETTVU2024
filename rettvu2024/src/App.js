@@ -1,18 +1,19 @@
 
 import "./Responsive.css"
 import "./App.css"
-import { useContext, useEffect, useState } from "react";
-import { Layout, Menu, ConfigProvider, Avatar, Spin } from 'antd';
-import { Link, Route, Routes, useLocation } from 'react-router-dom';
+import { useEffect, useState } from "react";
+import { Layout, Spin } from 'antd';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Committee from "./components/Committee/Committee";
 import Header from "./components/Header/Header";
-import Map from "./components/map/map";
 import Footer from "./components/Footer/Footer";
-import logo from "./components/imgs/logoTVU.png";
 import About from "./components/About/About";
 import Program from "./components/Program/Program";
 import TravelInformation from "./components/Travel/TravelInformation";
+import TravelNote from "./components/Travel/TravelNote";
 import Slider from "./components/Slider/Slider";
+import Submission from "./components/Submission/submission";
+import ContactUs from "./components/Travel/ContactUs";
 
 const { Content } = Layout;
 
@@ -20,6 +21,7 @@ const App = () => {
 
   const location = useLocation();
   const [loading, setLoading] = useState(true);
+  const [showScrollButton, setShowScrollButton] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -32,6 +34,24 @@ const App = () => {
 
   }, [location.pathname])
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+
+      setShowScrollButton(scrollY > 250);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className='App'>
       {
@@ -39,25 +59,31 @@ const App = () => {
         <Spin fullscreen />
       }
       <Layout>
-        <div className='Banner'>
-          <Avatar src={logo} size={50} />
-          <h2>RET 2024 BY TRA VINH UNIVERSITY</h2>
-        </div>
+        {/* <div className='Banner'>
+          <h2>The International Conference on Research in Engineering and Technology 2024 (RET2024)</h2>
+        </div> */}
         <Header />
         <Content>
           <div className='Content'>
-            <Slider/>
+            <Slider />
             <Routes>
               <Route path="/" element={<About />} />
               <Route path="/committee" element={<Committee />} />
               <Route path="/program" element={<Program />} />
               <Route path="/about" element={<About />} />
+              <Route path="/submission" element={<Submission />} />
               <Route path="/travel-information" element={<TravelInformation />} />
-              <Route path="/map" element={<Map />} />
+              <Route path="/travel-notes" element={<TravelNote />} />
+              <Route path="/contact-us" element={<ContactUs />} />
             </Routes>
           </div>
         </Content>
         <Footer />
+        {showScrollButton && (
+          <div className="scroll-to-top-button" onClick={scrollToTop}>
+            <i class="fa-solid fa-chevron-up"></i>
+          </div>
+        )}
       </Layout>
     </div>
   );

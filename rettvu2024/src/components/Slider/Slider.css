@@ -15,6 +15,24 @@
     position: relative;
 }
 
+.List_Slide_logo{
+    top: 20px;
+    z-index: 6;
+    position: absolute;
+    font-size: 35px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    color: white;  
+    text-shadow: 2px 2px 5px #00000080;
+}
+
+.List_Slide_logo p {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .List_Slide_stital {
     position: absolute;
     bottom: 40px;
@@ -54,10 +72,22 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    image-rendering: pixelated;
 }
 
 /* ---------------------chỉnh Carousel------------------------------------- */
 
-.modify_color_red {
-    color: yellow
+.modify_color_yellow {
+    color: #f8f046;
 }
+
+.modify_color_red {
+    color: rgb(255, 64, 0);
+    text-shadow: 
+    -1px -1px 0 white,  
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white,
+    0 0 5px white;
+}
+
