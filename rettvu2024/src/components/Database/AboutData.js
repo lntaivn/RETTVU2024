@@ -30,7 +30,6 @@ const Submission_Guideline = [
             "All submitted papers should be the original ones and must not be considered elsewhere for under review or publication.",
             "Full-text papers (pdf only) should be submitted to the conference via the EasyChair system (<a target='_blank' href='https://easychair.org/conferences/?conf=tvu-ret2024'>https://easychair.org/conferences/?conf=tvu-ret2024</a>) for peer-reviewed by the conference committee.",
             "Accepted full papers will be presented onsite at the conference and published in the conference proceedings with the ISBN index. (Papers published in the proceedings must be presented by at least one author at the conference). <ul><li>Registration fee for each paper/author in the Proceedings: 500.000 VND</li></ul>",
-            "Excellent papers will be recommended to publish on The Scientific Journal of Tra Vinh University; ISSN: 2815-6072; E-ISSN: 2815-6099 or other Journals (if any).",
             "RET is respectful of the rights of authors and therefore we are intolerant of plagiarism. Manuscripts are expected to contain original work and should be cited adequately,properly, and academically. Consequently, the overall similarity rate of a manuscript should not exceed 30 percent, and the similarity rate to a single source should not exceed 15 percent.",
         ]
     }
