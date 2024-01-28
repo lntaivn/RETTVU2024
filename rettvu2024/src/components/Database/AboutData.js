@@ -1,7 +1,4 @@
 
-import prof1 from "../imgs/pro1.jpg"
-import prof2 from "../imgs/pro2.jpg"
-import prof3 from "../imgs/pro3.jpg"
 
 const About_content = [
     {
@@ -26,13 +23,13 @@ const About_content_topic = [
 const Submission_Guideline = [
     {
         header: [
-            "Full papers should be with at least 4 pages, but not exceed 10 pages. All papers are required to adopt the <Link to='https://www.ieee.org/content/dam/ieee-org/ieee/web/org/conferences/conference-template-a4.docx'> IEEE template </Link> format in English.",
+            "Full papers should be with at least 4 pages, but not exceed 10 pages. All papers are required to adopt the <a target='_blank' href='https://www.ieee.org/content/dam/ieee-org/ieee/web/org/conferences/conference-template-a4.docx'> IEEE template </a> format in English.",
             "Prospective authors are kindly invited to submit full-text papers including results, tables, figures, and references."
-        ],
+        ], 
         body: [
             "All submitted papers should be the original ones and must not be considered elsewhere for under review or publication.",
-            "Full-text papers (pdf only) should be submitted to the conference via the EasyChair system (https://easychair.org/conferences/?conf=tvu-ret2024) for peer-reviewed by the conference committee.",
-            "Accepted full papers will be presented onsite at the conference and published in the conference proceedings with the ISBN index. (Papers published in the proceedings must be presented by at least one author at the conference).",
+            "Full-text papers (pdf only) should be submitted to the conference via the EasyChair system (<a target='_blank' href='https://easychair.org/conferences/?conf=tvu-ret2024'>https://easychair.org/conferences/?conf=tvu-ret2024</a>) for peer-reviewed by the conference committee.",
+            "Accepted full papers will be presented onsite at the conference and published in the conference proceedings with the ISBN index. (Papers published in the proceedings must be presented by at least one author at the conference). <ul><li>Registration fee for each paper/author in the Proceedings: 500.000 VND</li></ul>",
             "Excellent papers will be recommended to publish on The Scientific Journal of Tra Vinh University; ISSN: 2815-6072; E-ISSN: 2815-6099 or other Journals (if any).",
             "RET is respectful of the rights of authors and therefore we are intolerant of plagiarism. Manuscripts are expected to contain original work and should be cited adequately,properly, and academically. Consequently, the overall similarity rate of a manuscript should not exceed 30 percent, and the similarity rate to a single source should not exceed 15 percent.",
         ]
@@ -75,7 +72,7 @@ const About_Important_Date = [
         ChangeDate: "",
     },
     {
-        Date: "26.05.2024",
+        Date: "25.05.2024",
         TitleDate: "Acceptance notification",
         ChangeDate: "",
     },

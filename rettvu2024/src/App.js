@@ -1,14 +1,12 @@
 
 import "./Responsive.css"
 import "./App.css"
-import { useContext, useEffect, useState } from "react";
-import { Layout, Menu, ConfigProvider, Avatar, Spin } from 'antd';
-import { Link, Route, Routes, useLocation } from 'react-router-dom';
+import { useEffect, useState } from "react";
+import { Layout, Spin } from 'antd';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Committee from "./components/Committee/Committee";
 import Header from "./components/Header/Header";
-import Map from "./components/map/map";
 import Footer from "./components/Footer/Footer";
-import logo from "./components/imgs/logoTVU.png";
 import About from "./components/About/About";
 import Program from "./components/Program/Program";
 import TravelInformation from "./components/Travel/TravelInformation";
@@ -61,10 +59,9 @@ const App = () => {
         <Spin fullscreen />
       }
       <Layout>
-        <div className='Banner'>
-          {/* <Avatar src={logo} size={50} /> */}
+        {/* <div className='Banner'>
           <h2>The International Conference on Research in Engineering and Technology 2024 (RET2024)</h2>
-        </div>
+        </div> */}
         <Header />
         <Content>
           <div className='Content'>
@@ -78,7 +75,6 @@ const App = () => {
               <Route path="/travel-information" element={<TravelInformation />} />
               <Route path="/travel-notes" element={<TravelNote />} />
               <Route path="/contact-us" element={<ContactUs />} />
-              <Route path="/map" element={<Map />} />
             </Routes>
           </div>
         </Content>
