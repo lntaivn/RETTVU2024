@@ -5,6 +5,7 @@ const About_content = [
         "Text": "The International Conference on Research in Engineering and Technology (RET) is held annually at Tra Vinh University. The conference is a forum for researchers to present and exchange ideas in the fields of Information Technology, Electrical and Electronic Engineering, Automation, Mechanical Engineering, Automotive Engineering, Civil Engineering, AI applications. Tra Vinh University welcomes potential authors to submit research papers to RET and share their latest research findings and valuable experiences with other engineers, scientists, and scholars around the world."
     }
 ];
+
 const About_content_topic = [
     {
         header: "The topics of the conference include, but are not limited to:",

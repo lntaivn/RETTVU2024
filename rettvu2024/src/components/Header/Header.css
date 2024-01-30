@@ -8,7 +8,7 @@
     top: 0;
     z-index: 99;
     background-color: #07223C;
-    gap: 30px;
+    gap: 20px;
 
 }
 
@@ -27,9 +27,20 @@
     margin-left: 10px;
 }
 
-.Header-right i{
+.Header-right i, .Header-back i{
+    cursor: pointer;
     color: white;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.Header-right i:hover, .Header-back i:hover{
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .Header-logo{
@@ -121,15 +132,33 @@
     display: flex;
     align-items: center;
     flex: 1;
+    max-width: 700px;
 }
 
 .Header-middle > input{
     height: 38px;
     font-weight: 500;
+    font-size: 15px;
     padding-left: 10px;
+    animation: animation-for-search 0.2s ease-in-out;
     width: 100%;
 }
 
+@keyframes animation-for-search {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+
+.Header-right-gr{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
 
 .Header-mobile-right{
     display: none;

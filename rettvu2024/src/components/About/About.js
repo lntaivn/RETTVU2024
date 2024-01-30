@@ -59,8 +59,8 @@ const About = () => {
                 <h1> Keynote Speakers</h1>
             </div>
             <div className="Speakers">
-                {Speakers.map((speaker) => (
-                    <div className="Speakers_item">
+                {Speakers.map((speaker, index) => (
+                    <div className="Speakers_item" key={index}>
                         {
                             speaker.scholar !== "" ?
                                 <Link className="Speakers_item_img" to={speaker.scholar} target="_blank">

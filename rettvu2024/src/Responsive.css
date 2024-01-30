@@ -1,7 +1,16 @@
 /* Mobile */
 @media screen and (max-width: 500px) {
     .Header {
-        padding: 0 30px !important;
+        padding: 0 25px !important;
+    }
+
+    .Header-for-search{
+        padding: 0 10px !important;
+        gap: 10px !important;
+    }
+
+    .Header-right-gr{
+        gap: 20px !important;
     }
 
     .Banner {
@@ -36,6 +45,7 @@
     .List_Slide_stital {
         font-size: 18px !important;
         padding  : 0 20px;
+        bottom: 25px !important;
     }
 
     .List_Slide_logo{
@@ -126,7 +136,7 @@
     }
 
     .Header-right {
-        display: none;
+        /* display: none; */
     }
 
     .Header-tab {
