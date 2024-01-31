@@ -25,7 +25,7 @@ const Slider = () => {
 
                     <li>May 25, 2024: Acceptance Notification</li>
 
-                    <li className="modify_color_yellow">July 21, 22, 2024: Conference</li>
+                    <li className="modify_color_yellow">June 21, 22, 2024: Conference</li>
 
 
                 </ul>

@@ -125,6 +125,7 @@
 
 .Speakers {
     width: 60%;
+    max-width: 800px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 30px;
@@ -219,8 +220,6 @@
 .Submission_Guideline_body ul li a{
     word-wrap: break-word;
 }
-
-
 
 
 /*                    modify                             */

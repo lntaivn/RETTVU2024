@@ -43,7 +43,8 @@ html {
 
 .Content {
   min-height: 1000px;
-  margin-bottom: 10px;
+  max-width: 2200px;
+  margin: 0 auto 20px;
 }
 
 .App{
