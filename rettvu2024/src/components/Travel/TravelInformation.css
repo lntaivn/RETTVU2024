@@ -86,7 +86,7 @@
     align-items: center;
     overflow: hidden;
     width: 100%;
-    height: 500px;
+    aspect-ratio: 16/9;
     margin-top: 20px;
 }
 
@@ -170,7 +170,7 @@
     position: relative;
     width: 100%;
 
-    border-left: 5px solid #f8f046;
+    border-left: 5px solid #f7961e;
 }
 
 .Contact-Card {

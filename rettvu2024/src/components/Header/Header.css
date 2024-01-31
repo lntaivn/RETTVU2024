@@ -51,13 +51,13 @@
 }
 
 .Header-link:hover{
-    background-color: #f8f046;
-    color:  #07223C;;
+    background-color: #ffde17;
+    color: rgb(0, 36, 98);
 }
 
 .Heade-active{
-    background-color: #f8f046;
-    color:  #07223C;;
+    background-color: #ffde17;
+    color: rgb(0, 36, 98);
     font-weight: 600;
 }
 
