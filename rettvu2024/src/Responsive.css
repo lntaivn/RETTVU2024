@@ -76,6 +76,14 @@
         gap   : 15px !important;
         margin: 10px 0 !important;
     }
+
+    .CallForPapers_img{
+        width: 90% !important;
+    }
+
+    .CallForPapers_img > a{
+        font-size: 16px !important;
+    }
 }
 
 @media screen and (max-width: 1000px) {

@@ -14,6 +14,7 @@ import TravelNote from "./components/Travel/TravelNote";
 import Slider from "./components/Slider/Slider";
 import Submission from "./components/Submission/submission";
 import ContactUs from "./components/Travel/ContactUs";
+import CallForPapers from "./components/CallForPapers/CallForPapers";
 
 const { Content } = Layout;
 
@@ -75,6 +76,7 @@ const App = () => {
               <Route path="/travel-information" element={<TravelInformation />} />
               <Route path="/travel-notes" element={<TravelNote />} />
               <Route path="/contact-us" element={<ContactUs />} />
+              <Route path="/call-for-papers" element={<CallForPapers />} />
             </Routes>
           </div>
         </Content>

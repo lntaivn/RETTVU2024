@@ -17,6 +17,10 @@ const About = () => {
                 <div className="About_content_text">
                     <h2>About RET</h2>
                     <p>{About_content.map((item) => item.Text)}</p>
+                    <Link className="Call-for-papers-link" to="/call-for-papers">
+                        <span>Call For Papers</span>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </Link>
                 </div>
                 <div className="About_content_topics">
                     {About_content_topic.map((item) => (
