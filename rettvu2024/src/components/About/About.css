@@ -101,7 +101,7 @@
 
 .fa-calendar-days {
     font-size: 60px;
-    color: rgba(0, 58, 159, 0.427);
+    color: #24629A;
     margin-bottom: 4px;
 }
 
@@ -211,6 +211,7 @@
 .Submission_Guideline_body ul {
     margin-left: 20px;
     list-style-type: square;
+ 
 }
 
 .Submission_Guideline_body ul li{
@@ -228,4 +229,16 @@
     color: #c0b7b7;
     font-size: 18px;
     font-weight: 500;
+}
+
+.Call-for-papers-link{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    color: #0074e1;
 }

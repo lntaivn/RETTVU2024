@@ -1,0 +1,24 @@
+.CallForPapers_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 30px auto;
+    gap: 30px;
+}
+
+.CallForPapers_img > img{
+    display: block;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.CallForPapers_img > a{
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    font-weight: 500;
+    gap: 8px;
+    color: #0074e1;
+}

@@ -36,15 +36,15 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(0, 24, 66);
+  color: #07223C;
   gap: 10px;
   text-align: center;
 }
 
 .Content {
-  min-height: 1000px;
+  min-height: 100vh;
+  margin: 0 auto 10px;
   max-width: 2200px;
-  margin: 0 auto 20px;
 }
 
 .App{
