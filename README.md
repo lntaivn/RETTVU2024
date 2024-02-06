@@ -2,37 +2,38 @@
 
 
 ### Giới thiệu
-Giới 
+Trang web của Hội thảo RET (The International Conference on Research in Engineering and Technology 2024)
 
-### Công nghệ Sử Dụng
+### Công nghệ sử dụng
 - ReactJS
 
 
-### Cài Đặt
+# Cài Đặt
 
-### Thiết lập dự án
+### Clone dự án
 
+```
 git clone https://github.com/lntaivn/RETTVU2024.git
+```
 
-### Chạy Dự Án
-Chạy dự án:
+### Di chuyển vào thư mục của dự án
+
+```
+cd rettvu2024
+```
+
+### Cài đặt các gói thư viện
+
 ```
 npm i
+```
+
+### Chạy dự án
+
+```
 npm start
 ```
 
-Mở trình duyệt truy cập vào ``` http://localhost:3000```
+Mở trình duyệt truy cập vào ```http://localhost:3000```
 
-### Liên Hệ
-Người quản lý dự án: Cao Ka Ka
-Email: lamngoctai2002@gmail.com
-Điện thoại: 0965577180
-
-Người quản lý dự án: Lâm Ngọc Tài
-Email: lamngoctai2002@gmail.com
-Điện thoại: 0965577180
-
-Người quản lý dự án: Nguyễn Thái Hưng
-Email: lamngoctai2002@gmail.com
-Điện thoại: 0965577180
 
