@@ -1,22 +1,22 @@
-.Footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #07223C;
-    color: white;
-    gap: 10px;
-    padding: 25px 30px;
-    text-align: center;
-    border-top: 4px solid #ffde17;
+.Footer {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    flex-direction  : column;
+    background-color: #21409A;
+    color           : white;
+    gap             : 10px;
+    padding         : 25px 30px;
+    text-align      : center;
+    border-top      : 4px solid #ffde17;
 }
 
-.Footer_info{
-    display: flex;
+.Footer_info {
+    display       : flex;
     flex-direction: column;
-    gap: 5px;
+    gap           : 5px;
 }
 
-.Footer_info > h3{
+.Footer_info>h3 {
     font-weight: 400;
 }
