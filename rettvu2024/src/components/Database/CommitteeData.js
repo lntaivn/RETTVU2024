@@ -1,40 +1,20 @@
 
 const Committees = [
     {
-        title: "Chairman Program Committee",
+        title: "General Chairs",
         content: [
             "Assoc. Prof. Dr. Nguyen Minh Hoa – Rector of Tra Vinh University",
+            "Dr. Phan Quoc Nghia – Vice Rector of Tra Vinh University",
         ],
     },
     {
-        title: "Vice Chairman Program Committee",
+        title: "Program Chairs",
         content: [
-            "Dr. Phan Quoc Nghia – Vice Rector of Tra Vinh University",
+            "Assoc. Prof. Dr. Nguyen Thai Son – Head of the Resource Development Institute",
             "Dr. Vo Phuoc Hung – Head of the Faculty of Engineering and Technology (Permanent)",
             "Dr. Huynh Cong Khoi – Head of Science and Technology Office, Tra Vinh University",
-        ],
-    },
-    {
-        title: "Technical Program Chairs",
-        content: [
-            "Dr. Nguyen Nhut Lam – Vice Head of the Faculty of Engineering and Technology",
-        ],
-    },
-    {
-        
-        title: "Deputy Program Committee Heads",
-        content: [
-            "Prof. Assoc. Dr. Nguyen Thai Son – Head of the Resource Development Institute",
             "Dr. Pham Quoc Phong – Vice Head of the Faculty of Engineering and Technology",
-        ],
-    },
-    {
-        title: "Co-Deputy Program Committee Heads",
-        content: [
-            "Dr. Truong Van Men – Vice Head of the Mechanical Engineering Department",
-            "Dr. Nguyen Bao An – Vice Head of the Information Technology Department",
-            "Dr. Cao Phuong Thao – Head of the Electrical and Electronic Department",
-            "Dr. Huynh Van Hiep – Head of the Construction Department",
+            "Dr. Nguyen Nhut Lam – Vice Head of the Faculty of Engineering and Technology",
         ],
     },
     {
@@ -42,7 +22,6 @@ const Committees = [
         content: [
             "Prof. Dr. Tang-Chieh Liu - FCU, Taiwan",
             "Prof. Dr. Cheng Ching-Hwa - FCU, Taiwan",
-            "Prof. Dr. Nguyen Tat Dac - Tra Vinh University",
             "Prof. Dr. Tze-Yee-Ho - FCU, Taiwan",
             "Assoc. Prof. Dr. Do Duc Ton - Nazarbayev University, Kazakhstan",
             "Assoc. Prof. Dr. Lu Jan Huai – Taiwan",
@@ -54,6 +33,10 @@ const Committees = [
             "Dr. Thai Minh Tuan - Can Tho University",
             "Dr. Bui Van Tung – Thai Nguyen University",
             "Dr. Dang Xuan Trong – Hositco, Vietnam",
+            "Dr. Truong Van Men – Tra Vinh University",
+            "Dr. Nguyen Bao An – Tra Vinh University",
+            "Dr. Cao Phuong Thao – Tra Vinh University",
+            "Dr. Huynh Van Hiep – Tra Vinh University",
             "Dr. Hoang Trung Kien - Tra Vinh University",
             "Dr. Le Tuong Thanh - Tra Vinh University",
             "Dr. Ngo Huu Huy - Thai Nguyen University",

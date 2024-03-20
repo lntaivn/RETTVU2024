@@ -17,6 +17,10 @@ const About = () => {
                 <div className="About_content_text">
                     <h2>About RET</h2>
                     <p>{About_content.map((item) => item.Text)}</p>
+                    <Link className="Call-for-papers-link" to="/call-for-papers">
+                        <span>Call For Papers</span>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </Link>
                 </div>
                 <div className="About_content_topics">
                     {About_content_topic.map((item) => (
@@ -59,8 +63,8 @@ const About = () => {
                 <h1> Keynote Speakers</h1>
             </div>
             <div className="Speakers">
-                {Speakers.map((speaker) => (
-                    <div className="Speakers_item">
+                {Speakers.map((speaker, index) => (
+                    <div className="Speakers_item" key={index}>
                         {
                             speaker.scholar !== "" ?
                                 <Link className="Speakers_item_img" to={speaker.scholar} target="_blank">

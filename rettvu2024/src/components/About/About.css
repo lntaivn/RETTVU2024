@@ -126,8 +126,9 @@
 }
 
 .Speakers {
-    width                : 60%;
-    display              : grid;
+    width: 60%;
+    max-width: 800px;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap                  : 30px;
     margin               : 0 auto;
@@ -212,6 +213,7 @@
 .Submission_Guideline_body ul {
     margin-left    : 20px;
     list-style-type: square;
+ 
 }
 
 .Submission_Guideline_body ul li {
@@ -223,12 +225,34 @@
 }
 
 
-
-
 /*                    modify                             */
 .modify_underline {
     text-decoration: line-through;
     color          : #c0b7b7;
     font-size      : 18px;
     font-weight    : 500;
+}
+
+.Call-for-papers-link{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    color: #0074e1;
+}
+
+.Call-for-papers-link{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    color: #0074e1;
 }
