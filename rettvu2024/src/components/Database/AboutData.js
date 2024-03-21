@@ -30,7 +30,7 @@ const Submission_Guideline = [
         body: [
             "All submitted papers should be the original ones and must not be considered elsewhere for under review or publication.",
             "Full-text papers (pdf only) should be submitted to the conference via the EasyChair system (<a target='_blank' href='https://easychair.org/conferences/?conf=tvu-ret2024'>https://easychair.org/conferences/?conf=tvu-ret2024</a>) for peer-reviewed by the conference committee.",
-            "Accepted full papers will be presented onsite at the conference and published in the conference proceedings with the ISBN index. (Papers published in the proceedings must be presented by at least one author at the conference). <ul><li>Registration fee for each paper/author in the Proceedings: 500.000 VND</li></ul>",
+            "Accepted full papers will be presented onsite at the conference and published in the conference proceedings with the ISBN index. (Papers published in the proceedings must be presented by at least one author at the conference). <ul><li>Registration fee for each paper/author in the Proceedings: 500.000 VND (20USD)</li></ul>",
             "RET is respectful of the rights of authors and therefore we are intolerant of plagiarism. Manuscripts are expected to contain original work and should be cited adequately,properly, and academically. Consequently, the overall similarity rate of a manuscript should not exceed 30 percent, and the similarity rate to a single source should not exceed 15 percent.",
         ]
     }
@@ -52,12 +52,19 @@ const Speakers = [
         scholar: "https://scholar.google.com/citations?hl=en&user=8C_C3NQAAAAJ"
     },
     {
+        imgSrc: "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=b5BVqa4AAAAJ&citpid=2",
+        name: "Prof. Francis Ann R. Sy",
+        title: "Professor",
+        topic: "Vice President for Research, Innovation and Extension Services, Southern Leyte State University, Philippines",
+        scholar: "https://scholar.google.com/citations?user=b5BVqa4AAAAJ&hl=en"
+    },
+    {
         imgSrc: "https://firebasestorage.googleapis.com/v0/b/ret-tvu.appspot.com/o/RET%2Fpro3.jpg?alt=media&token=dd350825-7553-45e0-b951-7ef14a3d8e07",
         name: "Dr. Ming-Hung Wang",
         title: "Professor",
         topic: "National Chung Cheng University, Taiwan",
         scholar: "https://scholar.google.com/citations?user=ZuP97eoAAAAJ"
-    }
+    },
 ];
 
 const About_Important_Date = [

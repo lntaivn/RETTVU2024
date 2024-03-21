@@ -11,7 +11,7 @@ const CallForPapers = () => {
                 <img src={CFP} alt="" />
                 <a href={CFP} download="CallForPapers.png">
                     <i class="fa-solid fa-cloud-arrow-down"></i>
-                    <span>Tải xuống hình ảnh</span>
+                    <span>Download Image</span>
                 </a>
             </div>
         </div>
