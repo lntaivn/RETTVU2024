@@ -15,7 +15,7 @@
     position: relative;
 }
 
-.List_Slide_logo{
+.List_Slide_logo {
     top: 20px;
     z-index: 6;
     position: absolute;
@@ -23,7 +23,7 @@
     font-weight: bold;
     width: 100%;
     text-align: center;
-    color: white;  
+    color: white;
     text-shadow: 2px 2px 5px #00000080;
 }
 
@@ -62,12 +62,12 @@
 }
 
 /* Thay đổi kích thước Carousel ở đây */
-.Slide_video_fr{
+.Slide_video_fr {
     height: 450px;
     position: relative;
 }
 
-.Slide_video_fr > img, video{
+.Slide_video_fr>img, video {
     display: block;
     height: 100%;
     width: 100%;
@@ -83,11 +83,64 @@
 
 .modify_color_red {
     color: rgb(255, 64, 0);
-    text-shadow: 
-    -1px -1px 0 white,  
-    1px -1px 0 white,
-    -1px 1px 0 white,
-    1px 1px 0 white,
-    0 0 5px white;
+    text-shadow:
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white,
+        0 0 5px white;
 }
 
+/* Count Down */
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    margin: 0 auto;
+    width: 80%;
+    gap: 30px;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.countdown-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 5px;
+    width: 80px;
+    aspect-ratio: 1/1;
+    background-color: #213f9aea;
+    border-bottom: 3px #ffde17 solid;
+}
+
+.countdown-text {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 500px) {
+    .countdown-number {
+        width: 55px;
+        font-size: 25px;
+    }
+
+    .countdown {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .countdown-text {
+        font-size: 14px;
+    }
+}
