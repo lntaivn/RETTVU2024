@@ -1,30 +1,30 @@
 .About {
-    display: grid;
-    gap: 40px;
-    padding: 40px;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
+    display            : grid;
+    gap                : 40px;
+    padding            : 40px;
+    justify-content    : center;
+    align-items        : flex-start;
+    width              : 100%;
     grid-template-areas: "about img"
         "topic img";
     grid-template-rows: auto 1fr;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 30px;
-    line-height: 1.5;
+    margin-bottom        : 30px;
+    line-height          : 1.5;
 }
 
 .About_content_text {
-    grid-area: about;
+    grid-area : about;
     text-align: justify;
-    height: fit-content;
+    height    : fit-content;
 }
 
 .About_content_topics {
-    grid-area: topic;
-    display: flex;
+    grid-area     : topic;
+    display       : flex;
     flex-direction: column;
-    align-items: flex-start;
-    height: fit-content;
+    align-items   : flex-start;
+    height        : fit-content;
 }
 
 .About_content_topics h2, .About_content_text h2 {
@@ -33,21 +33,22 @@
     margin-bottom: 10px;
 }
 
-.About_content_topics p, .About_content_text p {
-    font-size: 18px;
+.About_content_topics p,
+.About_content_text p {
+    font-size    : 18px;
     margin-bottom: 5px;
 }
 
 .About_image {
     grid-area: img;
-    width: 100%;
-    height: 550px;
+    width    : 100%;
+    height   : 550px;
 }
 
 .About_image img {
-    display: block;
-    width: 100%;
-    height: 100%;
+    display   : block;
+    width     : 100%;
+    height    : 100%;
     object-fit: cover;
 }
 
@@ -59,19 +60,19 @@
     line-height: 20px;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    margin: 10px auto;
-    font-style: italic;
+    text-align     : center;
+    margin         : 10px auto;
+    font-style     : italic;
 }
 
 .About_Important_Date {
-    display: flex;
+    display       : flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 80px;
-    font-size: 15px;
-    line-height: 1.5;
+    align-items   : center;
+    width         : 100%;
+    margin-bottom : 80px;
+    font-size     : 15px;
+    line-height   : 1.5;
 }
 
 .About_Important_Date h1 {
@@ -82,32 +83,33 @@
 }
 
 .import_date {
-    display: grid;
-    width: 100%;
+    display              : grid;
+    width                : 100%;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 0 50px;
+    gap                  : 20px;
+    padding              : 0 50px;
 }
 
+
 .About_content_layout {
-    padding: 30px 30px;
-    display: flex;
+    padding    : 30px 30px;
+    display    : flex;
     align-items: center;
-    gap: 25px;
-    width: 100%;
-    border: 1px solid #c0b7b7;
+    gap        : 25px;
+    width      : 100%;
+    border     : 1px solid #c0b7b7;
 
 }
 
 .fa-calendar-days {
-    font-size: 60px;
-    color: #24629A;
+    font-size    : 60px;
+    color        : rgba(0, 58, 159, 0.427);
     margin-bottom: 4px;
 }
 
 .ACL-flex {
-    display: flex;
-    flex-direction: column;
+    display        : flex;
+    flex-direction : column;
     justify-content: flex-start;
     align-items: flex-start;
     color: #21409A;
@@ -115,11 +117,13 @@
 }
 
 .ACL-flex h3 {
+.ACL-flex h3 {
     color: #000000;
 }
 
 .ACL-flex h2 {
     font-weight: bold;
+
 
 }
 
@@ -128,72 +132,72 @@
     max-width: 800px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 30px;
-    margin: 0 auto;
-    justify-items: center;
-    text-align: left;
-    padding-bottom: 100px;
+    gap                  : 30px;
+    margin               : 0 auto;
+    justify-items        : center;
+    text-align           : left;
+    padding-bottom       : 100px;
 }
 
 .Speakers_tital {
-    width: 100%;
+    width        : 100%;
     margin-bottom: 40px;
 }
 
 .Speakers_tital h1 {
-    padding: 5px;
+    padding   : 5px;
     text-align: center;
     color: #21409A;
 }
 
 .Speakers_item {
-    display: flex;
+    display       : flex;
     flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    text-align: center;
-    width: 100%;
+    gap           : 10px;
+    align-items   : center;
+    text-align    : center;
+    width         : 100%;
 }
 
 .Speakers_item>.Speakers_item_img {
-    display: flex;
-    align-items: center;
+    display        : flex;
+    align-items    : center;
     justify-content: center;
-    overflow: hidden;
-    aspect-ratio: 1/1;
-    width: 100%;
-    position: relative;
+    overflow       : hidden;
+    aspect-ratio   : 1/1;
+    width          : 100%;
+    position       : relative;
 }
 
 .Speakers_item>.Speakers_item_img>img {
-    display: block;
+    display   : block;
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    width     : 100%;
+    height    : 100%;
 }
 
 
 
 
 .Submission_Guideline_tital h1 {
-    padding: 5px;
+    padding   : 5px;
     text-align: center;
     color: #21409A;
 }
 
 .Submission_Guideline {
-    width: 100%;
-    text-align: justify;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width          : 100%;
+    text-align     : justify;
+    padding        : 30px;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
     justify-content: center;
-    font-size: 18px;
-    line-height: 2;
-    gap: 5px;
-    max-width: 1100px;
-    margin: 0 auto;
+    font-size      : 18px;
+    line-height    : 2;
+    gap            : 5px;
+    max-width      : 1100px;
+    margin         : 0 auto;
 }
 
 .Submission_Guideline_header {
@@ -209,15 +213,17 @@
 }
 
 .Submission_Guideline_body ul {
-    margin-left: 20px;
+    margin-left    : 20px;
     list-style-type: square;
 
 }
 
 .Submission_Guideline_body ul li {
+.Submission_Guideline_body ul li {
     margin-bottom: 10px;
 }
 
+.Submission_Guideline_body ul li a {
 .Submission_Guideline_body ul li a {
     word-wrap: break-word;
 }

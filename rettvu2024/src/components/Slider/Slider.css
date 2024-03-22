@@ -3,15 +3,15 @@
 }
 
 .list_Slide_img .Slide-img img {
-    display: block;
-    width: 100%;
+    display   : block;
+    width     : 100%;
     object-fit: cover;
-    height: 100%;
+    height    : 100%;
 }
 
 /* ---------------------------------------- */
 .List_Slide {
-    width: 100%;
+    width   : 100%;
     position: relative;
 }
 
@@ -28,37 +28,37 @@
 }
 
 .List_Slide_logo p {
-    width: 100%;
+    width    : 100%;
     max-width: 800px;
-    margin: 0 auto;
+    margin   : 0 auto;
 }
 
 .List_Slide_stital {
-    position: absolute;
-    bottom: 40px;
-    text-align: center;
+    position   : absolute;
+    bottom     : 40px;
+    text-align : center;
     font-weight: bold;
-    font-size: 22px;
-    color: white;
+    font-size  : 22px;
+    color      : white;
     line-height: 1.5;
-    z-index: 6;
-    width: 100%;
+    z-index    : 6;
+    width      : 100%;
 }
 
 .List_Slide_stital ul {
-    list-style: none !important;
+    list-style : none !important;
     text-shadow: 2px 2px 5px #00000080;
 }
 
 .List_Slide_overplay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
+    width           : 100%;
+    height          : 100%;
+    position        : absolute;
+    bottom          : 0;
+    left            : 0;
+    display         : block;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0));
-    z-index: 5;
+    z-index         : 5;
 }
 
 /* Thay đổi kích thước Carousel ở đây */
@@ -78,11 +78,17 @@
 /* ---------------------chỉnh Carousel------------------------------------- */
 
 .modify_color_yellow {
-    color: #f8f046;
+    color: #ffde17;
 }
 
 .modify_color_red {
     color: rgb(255, 64, 0);
+    text-shadow:
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white,
+        0 0 5px white;
     text-shadow:
         -1px -1px 0 white,
         1px -1px 0 white,

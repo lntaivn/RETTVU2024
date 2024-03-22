@@ -14,26 +14,26 @@
 }
 
 .Committee_left {
-    flex: 1;
+    flex : 1;
     width: 100%;
 }
 
 .Slide-img {
     margin-bottom: 30px;
-    /* object-fit: cover; */ 
+    /* object-fit: cover; */
 }
 
 .Committee_item {
     margin-bottom: 50px;
-    width: 100%;
+    width        : 100%;
 }
 
-.Committee_item > p {
-    white-space : pre-line;
-    padding-left: 30px;
-    margin      : 10px 10px;
-    font-size   : 18px;
-    line-height: 1.5;
+.Committee_item>p {
+    white-space    : pre-line;
+    padding-left   : 30px;
+    margin         : 10px 10px;
+    font-size      : 18px;
+    line-height    : 1.5;
     list-style-type: circle;
 }
 
@@ -41,42 +41,45 @@
     padding-left: 30px;
     margin      : 10px 10px;
     font-size   : 18px;
-    line-height: 1.5;
+    line-height : 1.5;
 }
 
 
 .Committee_item div ul li {
-    
-    margin      : 10px 10px;
-    font-size   : 18px;
-    line-height: 1.5;
+
+    margin         : 10px 10px;
+    font-size      : 18px;
+    line-height    : 1.5;
     list-style-type: disc;
 }
+
 .Committee_item div ul {
     padding-left: 30px;
 }
 
-.Committee_right .Committee_item > p, .TravelInformation_right .Committee_item > p {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+.Committee_right .Committee_item>p,
+.TravelInformation_right .Committee_item>p {
+    cursor         : pointer;
+    display        : flex;
+    align-items    : center;
     justify-content: flex-start;
-    width: fit-content;
-    gap: 15px;
+    width          : fit-content;
+    gap            : 15px;
 }
 
-.Committee_right .Committee_item > p > i, .TravelInformation_right .Committee_item > p > i {
-    opacity: 0;
-    color: rgb(0, 58, 159);
-    font-size: 15px;
+.Committee_right .Committee_item>p>i,
+.TravelInformation_right .Committee_item>p>i {
+    opacity   : 0;
+    color     : rgb(0, 58, 159);
+    font-size : 15px;
     transition: 0.1s;
 }
 
-.Committee_right .Committee_item > p:hover > i{
+.Committee_right .Committee_item>p:hover>i {
     opacity: 1;
 }
 
-.TravelInformation_right .Committee_item > p:hover > i{
+.TravelInformation_right .Committee_item>p:hover>i {
     opacity: 1;
 }
 
@@ -92,10 +95,10 @@
     font-size       : 20px;
     text-align      : left;
     text-transform  : capitalize;
-    position: relative;
-    width: 100%;
-    margin-bottom: 20px;
-    border-left: 5px solid #f8f046;
+    position        : relative;
+    width           : 100%;
+    margin-bottom   : 20px;
+    border-left     : 5px solid #ffde17;
 }
 
 /* .Committee_item>h2::after{
@@ -137,6 +140,6 @@
     font-size   : 1.1rem;
 } */
 
-.Committee_item > p > a{
+.Committee_item>p>a {
     color: rgb(0, 73, 200);
 }
