@@ -83,6 +83,7 @@ const About = () => {
             <div className="Submission_Guideline_tital">
                 <h1> Submission Guidelines</h1>
             </div>
+            
             <div className="Submission_Guideline">
                 {Submission_Guideline.map((item, index) => (
                     <div key={index}>

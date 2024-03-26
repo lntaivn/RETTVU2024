@@ -38,6 +38,13 @@ const Submission_Guideline = [
 
 const Speakers = [
     {
+        imgSrc: "https://firebasestorage.googleapis.com/v0/b/ret-tvu.appspot.com/o/RET%2FAdam.jpg?alt=media&token=d8f0e616-8640-4ae3-848f-708f6cced7c1",
+        name: "Dr. Phillip M. Adams",
+        title: "Associate Professor",
+        topic: "Visiting Professor, Tra Vinh University",
+        scholar: ""
+    },
+    {
         imgSrc: "https://firebasestorage.googleapis.com/v0/b/ret-tvu.appspot.com/o/RET%2Fpro1.jpg?alt=media&token=7ede8c39-054a-4d83-8340-42e2dc9398be",
         name: "Assoc.Prof. Lu Jau Huai",
         title: "Associate Professor",

@@ -98,7 +98,6 @@
     gap: 25px;
     width: 100%;
     border: 1px solid #c0b7b7;
-
 }
 
 .fa-calendar-days {
@@ -117,137 +116,131 @@
 }
 
 .ACL-flex h3 {
-    .ACL-flex h3 {
-        color: #000000;
-    }
+    color: #000000;
+}
 
-    .ACL-flex h2 {
-        font-weight: bold;
+.ACL-flex h2 {
+    font-weight: bold;
 
 
-    }
+}
 
-    .Speakers {
-        width: 60%;
-        max-width: 800px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 30px;
-        margin: 0 auto;
-        justify-items: center;
-        text-align: left;
-        padding-bottom: 100px;
-    }
+.Speakers {
+    width: 80%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 30px;
+    margin: 0 auto;
+    justify-items: center;
+    text-align: left;
+    padding-bottom: 100px;
+}
 
-    .Speakers_tital {
-        width: 100%;
-        margin-bottom: 40px;
-    }
+.Speakers_tital {
+    width: 100%;
+    margin-bottom: 40px;
+}
 
-    .Speakers_tital h1 {
-        padding: 5px;
-        text-align: center;
-        color: #21409A;
-    }
+.Speakers_tital h1 {
+    padding: 5px;
+    text-align: center;
+    color: #21409A;
+}
 
-    .Speakers_item {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-    }
+.Speakers_item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
 
-    .Speakers_item>.Speakers_item_img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        aspect-ratio: 1/1;
-        width: 100%;
-        position: relative;
-    }
+.Speakers_item>.Speakers_item_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    width: 100%;
+    position: relative;
+}
 
-    .Speakers_item>.Speakers_item_img>img {
-        display: block;
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
-
+.Speakers_item>.Speakers_item_img>img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 
 
 
-    .Submission_Guideline_tital h1 {
-        padding: 5px;
-        text-align: center;
-        color: #21409A;
-    }
 
-    .Submission_Guideline {
-        width: 100%;
-        text-align: justify;
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: 18px;
-        line-height: 2;
-        gap: 5px;
-        max-width: 1100px;
-        margin: 0 auto;
-    }
+.Submission_Guideline_tital h1 {
+    padding: 5px;
+    text-align: center;
+    color: #21409A;
+}
 
-    .Submission_Guideline_header {
-        width: 100%;
-    }
+.Submission_Guideline {
+    width: 100%;
+    text-align: justify;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 2;
+    gap: 5px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
 
-    .Submission_Guideline_body {
-        width: 100%;
-    }
+.Submission_Guideline_header {
+    width: 100%;
+}
 
-    .Submission_Guideline_header p {
-        font-size: 18px;
-    }
+.Submission_Guideline_body {
+    width: 100%;
+}
 
-    .Submission_Guideline_body ul {
-        margin-left: 20px;
-        list-style-type: square;
+.Submission_Guideline_header p {
+    font-size: 18px;
+}
 
-    }
+.Submission_Guideline_body ul {
+    margin-left: 20px;
+    list-style-type: square;
 
-    .Submission_Guideline_body ul li {
-        .Submission_Guideline_body ul li {
-            margin-bottom: 10px;
-        }
+}
 
-        .Submission_Guideline_body ul li a {
-            .Submission_Guideline_body ul li a {
-                word-wrap: break-word;
-            }
+.Submission_Guideline_body ul li {
+    margin-bottom: 10px;
+}
+
+.Submission_Guideline_body ul li a {
+    word-wrap: break-word;
+}
 
 
-            /*                    modify                             */
-            .modify_underline {
-                text-decoration: line-through;
-                color: #c0b7b7;
-                font-size: 18px;
-                font-weight: 500;
-            }
+/*                    modify                             */
+.modify_underline {
+    text-decoration: line-through;
+    color: #c0b7b7;
+    font-size: 18px;
+    font-weight: 500;
+}
 
-            .Call-for-papers-link {
-                margin-top: 20px;
-                font-size: 18px;
-                font-weight: 500;
-                display: flex;
-                gap: 8px;
-                align-items: center;
-                justify-content: flex-start;
-                width: fit-content;
-                color: #21409A;
-            }
-        }
-    }
+.Call-for-papers-link {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    color: #21409A;
 }
