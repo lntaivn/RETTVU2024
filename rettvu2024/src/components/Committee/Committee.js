@@ -1,16 +1,27 @@
 import { Link } from "react-router-dom";
 import "./Committee.css";
 import { Carousel } from "antd";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { DataStore } from "../Database";
+import { getCommittees } from "../../service/DataService";
 
 const Committee = () => {
 
-    const database = useContext(DataStore);
+    // const Committees = database?.Committees;
 
-    console.log(database?.Committees);
+    const [Committees, setCommittees] = useState([]);
 
-    const Committees = database?.Committees;
+    const handleGetCommittees = async () => {
+        try {
+            const response = await getCommittees();
+            setCommittees(response.data);
+        } catch (error) {
+        }
+    };
+
+    useEffect(() => {
+        handleGetCommittees();
+    }, []);
 
     return (
         <div className="Committee">

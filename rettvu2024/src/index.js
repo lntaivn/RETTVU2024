@@ -3,15 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { DataStoreProvider } from './components/Database';
+import Admin from './components/Admin/Admin';
+import Verify from './components/Admin/Verify';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <DataStoreProvider>
-        <App />
+        <Routes>
+          <Route path="/verify" element={<Verify />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/*" element={<App />} />
+        </Routes>
       </DataStoreProvider>
     </BrowserRouter>
   </React.StrictMode>

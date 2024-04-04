@@ -110,7 +110,7 @@ const Header = () => {
                                         ? "Header-link Heade-group-active Header-group"
                                         : "Header-link Header-group"}
                                 >
-                                    <span>Support</span><i class="fa-solid fa-caret-down"></i>
+                                    <span>Support</span><i className="fa-solid fa-caret-down"></i>
                                 </h3>
                                 <div className="Header-tab_child">
                                     <Link to="/travel-information" className={location.pathname.startsWith('/travel-information') ? "Header-link Heade-active" : "Header-link"}>Travel Information</Link>
@@ -129,7 +129,7 @@ const Header = () => {
                                         ? "Header-link Heade-group-active Header-group"
                                         : "Header-link Header-group"}
                                 >
-                                    <span>History</span><i class="fa-solid fa-caret-down"></i>
+                                    <span>History</span><i className="fa-solid fa-caret-down"></i>
                                 </h3>
                                 <div className="Header-tab_child">
                                     <Link to="https://sites.google.com/tvu.edu.vn/ret/program" className={location.pathname.startsWith('/ret-2023') ? "Header-link Heade-active" : "Header-link"}>RET 2023</Link>
@@ -146,13 +146,13 @@ const Header = () => {
                                 <i className="fa-solid fa-magnifying-glass"></i>
                             </div>
                             <div className="Header-mobile-right" onClick={() => { showDrawer() }}>
-                                <i class="fa-solid fa-bars"></i>
+                                <i className="fa-solid fa-bars"></i>
                             </div>
                         </div>
                     </> :
                     <>
                         <div className="Header-back" onClick={() => { setOpenSearch(!openSearch) }}>
-                            <i class="fa-solid fa-arrow-left"></i>
+                            <i className="fa-solid fa-arrow-left"></i>
                         </div>
                         <div className="Header-middle">
                             <input
@@ -168,7 +168,7 @@ const Header = () => {
                             {
                                 searchInput !== "" ?
                                     <i className="fa-solid fa-magnifying-glass" onClick={() => { handleSearchClick() }}></i>
-                                    : <i class="fa-solid fa-xmark" onClick={() => { setOpenSearch(!openSearch) }}></i>
+                                    : <i className="fa-solid fa-xmark" onClick={() => { setOpenSearch(!openSearch) }}></i>
                             }
                         </div>
                     </>

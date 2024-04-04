@@ -1,34 +1,40 @@
 import { Link } from "react-router-dom";
 import "./TravelInformation.css";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { DataStore } from "../Database";
+import { getTravelInfo } from "../../service/DataService";
 
 
 const TravelInformation = () => {
 
-    const database = useContext(DataStore);
-    const TralvelInfor = database?.TralvelInfor;
+    const [TravelInfo, setTravelInfo] = useState([]);
+
+    const handleGetTravelInfo = async () => {
+        try {
+            const response = await getTravelInfo();
+            setTravelInfo(response.data);
+        } catch (error) {
+        }
+    };
+
+    useEffect(() => {
+        handleGetTravelInfo();
+    }, []);
 
     return (
         <div className="TravelInformation">
             <div className="TravelInformation_left">
                 {
-                    TralvelInfor?.map((tralvel, index) => {
+                    TravelInfo?.map((travel, index) => {
                         return (
                             <div className="TravelInformation_item" key={index}>
-                                <h2>{tralvel.title}</h2>
-                                {
-                                    tralvel.description.map((description, index) => {
-                                        return (
-                                            <p key={index}>{description}</p>
-                                        )
-                                    })
-                                }
+                                <h2>{travel.title}</h2>
+                                <p>{travel.description}</p>
 
                                 <div className="TravelInformation_item_img">
-                                    <img src={tralvel.image} alt="" />
+                                    <img src={travel.image} alt="" />
                                 </div>
-                                <span>{tralvel.imageName}</span>
+                                <span>{travel.imageName}</span>
                             </div >
                         )
                     })

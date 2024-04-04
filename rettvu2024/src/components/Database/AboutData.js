@@ -62,7 +62,7 @@ const Speakers = [
         imgSrc: "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=b5BVqa4AAAAJ&citpid=2",
         name: "Prof. Francis Ann R. Sy",
         title: "Professor",
-        topic: "Vice President for Research, Innovation and Extension Services, Southern Leyte State University, Philippines",
+        topic: "Vice President for Research, Innovation and Extension Services, Southern Leyte State University, the Philippines",
         scholar: "https://scholar.google.com/citations?user=b5BVqa4AAAAJ&hl=en"
     },
     {
