@@ -135,6 +135,14 @@
     font-size: 16px;
 }
 
+.old_day{
+    text-decoration: line-through;
+    color: white;
+    font-weight: 600;
+    text-shadow: none;
+    opacity: 0.9;
+}
+
 @media screen and (max-width: 500px) {
     .countdown-number {
         width: 55px;

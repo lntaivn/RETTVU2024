@@ -68,7 +68,7 @@ const Slider = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCountdown(getTimeRemaining(endDate)); 
+            setCountdown(getTimeRemaining(endDate));
         }, 1000);
 
         // Clear interval để tránh memory leak
@@ -124,11 +124,17 @@ const Slider = () => {
                     ImportantDate &&
                     <ul>
 
-                        <li className="modify_color_red">{formatDate(ImportantDate[0]?.date)}: {ImportantDate[0]?.titledate}</li>
+                        <li className="modify_color_red">
+                            <span className="old_day">{ImportantDate[0]?.changedate !== "" && formatDate(ImportantDate[0]?.date)}</span> {ImportantDate[0]?.changedate === "" ? formatDate(ImportantDate[0]?.date) : formatDate(ImportantDate[0]?.changedate)}: {ImportantDate[0]?.titledate}
+                        </li>
 
-                        <li>{formatDate(ImportantDate[1]?.date)}: {ImportantDate[1]?.titledate}</li>
+                        <li>
+                            <span className="old_day">{ImportantDate[1]?.changedate !== "" && formatDate(ImportantDate[1]?.date)}</span> {ImportantDate[1]?.changedate === "" ? formatDate(ImportantDate[1]?.date) : formatDate(ImportantDate[1]?.changedate)}: {ImportantDate[1]?.titledate}
+                        </li>
 
-                        <li className="modify_color_yellow">{formatDate(ImportantDate[2]?.date)}: {ImportantDate[2]?.titledate}</li>
+                        <li className="modify_color_yellow">
+                            <span className="old_day">{ImportantDate[2]?.changedate !== "" && formatDate(ImportantDate[2]?.date)}</span> {ImportantDate[2]?.changedate === "" ? formatDate(ImportantDate[2]?.date) : formatDate(ImportantDate[2]?.changedate)}: {ImportantDate[2]?.titledate}
+                        </li>
 
                     </ul>
                 }

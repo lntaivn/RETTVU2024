@@ -25,7 +25,7 @@ const About = () => {
         }
     };
 
-    const handleGetImportantDate= async () => {
+    const handleGetImportantDate = async () => {
         try {
             const response = await getImportantDate();
             setImportantDate(response.data);
@@ -117,8 +117,13 @@ const About = () => {
                             </div>
                             <div className="ACL-flex">
                                 <h3>{date.titledate}</h3>
-                                <h2 className={date.changedate !== "" && "modify_underline"}>{date.date}</h2>
-                                {date.changedate !== "" && <h2>{date.changedate}</h2>}
+                                <div style={{display: "flex", flexDirection: "column"}}>
+                                    <h2 className={date.changedate !== "" && "modify_underline"}>{date.date}</h2>
+                                    {
+                                        date.changedate !== "" &&
+                                        <h2>{date.changedate}</h2>
+                                    }
+                                </div>
                             </div>
                         </div>
                     ))}
