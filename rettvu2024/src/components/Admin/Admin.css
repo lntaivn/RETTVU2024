@@ -1,0 +1,60 @@
+.Verify, .Admin{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Verify_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.Verify_input{
+    display: flex;
+    gap: 10px;
+}
+
+.Verify_input > input{
+    display: flex;
+    width: 45px;
+    aspect-ratio: 1/1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.Verify_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:20px;
+}
+
+.Verify_title > h3{
+    color: #21409A;
+}
+
+.Verify_title > span{
+    font-weight: 600;
+}
+
+.Admin_Control{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.Admin_Control_edit{
+    text-decoration: none;
+    margin-top: 10px;
+}

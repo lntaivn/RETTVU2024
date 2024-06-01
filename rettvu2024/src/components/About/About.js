@@ -1,32 +1,102 @@
 import { Link } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import "./About.css";
 import { DataStore } from "../Database";
+import { getAboutRet, getImportantDate, getSpeakers, getSubmissionGuideline, getTopics } from "../../service/DataService";
 
 const About = () => {
     const database = useContext(DataStore);
-    const About_content = database?.About_content;
-    const About_content_topic = database?.About_content_topic;
-    const Submission_Guideline = database?.Submission_Guideline;
-    const Speakers = database?.Speakers;
-    const About_Important_Date = database?.About_Important_Date;
+    // const About_content = database?.About_content;
+    // const About_content_topic = database?.About_content_topic;
+    // const Submission_Guideline = database?.Submission_Guideline;
+    // const Speakers = database?.Speakers;
+    // const About_Important_Date = database?.About_Important_Date;
+    const [Speakers, setSpeakers] = useState([]);
+    const [About_content, setAbout_content] = useState([]);
+    const [About_content_topic, setAbout_content_topic] = useState([]);
+    const [Submission_Guideline, setSubmission_Guideline] = useState([]);
+    const [ImportantDate, setImportantDate] = useState([]);
+
+    const handleGetSpeakers = async () => {
+        try {
+            const response = await getSpeakers();
+            setSpeakers(response.data);
+        } catch (error) {
+        }
+    };
+
+    const handleGetImportantDate = async () => {
+        try {
+            const response = await getImportantDate();
+            setImportantDate(response.data);
+        } catch (error) {
+        }
+    };
+
+    const handleGetAbout = async () => {
+        try {
+            const response = await getAboutRet();
+            setAbout_content(response.data);
+        } catch (error) {
+        }
+    };
+
+    const handleGetTopic = async () => {
+        try {
+            const response = await getTopics();
+            setAbout_content_topic(response.data);
+        } catch (error) {
+        }
+    };
+
+    function groupDataByTitle(data) {
+        return data.reduce((acc, item) => {
+            const { title, content } = item;
+            if (!acc[title]) {
+                acc[title] = [];
+            }
+            acc[title].push(content);
+            return acc;
+        }, {});
+    }
+
+    const handleGetSubmissionGuideline = async () => {
+        try {
+            const response = await getSubmissionGuideline();
+            const groupedSubmissionGuideline = groupDataByTitle(response.data);
+            const submissionGuideline = [groupedSubmissionGuideline];
+            setSubmission_Guideline(submissionGuideline);
+        } catch (error) {
+            console.error("Error while fetching submission guideline:", error);
+        }
+    };
+
+    useEffect(() => {
+        handleGetSpeakers();
+        handleGetAbout();
+        handleGetTopic();
+        handleGetSubmissionGuideline();
+        handleGetImportantDate();
+    }, []);
 
     return (
         <>
             <div className="About">
                 <div className="About_content_text">
                     <h2>About RET</h2>
-                    <p>{About_content.map((item) => item.Text)}</p>
+                    <p>{About_content[0]?.text}</p>
+                    <Link className="Call-for-papers-link" to="/call-for-papers">
+                        <span>Call For Papers</span>
+                        <i className="fa-solid fa-up-right-from-square"></i>
+                    </Link>
                 </div>
                 <div className="About_content_topics">
-                    {About_content_topic.map((item) => (
-                        <>
-                            <h2>{item.header}</h2>
-                            {item.body.map((itemEvent, innerIndex) => (
-                                <p key={innerIndex}>{itemEvent}</p>
-                            ))}
-                        </>
-                    ))}
+                    <>
+                        <h2>The topics of the conference include, but are not limited to:</h2>
+                        {About_content_topic.map((itemEvent, innerIndex) => (
+                            <p key={innerIndex}>- {itemEvent.text}</p>
+                        ))}
+                    </>
                 </div>
                 <div className="About_image">
                     <img
@@ -40,15 +110,20 @@ const About = () => {
             <div className="About_Important_Date">
                 <h1>Important dates</h1>
                 <div className="import_date">
-                    {About_Important_Date.map((date, index) => (
+                    {ImportantDate.map((date, index) => (
                         <div key={index} className="About_content_layout">
                             <div className="import_date_icon">
                                 <i className="fa-solid fa-calendar-days"></i>
                             </div>
                             <div className="ACL-flex">
-                                <h3>{date.TitleDate}</h3>
-                                <h2 className={date.ChangeDate !== "" && "modify_underline"}>{date.Date}</h2>
-                                {date.ChangeDate !== "" && <h2>{date.ChangeDate}</h2>}
+                                <h3>{date.titledate}</h3>
+                                <div style={{display: "flex", flexDirection: "column"}}>
+                                    <h2 className={date.changedate !== "" && "modify_underline"}>{date.date}</h2>
+                                    {
+                                        date.changedate !== "" &&
+                                        <h2>{date.changedate}</h2>
+                                    }
+                                </div>
                             </div>
                         </div>
                     ))}
@@ -59,15 +134,15 @@ const About = () => {
                 <h1> Keynote Speakers</h1>
             </div>
             <div className="Speakers">
-                {Speakers.map((speaker) => (
-                    <div className="Speakers_item">
+                {Speakers.map((speaker, index) => (
+                    <div className="Speakers_item" key={index}>
                         {
                             speaker.scholar !== "" ?
                                 <Link className="Speakers_item_img" to={speaker.scholar} target="_blank">
-                                    <img src={speaker.imgSrc} alt="" />
+                                    <img src={speaker.imgsrc} alt="" />
                                 </Link>
                                 : <Link className="Speakers_item_img">
-                                    <img src={speaker.imgSrc} alt="" />
+                                    <img src={speaker.imgsrc} alt="" />
                                 </Link>
                         }
                         <h3>{speaker.name}</h3>
@@ -79,6 +154,7 @@ const About = () => {
             <div className="Submission_Guideline_tital">
                 <h1> Submission Guidelines</h1>
             </div>
+
             <div className="Submission_Guideline">
                 {Submission_Guideline.map((item, index) => (
                     <div key={index}>

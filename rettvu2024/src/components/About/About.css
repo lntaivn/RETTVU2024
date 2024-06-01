@@ -6,7 +6,7 @@
     align-items: flex-start;
     width: 100%;
     grid-template-areas: "about img"
-                        "topic img";
+        "topic img";
     grid-template-rows: auto 1fr;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 30px;
@@ -28,12 +28,13 @@
 }
 
 .About_content_topics h2, .About_content_text h2 {
-    color: #07223C;
+    color: #21409A;
     font-size: 22px;
     margin-bottom: 10px;
 }
 
-.About_content_topics p, .About_content_text p {
+.About_content_topics p,
+.About_content_text p {
     font-size: 18px;
     margin-bottom: 5px;
 }
@@ -51,7 +52,7 @@
     object-fit: cover;
 }
 
-.About_image > span{
+.About_image>span {
     display: flex;
     color: rgb(104, 113, 118);
     font-size: 13px;
@@ -77,7 +78,7 @@
 .About_Important_Date h1 {
     padding: 5px;
     text-align: center;
-    color: #07223C;
+    color: #21409A;
     margin-bottom: 20px;
 }
 
@@ -88,7 +89,8 @@
     gap: 20px;
     padding: 0 50px;
 }
-    
+
+
 .About_content_layout {
     padding: 30px 30px;
     display: flex;
@@ -96,12 +98,11 @@
     gap: 25px;
     width: 100%;
     border: 1px solid #c0b7b7;
-
 }
 
 .fa-calendar-days {
     font-size: 60px;
-    color: #24629A;
+    color: rgba(0, 58, 159, 0.427);
     margin-bottom: 4px;
 }
 
@@ -110,23 +111,25 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    color: #07223C;
+    color: #21409A;
     gap: 10px;
 }
 
-.ACL-flex h3{
+.ACL-flex h3 {
     color: #000000;
 }
 
 .ACL-flex h2 {
     font-weight: bold;
-    
+
+
 }
 
 .Speakers {
-    width: 60%;
+    width: 80%;
+    max-width: 1200px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
     gap: 30px;
     margin: 0 auto;
     justify-items: center;
@@ -142,7 +145,7 @@
 .Speakers_tital h1 {
     padding: 5px;
     text-align: center;
-    color: #07223C;
+    color: #21409A;
 }
 
 .Speakers_item {
@@ -177,7 +180,7 @@
 .Submission_Guideline_tital h1 {
     padding: 5px;
     text-align: center;
-    color: #07223C;
+    color: #21409A;
 }
 
 .Submission_Guideline {
@@ -210,18 +213,16 @@
 .Submission_Guideline_body ul {
     margin-left: 20px;
     list-style-type: square;
- 
+
 }
 
-.Submission_Guideline_body ul li{
+.Submission_Guideline_body ul li {
     margin-bottom: 10px;
 }
 
-.Submission_Guideline_body ul li a{
+.Submission_Guideline_body ul li a {
     word-wrap: break-word;
 }
-
-
 
 
 /*                    modify                             */
@@ -230,4 +231,16 @@
     color: #c0b7b7;
     font-size: 18px;
     font-weight: 500;
+}
+
+.Call-for-papers-link {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    color: #21409A;
 }
