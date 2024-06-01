@@ -16,6 +16,7 @@ import Submission from "./components/Submission/submission";
 import ContactUs from "./components/Travel/ContactUs";
 import Search from "./components/Search/Search";
 import CallForPapers from "./components/CallForPapers/CallForPapers";
+import Registration from "./components/Registration/Registration";
 
 const { Content } = Layout;
 
@@ -79,6 +80,9 @@ const App = () => {
               <Route path="/contact-us" element={<ContactUs />} />
               <Route path="/call-for-papers" element={<CallForPapers />} />
               <Route path="/search" element={<Search />} />
+
+              <Route path="/registration" element={<Registration />} />
+
             </Routes>
           </div>
         </Content>
