@@ -43,11 +43,11 @@ const Registration = () => {
                                 <span className="mr_2" dangerouslySetInnerHTML={{
                                     __html: item.title_registration_link,
                                 }} />
-                                <a target='blank' href={item.registration_link}> form <i className="fa-solid fa-up-right-from-square"></i> </a>                          
+                                <a target='blank' href={item.registration_link}> Registration here <i className="fa-solid fa-up-right-from-square"></i> </a>                          
                             </div>
                             <div>
                                 <span className="mr_2">{item.title_web_link}</span>
-                                <a target='blank' href={item.web_link}> web <i className="fa-solid fa-up-right-from-square"></i></a>
+                                <a target='blank' href={item.web_link}> ret.tvu.edu.vn <i className="fa-solid fa-up-right-from-square"></i></a>
                             </div>
 
                         </div>
