@@ -38,6 +38,8 @@ const Header = () => {
         getItem(<Link to="/" onClick={() => { onClose() }}>About RET</Link>, 'about'),
         getItem(<Link to="/committee" onClick={() => { onClose() }}>Committee</Link>, 'committee'),
         getItem(<Link to="/program" onClick={() => { onClose() }}>Program</Link>, 'program'),
+        getItem(<Link to="/registration" onClick={() => { onClose() }}>Registration</Link>, 'registration'),
+
         getItem(<Link to="/submission" onClick={() => { onClose() }}>Submission</Link>, 'submission'),
         getItem('Support', 'support', null, [
             getItem(<Link to="/travel-information" onClick={() => { onClose() }}>Travel Information</Link>, 'travel-information'),
@@ -97,6 +99,9 @@ const Header = () => {
                             </div>
                             <div className="Header-tab">
                                 <Link to="/committee" className={location.pathname.startsWith('/committee') ? "Header-link Heade-active" : "Header-link"}>Committee</Link>
+                            </div>
+                            <div className="Header-tab">
+                                <Link to="/registration" className={location.pathname.startsWith('/registration') ? "Header-link Heade-active" : "Header-link"}>Registration</Link>
                             </div>
                             <div className="Header-tab">
                                 <Link to="/program" className={location.pathname.startsWith('/program') ? "Header-link Heade-active" : "Header-link"}>Program</Link>

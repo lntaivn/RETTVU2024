@@ -1,0 +1,8 @@
+.mr_2{
+    margin-right: 4px;
+}
+.Registration {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

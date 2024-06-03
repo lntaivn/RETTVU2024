@@ -36,11 +36,17 @@ const getKey = () => {
     return axiosInstance.get(`/key`);
 };
 
+const getRegistration  = () => {
+    console.log('Registration');
+    return axiosInstance.get(`/registration`);
+};
+
 const clearCache = () => {
     return axiosInstance.delete(`/clear`);
 };
 
 export {
+    getRegistration,
     getSpeakers,
     getTravelInfo,
     getSubmissionGuideline,
