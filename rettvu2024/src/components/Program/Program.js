@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { Carousel, Collapse } from 'antd';
+import { Card, Carousel, Collapse, Timeline } from 'antd';
 import "./Program.css"
 import { Link } from 'react-router-dom';
 import { DataStore } from "../Database";
@@ -38,7 +38,6 @@ const Program = () => {
             <div className="Submission_Guideline_tital">
                 <h1>Conference Program</h1>
             </div>
-            {/* <h3 style={{padding: "20px", textAlign: "center"}}>Updating...</h3> */}
             <div className="Session_Container">
                 <div>
                     <div className="Session_item">
@@ -46,14 +45,27 @@ const Program = () => {
                         <h3>{conferenceProgram[0]?.date}</h3>
                     </div>
                     <div className="Session_timeline">
-                        {
-                            conferenceProgram[0]?.content?.map((item, index) => (
-                                <div key={index} className="Session_timeline_item">
-                                    <h3>{item.time}</h3>
-                                    <p>{item.description}</p>
-                                </div>
-                            ))
-                        }
+                        <Timeline pending>
+                            {conferenceProgram[0]?.content.map((item, index) => (
+                                <Timeline.Item key={index}>
+                                    <div className="Session_timeline_item">
+                                        <div className="Session_timeline_node">
+                                            <strong>{item.time}</strong>
+                                        </div>
+                                        <div className="Session_timeline_description">
+                                            <p>
+                                                {item.description.split('\n').map((line, idx) => (
+                                                    <span key={idx}>
+                                                        {line}
+                                                        <br />
+                                                    </span>
+                                                ))}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </Timeline.Item>
+                            ))}
+                        </Timeline>
                     </div>
                 </div>
                 <div>
@@ -62,14 +74,27 @@ const Program = () => {
                         <h3>{conferenceProgram[1]?.date}</h3>
                     </div>
                     <div className="Session_timeline">
-                        {
-                            conferenceProgram[1]?.content?.map((item, index) => (
-                                <div key={index} className="Session_timeline_item">
-                                    <h3>{item.time}</h3>
-                                    <p>{item.description}</p>
-                                </div>
-                            ))
-                        }
+                        <Timeline pending>
+                            {conferenceProgram[1]?.content.map((item, index) => (
+                                <Timeline.Item key={index}>
+                                    <div className="Session_timeline_item">
+                                        <div className="Session_timeline_node">
+                                            <strong>{item.time}</strong>
+                                        </div>
+                                        <div className="Session_timeline_description">
+                                            <p>
+                                                {item.description.split('\n').map((line, idx) => (
+                                                    <span key={idx}>
+                                                        {line}
+                                                        <br />
+                                                    </span>
+                                                ))}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </Timeline.Item>
+                            ))}
+                        </Timeline>
                     </div>
                 </div>
             </div>

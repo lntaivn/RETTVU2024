@@ -7,17 +7,29 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { DataStoreProvider } from './components/Database';
 import Admin from './components/Admin/Admin';
 import Verify from './components/Admin/Verify';
+import { ConfigProvider } from 'antd';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <DataStoreProvider>
-      <Routes>
-        <Route path="/verify" element={<Verify />} />
-        <Route path="/admin" element={<Admin />} />
-        <Route path="/*" element={<App />} />
-      </Routes>
-    </DataStoreProvider>
+    <ConfigProvider
+      theme={{
+        components: {
+          Timeline: {
+            itemPaddingBottom: 40,
+            dotBorderWidth: 4
+          },
+        },
+      }}
+    >
+      <DataStoreProvider>
+        <Routes>
+          <Route path="/verify" element={<Verify />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/*" element={<App />} />
+        </Routes>
+      </DataStoreProvider>
+    </ConfigProvider>
   </BrowserRouter>
 );
 
