@@ -10,17 +10,15 @@ import Verify from './components/Admin/Verify';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <DataStoreProvider>
-        <Routes>
-          <Route path="/verify" element={<Verify />} />
-          <Route path="/admin" element={<Admin />} />
-          <Route path="/*" element={<App />} />
-        </Routes>
-      </DataStoreProvider>
-    </BrowserRouter>
-  </React.StrictMode>
+  <BrowserRouter>
+    <DataStoreProvider>
+      <Routes>
+        <Route path="/verify" element={<Verify />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/*" element={<App />} />
+      </Routes>
+    </DataStoreProvider>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

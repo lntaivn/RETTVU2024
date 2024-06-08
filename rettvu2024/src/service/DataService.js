@@ -36,9 +36,20 @@ const getKey = () => {
     return axiosInstance.get(`/key`);
 };
 
-const getRegistration  = () => {
-    console.log('Registration');
+const getRegistration = () => {
     return axiosInstance.get(`/registration`);
+};
+
+const getConferenceProgram = () => {
+    return axiosInstance.get(`/conference-program`);
+};
+
+const getParallelSession1 = () => {
+    return axiosInstance.get(`/program-parallel-sessions-1`);
+};
+
+const getParallelSession2 = () => {
+    return axiosInstance.get(`/program-parallel-sessions-2`);
 };
 
 const clearCache = () => {
@@ -56,5 +67,8 @@ export {
     getAboutRet,
     getKey,
     clearCache,
-    getContact
+    getContact,
+    getConferenceProgram,
+    getParallelSession1,
+    getParallelSession2
 }

@@ -9,7 +9,6 @@ const Registration = () => {
 
     const [Submission_Guideline, setSubmission_Guideline] = useState([]);
 
-
     const handleGetRegistration = async () => {
         try {
             const response = await getRegistration();
@@ -27,7 +26,7 @@ const Registration = () => {
     return (
         <div className="Submission">
             <div className="Submission_Guideline_tital">
-                <h1> Registration</h1>
+                <h1>Registration</h1>
             </div>
             <div className="Submission_Guideline">
                 {Submission_Guideline.map((item, index) => (

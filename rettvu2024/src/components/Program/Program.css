@@ -1,143 +1,33 @@
-.Slide-img{
+.Program{
+    padding: 30px 60px;
+}
+
+.Session_Container{
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.Session_Container .Session_item{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    background-color: rgba(224, 224, 224, 0.449);
+}
+
+.Session_Container .Session_item h2{
+    display: flex;
+    gap: 10px;
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    height: 300px;
+    padding: 10px 20px;
+    background-color: #21409A;
+    color: white;
+    font-size: 18px;
+    width: fit-content;
 }
 
-.Slide-img > img{
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-/* ----------------------program--------------------- */
-.program {
-    margin: auto;
-    padding: 0 30px;
-}
-
-.program > h1 {
-    text-align: center;
-    color: #20629D;
-    padding:     40px;
-
-}
-.program >h2 {
-    padding-bottom: 20px;
-    color: red;
-
-}
-.modify_program_h1 {
-    color: black !important;
-    font-size:x-large;
-}
-
-.padding_10px{
-    padding: 20px;
-}
-.css-dev-only-do-not-override-zl9ks2 {
-    border: none;
-    border-bottom: 1px solid #bbb;
-
-}
-.modify_Upto{
-    font-size: x-large;
-    font-weight: bold;
-}
-
-.ant-collapse-item .ant-collapse-header{
-    display: flex;
-    align-items: center;
-    margin: auto;
-}
-.ant-collapse-item .ant-collapse-expand-icon{
-    margin: auto;
-    font-size: large;
-}
-
-.program_title_detail {
-    display: flex;
-    width: 100%;
-    padding-left: 20px;
-}
-
-.program_title_detail ul {
-    list-style: none;
-    padding: 0; 
-    margin: 0; 
-}
-
-.program_title_detail li {
-    display: flex;
-    align-items: center;
-}
-
-.program_title_detail h1,
-.program_title_detail h2 {
-    margin: 0; 
-}
-
-.program_title_detail h2 {
-    margin-right: 5px; 
-}
-
-.program_title_detail a {
-    margin-left: 10px; 
-}
-
-.ant-collapse-content-box{
-    margin-left: 40px;
-    background-color: none;
-}
-
-.program_event_click_arrow{
-    line-height: 1.5;
-}
-.program_event_click_arrow ul {
-    list-style-type: square;
-}
-
-.schedule {
-    width: 100%;
-    font-size: 1.1rem;
-    line-height: 1.5;
-    text-align: justify;
-    padding: 20px;
-    border-radius: 10px;
-  
-}
-
-.schedule ul {
-    list-style-type: square;
-    padding: 0;
-    padding-left: 20px;
-}
-
-.schedule li {
-    margin-bottom: 20px;
-}
-
-.schedule .time {
-    font-weight: bold;
-    margin-right: 10px;
-    color: red;
-}
-
-.schedule .event {
-    display: block;
-    margin-top: 5px;
-}
-
-.schedule h1,
-.schedule h2 {
-    text-align: center;
-    color: #333;
-}
-
-.schedule h2 {
-    margin-top: 50px;
+.Session_Container .Session_item h3{
+    font-size: 16px;
+    font-weight: 600;
 }
