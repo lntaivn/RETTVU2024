@@ -37,19 +37,51 @@ const Registration = () => {
                         />
 
                         <div>
-                            <div>
-                                <span className="mr_2" dangerouslySetInnerHTML={{
-                                    __html: item.title_registration_link,
-                                }} />
-                                <a target='blank' href={item.registration_link}> Registration here <i className="fa-solid fa-up-right-from-square"></i> </a>                          
-                            </div>
-                            <div>
-                                <span className="mr_2">{item.title_web_link}</span>
-                                <a target='blank' href={item.web_link}> ret.tvu.edu.vn <i className="fa-solid fa-up-right-from-square"></i></a>
-                            </div>
-
+                            <b><span >Registration link:</span></b>
                         </div>
                         <div>
+                            <div className="Submission_Guideline_body">
+                                <ul>
+                                    <li>
+                                        <div>
+                                        <span  className="mr_2 ml_2">{item.title_authors_presenters}</span>
+
+                                            <a target='blank' href={item.link_authors_presenters}> Link <i className="fa-solid fa-up-right-from-square"></i> </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span  className="mr_2 ml_2">{item.title_guests_participants}</span>
+                                            <a target='blank' href={item.link_participants}> Link <i className="fa-solid fa-up-right-from-square"></i></a>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <b><span >Due dates:</span></b>
+                        </div>
+                        <div>
+                            <div className="Submission_Guideline_body">
+                                <ul>
+                                    <li>
+                                        <div>
+                                        <span  className="mr_2 ml_2">{item.title_authors_presenters}</span>
+                                        <b><span>{item.due_dates_authors_presenters}</span></b>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span  className="mr_2 ml_2">{item.title_guests_participants}</span>
+                                            <b><span>{item.due_dates_guests_participants}</span></b>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        {/* <div>
                             <span className="mr_2"> {item.title_authors_presenters}</span>
                             <span><b>{item.registration_due_date_for_authors_presenters}</b> </span>
 
@@ -58,8 +90,7 @@ const Registration = () => {
                         <div>
                             <span className="mr_2"> {item.title_guests_participants}</span>
                             <span ><b>{item.registration_due_date_for_distinguished_guests_participants}</b></span>
-                        </div>
-
+                        </div> */}
                         <div dangerouslySetInnerHTML={{
                             __html: item.please_help_us,
                         }}
