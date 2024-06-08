@@ -1,33 +1,79 @@
-.Program{
+.Program {
     padding: 30px 60px;
 }
 
-.Session_Container{
+.Session_Container {
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-top: 30px;
+    font-size: 30px !important;
 }
 
-.Session_Container .Session_item{
+.Session_Container > div{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.Session_Container .Session_item {
     display: flex;
     align-items: baseline;
-    gap: 10px;
+    gap: 15px;
     background-color: rgba(224, 224, 224, 0.449);
 }
 
-.Session_Container .Session_item h2{
+.Session_Container .Session_timeline{
+    padding-left: 20px;
+}
+
+.Session_timeline_item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.Session_timeline_item .Session_timeline_node {
+    color: #21409a;
+    width: fit-content;
+    font-size: 14px;
+    padding: 0px 8px;
+    border: 1.5px solid #21409a;
+    border-radius: 5px;
+}
+
+.Session_timeline_item .Session_timeline_description{
+    font-size: 16px;
+    line-height: 2;
+}
+
+.Session_Container .Session_item h2 {
     display: flex;
     gap: 10px;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #21409A;
+    padding: 14px 20px;
+    background-color: #21409a;
     color: white;
     font-size: 18px;
     width: fit-content;
 }
 
-.Session_Container .Session_item h3{
+.Session_Container .Session_item h3 {
     font-size: 16px;
     font-weight: 600;
+}
+
+.ant-timeline-item-pending {
+    display: none;
+}
+
+.ant-timeline-item-head{
+    width: 14px !important;
+    height: 14px !important;
+    transform: translateX(-2px) !important;
+}
+
+.ant-timeline-item-head-blue{
+    border-color: #21409a !important;
 }
